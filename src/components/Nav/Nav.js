@@ -1,7 +1,18 @@
 import React from 'react'
 import { ContainerLogoAndH2, H2, H2Container, Header, Li, Logo, LogoContainer, MenuBurguer, Navegador, Ul } from './NavStyles'
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 function Nav() {
+  const history = useHistory()
+
+  const pushAboutUs = () => {
+      history.push('/about-us')
+  }
+
+  const pushHome = () => {
+      history.push('/')
+  }
+
   return (
     <Header>
 
@@ -21,8 +32,8 @@ function Nav() {
 
         <Navegador>
             <Ul>
-                <Li>Home</Li>
-                <Li>About Us</Li>
+                <Li onClick={pushHome}>Home</Li>
+                <Li onClick={pushAboutUs}>About Us</Li>
                 <Li>Wedding Dresses</Li>
                 <Li>Our Brides</Li>
                 <Li>Designers</Li>

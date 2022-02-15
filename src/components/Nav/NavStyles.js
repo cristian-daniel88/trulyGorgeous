@@ -44,6 +44,21 @@ cursor: pointer;
 
 `;
 
+export const H2Container = styled.div`
+width: 100%;
+display: flex;
+justify-content: center;
+`
+
+
+
+export const H2 = styled.h2`
+font-size: 100%;
+font-weight: 300;
+letter-spacing: 5px;
+color: #a59797;
+`
+
 
 
 export const Navegador = styled.nav`
@@ -87,9 +102,14 @@ display: none;
 @media screen and (max-width: 865px) {
     display: block;
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 20px;
     cursor: pointer;
   }
 
+
+`
+
+export const ContainerLogoAndH2 = styled.div`
+margin-bottom: 10px;
 
 `

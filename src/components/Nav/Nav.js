@@ -1,12 +1,24 @@
 import React from 'react'
-import { Header, Li, Logo, LogoContainer, MenuBurguer, Navegador, Ul } from './NavStyles'
+import { ContainerLogoAndH2, H2, H2Container, Header, Li, Logo, LogoContainer, MenuBurguer, Navegador, Ul } from './NavStyles'
 
 function Nav() {
   return (
     <Header>
+
+        <ContainerLogoAndH2>
+
         <LogoContainer>
         <Logo/>
         </LogoContainer>
+
+        <H2Container>
+            <H2>
+                DESIGNER & BESPOKE BRIDAL WEAR
+            </H2>
+        </H2Container>
+
+        </ContainerLogoAndH2>
+
         <Navegador>
             <Ul>
                 <Li>Home</Li>

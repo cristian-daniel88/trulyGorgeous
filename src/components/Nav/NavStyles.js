@@ -104,6 +104,7 @@ display: none;
     font-size: 30px;
     margin-top: 20px;
     cursor: pointer;
+    color:#704949;
   }
 
 

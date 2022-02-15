@@ -8,7 +8,10 @@ padding: 10px 5%;
 position: fixed;
 @media screen and (max-width: 865px) {
    display: flex;
+   justify-content: space-between;
   }
+
+
 `;
 
 
@@ -30,7 +33,7 @@ background-size: contain ;
 background-repeat: no-repeat;
 cursor: pointer;
 @media screen and (max-width: 1300px) {
-    width: 60%;
+    width: 100%;
     background-size: contain ;
     background-position: center;
   }
@@ -57,6 +60,12 @@ font-size: 100%;
 font-weight: 300;
 letter-spacing: 5px;
 color: #a59797;
+
+@media screen and (max-width: 600px) {
+    font-size: 9px;
+    font-weight: bold;
+  }
+
 `
 
 
@@ -68,7 +77,11 @@ justify-content: center;
 
 @media screen and (max-width: 1300px) {
     justify-content: end;
+    width: auto;
   }
+
+
+
 
 
 

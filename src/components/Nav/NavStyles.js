@@ -126,6 +126,11 @@ display: none;
     color:#704949;
   }
 
+  @media screen and (max-width: 300px) {
+   margin-top: 65px;
+   width: 20px;
+  }
+
 
 `
 

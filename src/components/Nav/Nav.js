@@ -1,9 +1,18 @@
 import React from 'react'
 import { ContainerLogoAndH2, H2, H2Container, Header, Li, Logo, LogoContainer, MenuBurguer, Navegador, Ul } from './NavStyles'
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useDispatch } from 'react-redux';
+import { toggleHamburguerHidden } from '../../redux/hamburguer/hamburguerActions';
+
 
 function Nav() {
   const history = useHistory()
+  const dispatch = useDispatch()
+  
+  const toggleMenu = () => {
+      dispatch(toggleHamburguerHidden())
+  }
+
 
   const pushAboutUs = () => {
       history.push('/about-us')
@@ -43,7 +52,7 @@ function Nav() {
                 <Li>Contact</Li>
 
             </Ul>
-        <MenuBurguer/>
+        <MenuBurguer onClick={toggleMenu}/>
         </Navegador>
 
     </Header>

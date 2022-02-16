@@ -55,7 +55,7 @@ justify-content: center;
 
 
 
-export const H2 = styled.h2`
+export const H2 = styled.h1`
 font-size: 100%;
 font-weight: 300;
 letter-spacing: 5px;

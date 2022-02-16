@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { BodyHome } from './HomeBodyStyles'
+import Arrows from '../Arrows/Arrows'
+import Balls from '../Balls/Balls'
 
 
 function HomeBody() {
@@ -26,13 +28,22 @@ function HomeBody() {
 
   return (
     <>
-    {count === 1 && (<BodyHome image={`./assets/banner${count}.jpg`}/>)}
-    {count === 2 && (<BodyHome image={`./assets/banner${count}.jpg`}/>)}
-    {count === 3 && (<BodyHome image={`./assets/banner${count}.jpg`}/>)}
-
-
+    {count === 1 && (<BodyHome image={`./assets/banner${count}.jpg`}>
+      <Arrows/>
+      <Balls/>
+    </BodyHome>)}
+    {count === 2 && (<BodyHome image={`./assets/banner${count}.jpg`}>
+     <Arrows/>
+     <Balls/>
+    </BodyHome>)}
+    {count === 3 && (<BodyHome image={`./assets/banner${count}.jpg`}>
+     <Arrows/>
+     <Balls/>
+    </BodyHome>)}
     </>
   )
 }
+
+
 
 export default HomeBody

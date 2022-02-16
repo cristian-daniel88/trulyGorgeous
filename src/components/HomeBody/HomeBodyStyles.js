@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const BodyHome = styled.section`
 width: 100%;
 height: 100vh;
-padding: 2% 0%;
+padding: 0% 0%;
+padding-bottom: 12%;
 
 
 

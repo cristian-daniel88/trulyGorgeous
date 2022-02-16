@@ -114,7 +114,8 @@ export const MenuBurguer = styled(FaBars)`
 display: none;
 @media screen and (max-width: 865px) {
     display: block;
-    font-size: 30px;
+    //font-size: 30px;
+    font-size: 2em;
     margin-top: 20px;
     cursor: pointer;
     color:#704949;

@@ -44,6 +44,7 @@ export const LiBurguer = styled.li`
 color: white;
 display: block;
 margin: 20px;
+margin-bottom: 10px;
 
 
 `;
@@ -115,7 +116,7 @@ export const ButtonMenuLanguage = styled.button`
 export const ButtonMenu = styled.button`
 border: none;
 background-color: transparent;
-color: black;
+color: #683535;
 font-size: 1.3rem;
 cursor: pointer;
 &:hover{

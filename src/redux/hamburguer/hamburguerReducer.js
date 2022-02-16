@@ -1,7 +1,7 @@
 import { TOGGLE_HAMBURGUER_HIDDEN} from "./hamburguerActions";
 
 const INITIAL_STATE = {
-  hidden: true,
+  hidden: false,
 };
 
 const hamburguerReducer = (state = INITIAL_STATE, action) => {

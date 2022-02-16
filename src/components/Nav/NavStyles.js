@@ -6,6 +6,8 @@ width: 100%;
 height: auto;
 padding: 10px 5%;
 position: fixed;
+background-color: white;
+z-index: 50;
 @media screen and (max-width: 865px) {
    display: flex;
    justify-content: space-between;

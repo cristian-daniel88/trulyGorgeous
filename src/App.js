@@ -6,6 +6,7 @@ import { Switch, Route } from "react-router-dom"
 import AboutUs from './pages/AboutUs';
 import Top from './components/Top/Top';
 import ToggleMenu from './components/ToggleMenu/ToggleMenu';
+import Home from './pages/Home';
 
 function App() {
   return (
@@ -17,11 +18,19 @@ function App() {
 
     <Switch>
 
-      <Route exact path='/about-us'>
+
+    <Route exact path='/'>
+        <Home/>
+    </Route>
+      
+
+    <Route exact path='/about-us'>
         <AboutUs/>
-      </Route>
+    </Route>
+
       
     </Switch>
+    
     </>
   );
 }

@@ -8,6 +8,7 @@ padding: 10px 5%;
 position: fixed;
 background-color: white;
 z-index: 50;
+
 @media screen and (max-width: 865px) {
    display: flex;
    justify-content: space-between;
@@ -34,6 +35,7 @@ height: 70px;
 background-size: contain ;
 background-repeat: no-repeat;
 cursor: pointer;
+
 @media screen and (max-width: 1300px) {
     width: 100%;
     background-size: contain ;
@@ -41,7 +43,7 @@ cursor: pointer;
   }
 
   @media screen and (max-width: 600px) {
-    width: 250px;
+    width: 240px;
   }
 
 
@@ -117,8 +119,9 @@ display: none;
 @media screen and (max-width: 865px) {
     display: block;
     //font-size: 30px;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-top: 20px;
+    
     cursor: pointer;
     color:#704949;
   }

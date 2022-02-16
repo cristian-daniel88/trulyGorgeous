@@ -5,7 +5,9 @@ export const Menu = styled.div`
 width: 70%;
 height: 100vh;
 background-color: aliceblue;
+
 position: fixed;
+
 z-index: 500;
 display: none;
 transform: ${(props) => (props.toggle ? "translateX(0%)" : "translateX(-150%)")};
@@ -62,7 +64,7 @@ color: white;
 export const ButtonBurguer = styled(FaBars)`
 
 color:#704949;
-font-size: 2em;
+font-size: 1.5em;
 transform: rotate(90deg);
 margin: 5px;
 cursor: pointer;
@@ -123,4 +125,8 @@ cursor: pointer;
     color: #bf6c4a;
 
   }
+
+ @media screen and (max-width: 300px) {
+  font-size: 14px;
+}
 `

@@ -11,7 +11,6 @@ padding-bottom: 12%;
 background-image: ${(props) => (props.image ? `url(${props.image})` : "")};
 background-position: center;
 
-background-position-y: 10px;
 
 background-size: cover;
 background-repeat: no-repeat;

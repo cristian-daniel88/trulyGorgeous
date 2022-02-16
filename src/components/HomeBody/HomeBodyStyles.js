@@ -15,6 +15,7 @@ background-position-y: 10px;
 
 background-size: cover;
 background-repeat: no-repeat;
+position: relative;
 
 
 

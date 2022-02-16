@@ -20,7 +20,7 @@ function HomeBody() {
   }, [count])
 
 
-  console.log(count)
+  
 
 
 
@@ -29,17 +29,16 @@ function HomeBody() {
   return (
     <>
     {count === 1 && (<BodyHome image={`./assets/banner${count}.jpg`}>
-      <Arrows/>
-      <Balls/>
+      
     </BodyHome>)}
     {count === 2 && (<BodyHome image={`./assets/banner${count}.jpg`}>
-     <Arrows/>
-     <Balls/>
+   
     </BodyHome>)}
     {count === 3 && (<BodyHome image={`./assets/banner${count}.jpg`}>
-     <Arrows/>
-     <Balls/>
+     
     </BodyHome>)}
+    <Arrows/>
+    <Balls bola={count}/>
     </>
   )
 }

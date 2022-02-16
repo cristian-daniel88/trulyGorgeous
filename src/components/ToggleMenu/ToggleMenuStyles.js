@@ -6,7 +6,7 @@ width: 70%;
 height: 100vh;
 background-color: aliceblue;
 position: fixed;
-z-index: 11;
+z-index: 500;
 display: none;
 transform: ${(props) => (props.toggle ? "translateX(0%)" : "translateX(-150%)")};
 transition: transform 0.6s ease-in-out;

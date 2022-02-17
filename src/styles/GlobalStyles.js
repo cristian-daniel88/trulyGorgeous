@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     -ms-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-}
+    
 
 body {
     font-family: 'Montserrat', sans-serif;

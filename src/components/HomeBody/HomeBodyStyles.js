@@ -15,7 +15,7 @@ position: relative;
 
 @keyframes taadaa { 
     0% {
-      opacity: 0;
+      opacity: 0.1;
     }
   
     100% {

@@ -16,7 +16,7 @@ const sliderReducer = (state = INITIAL_STATE, action) => {
     case SLIDER_MANUAL:
       return {
         ...state,
-        slider: !state.slider,
+        slider: true,
       };
 
 

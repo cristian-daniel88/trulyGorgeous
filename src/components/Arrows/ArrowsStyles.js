@@ -4,36 +4,65 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 export const ArrowsContainer = styled.div`
 width: 100%;
 height: 90%;
-border: solid 1px black;
+//border: solid 1px black;
 position: absolute;
 top: 0;
 display: flex;
 justify-content: space-between;
+overflow-x: hidden;
 `;
 
-export const ArrowsColumn = styled.div`
+export const ArrowsColumnLeft = styled.div`
 width: 10%;
 height: 100%;
-background-color: aqua;
+//background-color: aqua;
 display: flex;
 align-items: center;
+align-content: center;
 `
 
-export const ArrowsBox = styled.div`
+export const ArrowsColumnRight = styled.div`
+width: 10%;
+height: 100%;
+//background-color: aqua;
+display: flex;
+align-items: center;
+align-content:center;
+`
+
+export const ArrowsBoxL = styled.div`
 width: 100%;
 height: 10%;
-background-color: aquamarine;
-margin-top:100px;
+//background-color: aquamarine;
+margin-top:300px;
 position: relative;
+display: flex;
+justify-content: start;
+
+
+`
+
+export const ArrowsBoxR = styled.div`
+width: 100%;
+height: 10%;
+//background-color: aquamarine;
+margin-top:300px;
+position: relative;
+display: flex;
+justify-content: end;
+
 
 `
 
 export const ArrowLeft = styled(FaAngleLeft)`
 font-size: 2em;
 position: absolute;
-
-transform: ${(props) => (props.hover ? "translateX(280%)" : "translateX(-150%)")};
+transform: ${(props) => (props.hover == 'true' ? "translateX(350%)" : "translateX(-100%)")};
 transition: transform 0.6s ease-in-out;
+cursor: pointer;
+color: silver;
+
+
 
 @media screen and (max-width: 865px) {
 display: none;
@@ -43,10 +72,10 @@ display: none;
 export const ArrowRight = styled(FaAngleRight)`
 font-size: 2em;
 position: absolute;
-transform: ${(props) => (props.hover ? "translateX(100%)" : "translateX(500%)")};
-transition: transform 0.6s ease-in-out;
-
-
+color: silver;
+transform: ${(props) => (props.hover == 'true' ? "translateX(-355%)" : "translateX(100%)")}; 
+transition: transform 0.6s ease-in-out; 
+cursor: pointer;
 
 @media screen and (max-width: 865px) {
 display: none;
@@ -84,4 +113,6 @@ cursor: pointer;
 display: block;
 }
 `
+
+
 

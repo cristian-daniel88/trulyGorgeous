@@ -2,27 +2,31 @@ import React, { useEffect, useState } from 'react'
 import { BodyHome } from './HomeBodyStyles'
 import Arrows from '../Arrows/Arrows'
 import Balls from '../Balls/Balls'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { hoverSlider } from '../../redux/slider/sliderActions'
 
 
 function HomeBody() {
   const [count, setCount] = useState(1)
   const dispatch = useDispatch()
+  const stopAutoSlider = useSelector((state)=> state.slider.slider)
+  console.log(stopAutoSlider)
 
   const activateSlider = () => {
     dispatch(hoverSlider())
   }
 
   useEffect(() => {
-     
-    setTimeout(() => {
+    if(!stopAutoSlider){
+      setTimeout(() => {
         if(count == 3){
             setCount(1)
             return
          }
         setCount(count + 1)
     }, 6000);
+    }
+
     
   }, [count])
 
@@ -46,7 +50,7 @@ function HomeBody() {
      
     </BodyHome>)}
     
-    <Arrows/>
+    <Arrows countFunction={setCount} cuenta={count}/>
     <Balls bola={count}/>
 
     </div>

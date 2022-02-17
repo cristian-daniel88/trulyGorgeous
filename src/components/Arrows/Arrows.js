@@ -1,25 +1,50 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
-import { ArrowLeft, ArrowLeftPhone, ArrowRight, ArrowRightPhone, ArrowsBox, ArrowsColumn, ArrowsContainer } from './ArrowsStyles'
+import { useDispatch, useSelector } from 'react-redux'
+import { ArrowLeft, ArrowLeftPhone, ArrowRight, ArrowRightPhone, ArrowsBox, ArrowsBoxL, ArrowsBoxR, ArrowsColumnLeft, ArrowsColumnRight, ArrowsContainer } from './ArrowsStyles'
+import {sliderManual} from '../../redux/slider/sliderActions'
+function Arrows({countFunction, cuenta}) {
 
-function Arrows() {
-  const hover = useSelector((state)=> state.slider.hover)
-  console.log(hover)
+  const hover = useSelector((state)=> state.slider.hover);
+  const dispatch = useDispatch();
+  
+  const nextPhoto = () => {
+    dispatch(sliderManual())
+    if(cuenta == 3){
+      countFunction(1)
+      return
+   }  
+    countFunction(cuenta + 1);
+  }
+
+  const backPhoto = () => {
+    dispatch(sliderManual())
+    if(cuenta == 1){
+      countFunction(3)
+      return
+   }  
+    countFunction(cuenta - 1);
+  }
+
+
   return (
+    <>
     <ArrowsContainer>
-        <ArrowsColumn>
-          <ArrowsBox>
-              <ArrowLeft hover={hover}/>
+        <ArrowsColumnLeft>
+          <ArrowsBoxL>
+             
               <ArrowLeftPhone/>
-          </ArrowsBox>
-        </ArrowsColumn>
-        <ArrowsColumn>
-          <ArrowsBox>
-              <ArrowRight hover={hover}/>
-              <ArrowRightPhone/>
-          </ArrowsBox>
-        </ArrowsColumn>
+              <ArrowLeft hover={hover ? 'true' : 'false'} onClick={backPhoto}/>
+          </ArrowsBoxL>
+        </ArrowsColumnLeft>
+        <ArrowsColumnRight>
+          <ArrowsBoxR>
+       
+              <ArrowRightPhone />
+              <ArrowRight hover={hover ? 'true' : 'false'} onClick={nextPhoto}/>
+          </ArrowsBoxR>
+        </ArrowsColumnRight>
     </ArrowsContainer>
+    </>
   )
 }
 

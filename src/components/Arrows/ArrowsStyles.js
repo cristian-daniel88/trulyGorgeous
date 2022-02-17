@@ -31,7 +31,9 @@ position: relative;
 export const ArrowLeft = styled(FaAngleLeft)`
 font-size: 2em;
 position: absolute;
-//left: -200px;
+
+transform: ${(props) => (props.hover ? "translateX(280%)" : "translateX(-150%)")};
+transition: transform 0.6s ease-in-out;
 
 @media screen and (max-width: 865px) {
 display: none;
@@ -41,7 +43,10 @@ display: none;
 export const ArrowRight = styled(FaAngleRight)`
 font-size: 2em;
 position: absolute;
-//right: -200px;
+transform: ${(props) => (props.hover ? "translateX(100%)" : "translateX(500%)")};
+transition: transform 0.6s ease-in-out;
+
+
 
 @media screen and (max-width: 865px) {
 display: none;

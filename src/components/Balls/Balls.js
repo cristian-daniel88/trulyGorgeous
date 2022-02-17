@@ -2,7 +2,7 @@ import React from 'react'
 import { BallsContainer, Bola } from './BallsStyles'
 
 function Balls({bola}) {
-  console.log(bola)
+
   return (
     <BallsContainer>
         <Bola bolaColor={bola == 1 && '#8eccf454'}/>

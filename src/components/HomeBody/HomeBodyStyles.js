@@ -2,16 +2,11 @@ import styled from "styled-components";
 
 export const BodyHome = styled.section`
 width: 100%;
-height: 100vh;
+height: 90vh;
 padding: 0% 0%;
 padding-bottom: 12%;
-
-
-
 background-image: ${(props) => (props.image ? `url(${props.image})` : "")};
 background-position: center;
-
-
 background-size: cover;
 background-repeat: no-repeat;
 position: relative;

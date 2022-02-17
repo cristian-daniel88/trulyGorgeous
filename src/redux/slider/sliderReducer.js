@@ -1,0 +1,29 @@
+import {HOVER_SLIDER, SLIDER_MANUAL } from "./sliderActions";
+
+const INITIAL_STATE = {
+  hover: false,
+  slider: false,
+};
+
+const sliderReducer = (state = INITIAL_STATE, action) => {
+  switch (action.type) {
+    case HOVER_SLIDER:
+      return {
+        ...state,
+        hover: !state.hover,
+      };
+      
+    case SLIDER_MANUAL:
+      return {
+        ...state,
+        slider: !state.slider,
+      };
+
+
+
+    default:
+      return state;
+  }
+};
+
+export default sliderReducer;

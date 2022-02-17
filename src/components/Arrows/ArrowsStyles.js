@@ -55,7 +55,7 @@ justify-content: end;
 `
 
 export const ArrowLeft = styled(FaAngleLeft)`
-font-size: 2em;
+font-size: 3em;
 position: absolute;
 transform: ${(props) => (props.hover == 'true' ? "translateX(350%)" : "translateX(-100%)")};
 transition: transform 0.6s ease-in-out;
@@ -70,7 +70,7 @@ display: none;
 `
 
 export const ArrowRight = styled(FaAngleRight)`
-font-size: 2em;
+font-size: 3em;
 position: absolute;
 color: silver;
 transform: ${(props) => (props.hover == 'true' ? "translateX(-355%)" : "translateX(100%)")}; 

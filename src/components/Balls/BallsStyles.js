@@ -10,6 +10,7 @@ justify-content: center;
 position: absolute;
 bottom: 0;
 
+
 `
 
 export const Bola = styled.div`

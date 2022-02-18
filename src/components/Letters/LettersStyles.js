@@ -31,6 +31,7 @@ animation: taadaa2   0.7s cubic-bezier(.92,.29,.65,.59) 1;
     width: 80%;
     padding: 10px;
     margin-top: 50px;
+    top: 50%;
 }
 `;
 
@@ -84,6 +85,31 @@ align-content: center;
 `
 
 export const Button1 = styled.button`
+background: transparent;
+border: none;
+border-radius: 5px;
+background-color: #fbfeff;
+color: #a59797;
+cursor: pointer;
+z-index: 200;
+padding: 0 5px;
+letter-spacing: -1px;
+
+font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
+font-weight: bold;
+font-style: normal;
+text-transform: uppercase;
+
+
+&:hover {
+
+}
+
+
+`
+
+
+export const ATelephon = styled.a`
 background: transparent;
 border: none;
 border-radius: 5px;

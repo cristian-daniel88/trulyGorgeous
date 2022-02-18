@@ -1,9 +1,9 @@
 import React from 'react'
-import { ContainerLogoAndH2, H1, H1Container, Header, Li, LinkA, Logo, LogoContainer, MenuBurguer, Navegador, Ul } from './NavStyles'
+import { ContainerLogoAndH2, H1, H1Container, Header, Li, Logo, LogoContainer, MenuBurguer, Navegador, Ul } from './NavStyles'
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useDispatch } from 'react-redux';
 import { toggleHamburguerHidden } from '../../redux/hamburguer/hamburguerActions';
-import { Link } from 'react-router-dom';
+
 
 
 function Nav() {
@@ -43,15 +43,16 @@ function Nav() {
 
         <Navegador>
             <Ul>
-                <Li><LinkA to={'/'}>Home</LinkA></Li>
-                <Li><LinkA to={'/about-us'}>About Us</LinkA> </Li>
-                <Li><LinkA to={'/'}>Wedding Dresses</LinkA></Li>
-                <Li><LinkA to={'/'}>Our Brides</LinkA></Li>
-                <Li><LinkA to={'/'}>Designers</LinkA></Li>
-                <Li><LinkA to={'/'}>Our Creations</LinkA></Li>
-                <Li><LinkA to={'/'}>Sale</LinkA></Li>
-                <Li><LinkA to={'/'}>Blog</LinkA></Li>
-                <Li><LinkA to={'/'}>Contact</LinkA></Li>
+                <Li onClick={pushHome}>Home</Li>
+               
+                <Li onClick={pushAboutUs}>About Us</Li>
+                <Li>Wedding Dresses</Li>
+                <Li>Our Brides</Li>
+                <Li>Designers</Li>
+                <Li>Our Creations</Li>
+                <Li>Sale</Li>
+                <Li>Blog</Li>
+                <Li>Contact</Li>
 
             </Ul>
         <MenuBurguer onClick={toggleMenu}/>

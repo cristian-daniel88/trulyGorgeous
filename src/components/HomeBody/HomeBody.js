@@ -17,27 +17,26 @@ function HomeBody() {
   const activateSlider = () => {
     dispatch(hoverSlider())
   }
+  
 
-  const functionSetTimeOut = () => {
-    setTimeout(() => {
-      if(count == 3){
+  useEffect(() => {
+    
+
+    if (!stopAutoSlider) {
+      let timer = setTimeout(()=> {
+        if(count == 3){
           setCount(1)
           return
        }
-      setCount(count + 1)
-  }, 6000);
-  }
+       setCount(count + 1)
+      } , 5000)
 
-  useEffect(() => {
-    if(!stopAutoSlider){
-      functionSetTimeOut()
-    } 
+      return () => {
+        clearTimeout(timer)
+      }
 
-
-    return () => {
-     clearTimeout(functionSetTimeOut)
     }
-
+    
   }, [count])
 
 

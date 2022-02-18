@@ -5,6 +5,7 @@ export const Menu = styled.div`
 width: 70%;
 height: 100vh;
 background-color: aliceblue;
+background-color: #f0f4f8;
 //background-image: url('./assets/marcaDeAgua.png');
 
 position: fixed;
@@ -15,6 +16,7 @@ transform: ${(props) => (props.toggle ? "translateX(0%)" : "translateX(-150%)")}
 transition: transform 0.6s ease-in-out;
 //border-right: solid 1px gold;
 //border-top: solid 1px gold;
+border-top-right-radius: 10px;
 @media screen and (max-width: 865px) {
 display: block;
 }

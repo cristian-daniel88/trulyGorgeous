@@ -42,15 +42,15 @@ function HomeBody() {
     <div onMouseEnter={activateSlider} onMouseLeave={activateSlider} >
 
     {count === 1 && (<BodyHome image={`./assets/banner${count}.jpg`}>
-    <Letters/>  
+    <Letters letters={'letters1'} button={'button1'}/>  
     </BodyHome>)}
 
     {count === 2 && (<BodyHome image={`./assets/banner${count}.jpg`}>
-    <Letters/>
+    <Letters letters={'letters2'} button={'button2'}/>
     </BodyHome>)}
-    
+
     {count === 3 && (<BodyHome image={`./assets/banner${count}.jpg`}>
-    <Letters/> 
+    <Letters  letters={'letters3'} button={'button3'}/> 
     </BodyHome>)}
 
     <Arrows countFunction={setCount} cuenta={count}/>

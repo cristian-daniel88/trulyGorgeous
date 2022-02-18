@@ -25,7 +25,7 @@ background-position-y: 10px;
 
   //animation: taadaa 6s cubic-bezier(.92,.29,.65,.59) 1;
 
-  animation: ${(props) => (props.image ? `taadaa 2s cubic-bezier(.92,.29,.65,.59) 1` : "")};
+  animation: ${(props) => (props.image ? `taadaa 1s cubic-bezier(.92,.29,.65,.59) 1` : "")};
 
   
   

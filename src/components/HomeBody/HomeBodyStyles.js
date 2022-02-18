@@ -10,7 +10,7 @@ background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 position: relative;
-
+background-position-y: 10px;
 
 
 @keyframes taadaa { 

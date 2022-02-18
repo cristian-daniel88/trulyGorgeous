@@ -32,14 +32,14 @@ function Arrows({countFunction, cuenta}) {
         <ArrowsColumnLeft>
           <ArrowsBoxL>
              
-              <ArrowLeftPhone/>
+              <ArrowLeftPhone onClick={backPhoto}/>
               <ArrowLeft hover={hover ? 'true' : 'false'} onClick={backPhoto}/>
           </ArrowsBoxL>
         </ArrowsColumnLeft>
         <ArrowsColumnRight>
           <ArrowsBoxR>
        
-              <ArrowRightPhone />
+              <ArrowRightPhone onClick={nextPhoto}/>
               <ArrowRight hover={hover ? 'true' : 'false'} onClick={nextPhoto}/>
           </ArrowsBoxR>
         </ArrowsColumnRight>

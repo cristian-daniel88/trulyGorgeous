@@ -5,6 +5,7 @@ export const Menu = styled.div`
 width: 70%;
 height: 100vh;
 background-color: aliceblue;
+//background-image: url('./assets/marcaDeAgua.png');
 
 position: fixed;
 

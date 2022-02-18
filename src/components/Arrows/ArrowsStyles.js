@@ -90,7 +90,7 @@ display: none;
 export const ArrowLeftPhone =styled(FaAngleLeft)`
 font-size: 2em;
 display: none;
-color: red;
+color: silver;
 position: absolute;
 left: 10px;
 cursor: pointer;
@@ -104,7 +104,7 @@ display: block;
 export const ArrowRightPhone = styled(FaAngleRight)`
 font-size: 2em;
 display: none;
-color: red;
+color: silver;
 position: absolute;
 right: 10px;
 cursor: pointer;

@@ -39,6 +39,11 @@ position: relative;
 display: flex;
 justify-content: start;
 
+@media screen and (max-width: 865px) {
+margin-top: 70px;
+
+}
+
 
 `
 
@@ -50,6 +55,11 @@ margin-top:300px;
 position: relative;
 display: flex;
 justify-content: end;
+
+@media screen and (max-width: 865px) {
+margin-top: 70px;
+
+}
 
 
 `
@@ -88,9 +98,9 @@ display: none;
 
 
 export const ArrowLeftPhone =styled(FaAngleLeft)`
-font-size: 2em;
+font-size: 3em;
 display: none;
-color: silver;
+color: #a28989;
 position: absolute;
 left: 10px;
 cursor: pointer;
@@ -102,9 +112,9 @@ display: block;
 `
 
 export const ArrowRightPhone = styled(FaAngleRight)`
-font-size: 2em;
+font-size: 3em;
 display: none;
-color: silver;
+color: #a28989;
 position: absolute;
 right: 10px;
 cursor: pointer;

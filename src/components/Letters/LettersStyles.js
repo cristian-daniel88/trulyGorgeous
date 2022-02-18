@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 export const LettersContainer = styled.div`
-width: 45%;
-height: 35%;
+width: 35%;
+height: auto;
 background-color: #0000003d;
 border-radius: 20px;
 padding: 30px;
-backdrop-filter: blur(20px);
+backdrop-filter: blur(1px);
 position: absolute;
 top: 40%;
 left: 10%;
 opacity: 1;
+
 
 @keyframes taadaa2 { 
     0% {
@@ -23,27 +24,50 @@ opacity: 1;
     }    
 }
 
-animation: taadaa2   1s cubic-bezier(.92,.29,.65,.59) 1;
+animation: taadaa2   0.7s cubic-bezier(.92,.29,.65,.59) 1;
 
 
 @media screen and (max-width: 865px) { 
     width: 80%;
+    padding: 10px;
+    margin-top: 50px;
 }
 `;
 
 export const TitleContainer = styled.div`
 width: 100%;
-height: 65%;
+
 //border: solid 1px black;
 display: flex;
-justify-content: center;
+
 align-content: center;
 
 
 `
 
-export const TitleH2 = styled.h2`
+export const SubTitleContainer = styled.div`
+width: 100%;
+display: flex;
+`
+
+export const Subtitle = styled.h2`
+font-size: 2em;
 color: white;
+
+@media screen and (max-width: 865px) { 
+    font-size: 1em;
+}
+
+
+`
+
+export const TitleH1 = styled.h1`
+color: white;
+font-size: 3em;
+
+@media screen and (max-width: 865px) { 
+    font-size: 1.5em;
+}
 
 
 `
@@ -51,7 +75,7 @@ color: white;
 
 export const ButtonContainer = styled.div`
 width: 100%;
-height: 35%;
+margin-top: 10px;
 //border: solid 1px black;
 display: flex;
 justify-content: start;
@@ -69,7 +93,7 @@ cursor: pointer;
 z-index: 200;
 padding: 0 5px;
 letter-spacing: -1px;
-width: 50%;
+
 font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
 font-weight: bold;
 font-style: normal;

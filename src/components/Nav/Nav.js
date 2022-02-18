@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContainerLogoAndH2, H1, H1Container, Header, Li, Logo, LogoContainer, MenuBurguer, Navegador, Ul } from './NavStyles'
+import { ContainerLogoAndH2, Designer, H1Container, Header, Li, Logo, LogoContainer, MenuBurguer, Navegador, Ul } from './NavStyles'
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useDispatch } from 'react-redux';
 import { toggleHamburguerHidden } from '../../redux/hamburguer/hamburguerActions';
@@ -34,9 +34,9 @@ function Nav() {
         </LogoContainer>
 
         <H1Container>
-            <H1>
+            <Designer>
                 DESIGNER & BESPOKE BRIDAL WEAR
-            </H1>
+            </Designer>
         </H1Container>
 
         </ContainerLogoAndH2>

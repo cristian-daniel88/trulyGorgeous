@@ -1,7 +1,7 @@
 import React from 'react'
-import { LettersContainer,ButtonContainer, TitleContainer, TitleH2, Button1 } from './LettersStyles'
+import { LettersContainer,ButtonContainer, TitleContainer, TitleH1, Button1, SubTitleContainer, Subtitle } from './LettersStyles'
 
-function Letters({letters, button, cuenta }) {
+function Letters({titulo,letters, button, cuenta }) {
 
   const handleButton = () =>{
    
@@ -24,10 +24,15 @@ function Letters({letters, button, cuenta }) {
   return (
     <LettersContainer>
       <TitleContainer>
-        <TitleH2>
-        {letters}
-        </TitleH2>
+        <TitleH1>
+        {titulo}
+        </TitleH1>
       </TitleContainer>
+      <SubTitleContainer>
+        <Subtitle>
+          {letters}
+        </Subtitle>
+      </SubTitleContainer>
       <ButtonContainer>
         <Button1 onClick={handleButton}>
         {button}

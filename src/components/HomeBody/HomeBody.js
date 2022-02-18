@@ -50,7 +50,7 @@ function HomeBody() {
     <div onMouseEnter={activateSlider} onMouseLeave={activateSlider} >
 
     {count === 1 && (<BodyHome image={`./assets/banner${count}.jpg`}>
-    <Letters letters={'letters1'} button={'button 1'} cuenta={count}/>  
+    <Letters titulo={'Truly Gorgeous'} letters={'Bridalwear'} button={'01243 788090'} cuenta={count} />  
     </BodyHome>)}
 
     {count === 2 && (<BodyHome image={`./assets/banner${count}.jpg`}>

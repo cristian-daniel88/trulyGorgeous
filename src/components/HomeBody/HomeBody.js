@@ -4,6 +4,7 @@ import Arrows from '../Arrows/Arrows'
 import Balls from '../Balls/Balls'
 import { useDispatch, useSelector } from 'react-redux'
 import { hoverSlider } from '../../redux/slider/sliderActions'
+import Letters from '../Letters/Letters'
 
 
 function HomeBody() {
@@ -41,15 +42,17 @@ function HomeBody() {
     <div onMouseEnter={activateSlider} onMouseLeave={activateSlider} >
 
     {count === 1 && (<BodyHome image={`./assets/banner${count}.jpg`}>
-      
+    <Letters/>  
     </BodyHome>)}
+
     {count === 2 && (<BodyHome image={`./assets/banner${count}.jpg`}>
-   
-    </BodyHome>)}
-    {count === 3 && (<BodyHome image={`./assets/banner${count}.jpg`}>
-     
+    <Letters/>
     </BodyHome>)}
     
+    {count === 3 && (<BodyHome image={`./assets/banner${count}.jpg`}>
+    <Letters/> 
+    </BodyHome>)}
+
     <Arrows countFunction={setCount} cuenta={count}/>
     <Balls bola={count}/>
 

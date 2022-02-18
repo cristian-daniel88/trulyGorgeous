@@ -7,28 +7,37 @@ import { hoverSlider } from '../../redux/slider/sliderActions'
 import Letters from '../Letters/Letters'
 
 
+
 function HomeBody() {
   const [count, setCount] = useState(1)
   const dispatch = useDispatch()
   const stopAutoSlider = useSelector((state)=> state.slider.slider)
-  console.log(stopAutoSlider)
+  
 
   const activateSlider = () => {
     dispatch(hoverSlider())
   }
 
+  const functionSetTimeOut = () => {
+    setTimeout(() => {
+      if(count == 3){
+          setCount(1)
+          return
+       }
+      setCount(count + 1)
+  }, 6000);
+  }
+
   useEffect(() => {
     if(!stopAutoSlider){
-      setTimeout(() => {
-        if(count == 3){
-            setCount(1)
-            return
-         }
-        setCount(count + 1)
-    }, 6000);
+      functionSetTimeOut()
+    } 
+
+
+    return () => {
+     clearTimeout(functionSetTimeOut)
     }
 
-    
   }, [count])
 
 
@@ -42,15 +51,15 @@ function HomeBody() {
     <div onMouseEnter={activateSlider} onMouseLeave={activateSlider} >
 
     {count === 1 && (<BodyHome image={`./assets/banner${count}.jpg`}>
-    <Letters letters={'letters1'} button={'button1'}/>  
+    <Letters letters={'letters1'} button={'button 1'} cuenta={count}/>  
     </BodyHome>)}
 
     {count === 2 && (<BodyHome image={`./assets/banner${count}.jpg`}>
-    <Letters letters={'letters2'} button={'button2'}/>
+    <Letters letters={'letters2'} button={'button 2'} cuenta={count}/>
     </BodyHome>)}
 
     {count === 3 && (<BodyHome image={`./assets/banner${count}.jpg`}>
-    <Letters  letters={'letters3'} button={'button3'}/> 
+    <Letters  letters={'letters3'} button={'button 3'} cuenta={count}/> 
     </BodyHome>)}
 
     <Arrows countFunction={setCount} cuenta={count}/>

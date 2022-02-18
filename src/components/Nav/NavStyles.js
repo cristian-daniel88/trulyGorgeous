@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
+
 
 export const Header = styled.header`
 width: 100%;
@@ -51,7 +54,7 @@ cursor: pointer;
 
 `;
 
-export const H2Container = styled.div`
+export const H1Container = styled.div`
 width: 100%;
 display: flex;
 justify-content: center;
@@ -59,7 +62,7 @@ justify-content: center;
 
 
 
-export const H2 = styled.h1`
+export const H1 = styled.h1`
 font-size: 100%;
 font-weight: 300;
 letter-spacing: 5px;
@@ -111,6 +114,9 @@ cursor: pointer;
     color: #bf6c4a;
 
 }
+&:focus {
+  color: #bf6c4a;
+}
 
 `
 
@@ -136,5 +142,12 @@ display: none;
 
 export const ContainerLogoAndH2 = styled.div`
 margin-bottom: 10px;
+
+`
+
+export const LinkA = styled(Link)`
+text-decoration: none;
+color: black;
+
 
 `

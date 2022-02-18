@@ -15,7 +15,7 @@ background-position-y: 10px;
 
 @keyframes taadaa { 
     0% {
-      opacity: 0.1;
+      opacity: 0.2;
     }
   
     100% {

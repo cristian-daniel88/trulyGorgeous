@@ -150,4 +150,29 @@ text-decoration: none;
 color: black;
 
 
+&:hover {
+    color: #bf6c4a;
+
+}
+&:focus {
+  color: #bf6c4a;
+}
+
+
+`
+
+export const LinkAHome = styled(Link)`
+text-decoration: none;
+color: black;
+color: ${(props)=> props.focuss == 'true'  ? '#bf6c4a' : 'black' };
+
+
+&:hover {
+    color: #bf6c4a;
+
+}
+&:focus {
+
+  color:  #bf6c4a;
+}
 `

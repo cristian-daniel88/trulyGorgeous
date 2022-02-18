@@ -1,5 +1,5 @@
-import React from 'react'
-import { ContainerLogoAndH2, Designer, H1Container, Header, Li, Logo, LogoContainer, MenuBurguer, Navegador, Ul } from './NavStyles'
+import React, { useState } from 'react'
+import { ContainerLogoAndH2, Designer, H1Container, Header, Li, LinkA, Logo, LogoContainer, MenuBurguer, Navegador, Ul, LinkAHome } from './NavStyles'
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useDispatch } from 'react-redux';
 import { toggleHamburguerHidden } from '../../redux/hamburguer/hamburguerActions';
@@ -7,7 +7,7 @@ import { toggleHamburguerHidden } from '../../redux/hamburguer/hamburguerActions
 
 
 function Nav() {
-    
+  const [focuss, setFocuss] = useState(true)
   const history = useHistory()
   const dispatch = useDispatch()
   
@@ -16,12 +16,10 @@ function Nav() {
   }
 
 
-  const pushAboutUs = () => {
-      history.push('/about-us')
-  }
+  
 
-  const pushHome = () => {
-      history.push('/')
+  const fucusHome = () => {
+      setFocuss(false)
   }
 
   return (
@@ -43,17 +41,15 @@ function Nav() {
 
         <Navegador>
             <Ul>
-                <Li onClick={pushHome}>Home</Li>
-               
-                <Li onClick={pushAboutUs}>About Us</Li>
-                <Li>Wedding Dresses</Li>
-                <Li>Our Brides</Li>
-                <Li>Designers</Li>
-                <Li>Our Creations</Li>
-                <Li>Sale</Li>
-                <Li>Blog</Li>
-                <Li>Contact</Li>
-
+                <Li ><LinkAHome focuss={focuss == true ? 'true' : 'false'} to={'/'}>Home</LinkAHome></Li>
+                <Li onClick={fucusHome}><LinkA to='./about-us'>About Us</LinkA></Li>
+                <Li onClick={fucusHome}>Wedding Dresses</Li>
+                <Li onClick={fucusHome}>Our Brides</Li>
+                <Li onClick={fucusHome}>Designers</Li>
+                <Li onClick={fucusHome}>Our Creations</Li>
+                <Li onClick={fucusHome}>Sale</Li>
+                <Li onClick={fucusHome}>Blog</Li>
+                <Li onClick={fucusHome}>Contact</Li>
             </Ul>
         <MenuBurguer onClick={toggleMenu}/>
         </Navegador>

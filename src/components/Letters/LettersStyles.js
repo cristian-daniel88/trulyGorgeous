@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FaPhone } from "react-icons/fa";
 
 export const LettersContainer = styled.div`
 width: 35%;
@@ -64,7 +65,7 @@ color: white;
 
 export const TitleH1 = styled.h1`
 color: white;
-font-size: 3em;
+font-size: 2.5em;
 
 @media screen and (max-width: 865px) { 
     font-size: 1.5em;
@@ -81,6 +82,7 @@ margin-top: 10px;
 display: flex;
 justify-content: start;
 align-content: center;
+
 
 `
 
@@ -113,22 +115,50 @@ export const ATelephon = styled.a`
 background: transparent;
 border: none;
 border-radius: 5px;
-background-color: #fbfeff;
-color: #a59797;
+border: solid 3px #b2b2b2;
+background-color: silver;
+color: white;
 cursor: pointer;
 z-index: 200;
-padding: 0 5px;
-letter-spacing: -1px;
+padding: 2px 5px;
 
+display: flex;
+justify-content: space-between;
+align-items: center;
 font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
 font-weight: bold;
 font-style: normal;
 text-transform: uppercase;
 
 
+
 &:hover {
 
 }
+
+
+`
+
+export const PhoneContainer = styled.div`
+border-radius: 50%;
+background-color:#7e9bb2;
+
+width: 35px;
+height: 35px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+`
+
+export const Phone = styled(FaPhone)`
+color: #a59797;
+font-size: 20px;
+
+color: white;
+
+
 
 
 `

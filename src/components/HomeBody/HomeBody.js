@@ -54,11 +54,11 @@ function HomeBody() {
     </BodyHome>)}
 
     {count === 2 && (<BodyHome image={`./assets/banner${count}.jpg`}>
-    <Letters letters={'letters2'} button={'button 2'} cuenta={count}/>
+    <Letters titulo={'titulo 2'} letters={'letters 2'} button={'button 2'} cuenta={count}/>
     </BodyHome>)}
 
     {count === 3 && (<BodyHome image={`./assets/banner${count}.jpg`}>
-    <Letters  letters={'letters3'} button={'button 3'} cuenta={count}/> 
+    <Letters  titulo={'titulo 3'}  letters={'letters3'} button={'button 3'} cuenta={count}/> 
     </BodyHome>)}
 
     <Arrows countFunction={setCount} cuenta={count}/>

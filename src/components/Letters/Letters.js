@@ -1,5 +1,5 @@
 import React from 'react'
-import { LettersContainer,ButtonContainer, TitleContainer, TitleH1, Button1, SubTitleContainer, Subtitle, ATelephon } from './LettersStyles'
+import { LettersContainer,ButtonContainer, TitleContainer, TitleH1, Button1, SubTitleContainer, Subtitle, ATelephon, Phone, PhoneContainer } from './LettersStyles'
 
 function Letters({titulo,letters, button, cuenta }) {
 
@@ -35,7 +35,7 @@ function Letters({titulo,letters, button, cuenta }) {
       </SubTitleContainer>
       <ButtonContainer>
         {
-          cuenta == 1 ? (<ATelephon href={`tel:${button}`}>{button}</ATelephon>) : (<Button1 onClick={handleButton}>{button}</Button1>)
+          cuenta == 1 ? (<ATelephon href={`tel:${button}`}><div>{button}</div>&nbsp; &nbsp;<PhoneContainer><Phone/></PhoneContainer> </ATelephon>) : (<Button1 onClick={handleButton}>{button}</Button1>)
         }
         
       </ButtonContainer>

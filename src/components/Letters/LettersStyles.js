@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FaPhone } from "react-icons/fa";
 
 export const LettersContainer = styled.div`
-width: 35%;
+width: 25%;
 height: auto;
 background-color: #0000003d;
 border-radius: 20px;

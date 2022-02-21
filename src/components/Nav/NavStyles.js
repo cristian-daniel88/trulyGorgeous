@@ -196,6 +196,7 @@ width: 120px;
 height: 300px;
 position: absolute;
 background-color: azure;
+display: none;
 
 
 `
@@ -207,6 +208,7 @@ export const UlAlterations = styled.ul`
 
 export const LiAlterations = styled.li`
 list-style: none;
+text-align: center;
 
 `
 
@@ -216,6 +218,7 @@ height: 300px;
 position: absolute;
 background-color: azure;
 left: 50px;
+display: none;
 
 `
 

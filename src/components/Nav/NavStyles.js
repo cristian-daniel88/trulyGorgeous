@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 
 
+
 export const Header = styled.header`
 width: 100%;
 height: auto;
@@ -11,6 +12,12 @@ padding: 10px 5%;
 position: fixed;
 background-color: white;
 z-index: 50;
+
+font-family: 'FuturaStd', sans-serif ;
+font-weight: 200;
+letter-spacing: 1.5px;
+color: #6f3333;
+
 
 @media screen and (max-width: 865px) {
    display: flex;
@@ -110,6 +117,11 @@ list-style: none;
 padding-top: 10px;
 margin-left: 20px;
 position: relative;
+text-transform: uppercase;
+font-weight: bolder;
+font-size: 12px;
+
+color: black;
 cursor: pointer;
 &:hover {
     color: #bf6c4a;
@@ -148,6 +160,8 @@ margin-bottom: 10px;
 
 export const LinkA = styled(Link)`
 text-decoration: none;
+
+font-size: 12px;
 color: black;
 
 
@@ -200,6 +214,7 @@ width: 120px;
 height: 300px;
 position: absolute;
 background-color: azure;
+left: 50px;
 
 `
 
@@ -210,6 +225,22 @@ export const UlWeddingDresses = styled.ul`
 `
 
 export const LiWeddingDresses = styled.li`
+list-style: none;
+
+`
+
+
+export const PopUpAboutUs = styled.div`
+width: 120px;
+height: 300px;
+position: absolute;
+background-color: azure;
+`
+export const PopUpUl = styled.ul`
+
+`
+
+export const PopUpLi = styled.li`
 list-style: none;
 
 `

@@ -109,6 +109,7 @@ export const Li = styled.li`
 list-style: none;
 padding-top: 10px;
 margin-left: 20px;
+position: relative;
 cursor: pointer;
 &:hover {
     color: #bf6c4a;
@@ -175,4 +176,40 @@ color: ${(props)=> props.focuss == 'true'  ? '#bf6c4a' : 'black' };
 
   color:  #bf6c4a;
 }
+`
+export const PopUpAlterations = styled.div`
+width: 120px;
+height: 300px;
+position: absolute;
+background-color: azure;
+
+`
+
+export const UlAlterations = styled.ul`
+
+
+`
+
+export const LiAlterations = styled.li`
+list-style: none;
+
+`
+
+export const PopUpWeddingDresses = styled.div`
+width: 120px;
+height: 300px;
+position: absolute;
+background-color: azure;
+
+`
+
+
+export const UlWeddingDresses = styled.ul`
+
+
+`
+
+export const LiWeddingDresses = styled.li`
+list-style: none;
+
 `

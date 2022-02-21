@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ContainerLogoAndH2, Designer, H1Container, Header, Li, LinkA, Logo, LogoContainer, MenuBurguer, Navegador, Ul, LinkAHome } from './NavStyles'
+import { ContainerLogoAndH2, Designer, H1Container, Header, Li, LinkA, Logo, LogoContainer, MenuBurguer, Navegador, Ul, LinkAHome, PopUp, PopUpAlterations, UlAlterations, LiAlterations, UlWeddingDresses, LiWeddingDresses, PopUpWeddingDresses } from './NavStyles'
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useDispatch } from 'react-redux';
 import { toggleHamburguerHidden } from '../../redux/hamburguer/hamburguerActions';
@@ -43,11 +43,25 @@ function Nav() {
             <Ul>
                 <Li ><LinkAHome focuss={focuss == true ? 'true' : 'false'} to={'/'}>Home</LinkAHome></Li>
                 <Li onClick={fucusHome}><LinkA to='./about-us'>About Us</LinkA></Li>
-                <Li onClick={fucusHome}>Wedding Dresses</Li>
+                <Li onClick={fucusHome}>Wedding Dresses
+                <PopUpWeddingDresses>
+                    <UlWeddingDresses>
+                        <LiWeddingDresses>
+                            Sales
+                        </LiWeddingDresses>
+                    </UlWeddingDresses>
+                </PopUpWeddingDresses>
+                </Li>
                 <Li onClick={fucusHome}>Our Brides</Li>
                 <Li onClick={fucusHome}>Designers</Li>
-                <Li onClick={fucusHome}>Our Creations</Li>
-                <Li onClick={fucusHome}>Sale</Li>
+                <Li onClick={fucusHome}>Alterations 
+                <PopUpAlterations>
+                    <UlAlterations>
+                        <LiAlterations>Our Creations</LiAlterations>
+                    </UlAlterations>
+                </PopUpAlterations>
+                </Li>
+              
                 <Li onClick={fucusHome}>Blog</Li>
                 <Li onClick={fucusHome}>Contact</Li>
             </Ul>

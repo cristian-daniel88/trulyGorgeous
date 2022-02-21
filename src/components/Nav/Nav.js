@@ -46,9 +46,21 @@ function Nav() {
                 <Li onClick={fucusHome}>Wedding Dresses
                 <PopUpWeddingDresses>
                     <UlWeddingDresses>
-                        <LiWeddingDresses>
+                    <LiWeddingDresses>
+                            Fairytale
+                    </LiWeddingDresses>
+                    <LiWeddingDresses>
+                            Romantic
+                    </LiWeddingDresses>
+                    <LiWeddingDresses>
+                            Sophisticated
+                    </LiWeddingDresses>
+                    <LiWeddingDresses>
+                            Elegant
+                    </LiWeddingDresses>
+                    <LiWeddingDresses>
                             Sales
-                        </LiWeddingDresses>
+                    </LiWeddingDresses>
                     </UlWeddingDresses>
                 </PopUpWeddingDresses>
                 </Li>

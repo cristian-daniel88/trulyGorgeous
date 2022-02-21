@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { ContainerLogoAndH2, Designer, H1Container, Header, Li, LinkA, Logo, LogoContainer, MenuBurguer, Navegador, Ul, LinkAHome, PopUp, PopUpAlterations, UlAlterations, LiAlterations, UlWeddingDresses, LiWeddingDresses, PopUpWeddingDresses, PopUpAboutUs, PopUpUl, PopUpLi } from './NavStyles'
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { toggleHamburguerHidden } from '../../redux/hamburguer/hamburguerActions';
+import { hoverPopUpAboutUs } from '../../redux/popUp/popUpActions';
 
 
 
@@ -10,6 +11,23 @@ function Nav() {
   const [focuss, setFocuss] = useState(true)
   const history = useHistory()
   const dispatch = useDispatch()
+  const popAbout = useSelector((state)=> state.popUp.hover1);
+  console.log(popAbout)
+
+
+  const popUpAbout = () => {
+    dispatch(hoverPopUpAboutUs())
+  }
+
+  const popUpWedding = () => {
+      
+  }
+
+  const popUpAlterations = () => {
+      
+  }
+
+
   
   const toggleMenu = () => {
       dispatch(toggleHamburguerHidden())
@@ -42,8 +60,8 @@ function Nav() {
         <Navegador>
             <Ul>
                 <Li ><LinkAHome focuss={focuss == true ? 'true' : 'false'} to={'/'}>Home</LinkAHome></Li>
-                <Li onClick={fucusHome}><LinkA to='./about-us'>About Us
-                <PopUpAboutUs>
+                <Li onClick={fucusHome}><LinkA to='./about-us' onMouseEnter={popUpAbout} onMouseLeave={popUpAbout}>About Us 
+                <PopUpAboutUs popUp={popAbout ? 'true' : 'false'}>
                     <PopUpUl>
                         <PopUpLi>
                             Our Brides

@@ -6,7 +6,7 @@ const INITIAL_STATE = {
   hover3: false
 };
 
-const hamburguerReducer = (state = INITIAL_STATE, action) => {
+const popUpReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
 
     
@@ -32,4 +32,4 @@ const hamburguerReducer = (state = INITIAL_STATE, action) => {
   }
 };
 
-export default hamburguerReducer;
+export default popUpReducer;

@@ -197,6 +197,7 @@ height: 300px;
 position: absolute;
 background-color: azure;
 
+
 `
 
 export const UlAlterations = styled.ul`
@@ -235,6 +236,7 @@ width: 120px;
 height: 300px;
 position: absolute;
 background-color: azure;
+display: ${(props)=> props.popUp == 'true' ? 'block' : 'none'};
 `
 export const PopUpUl = styled.ul`
 

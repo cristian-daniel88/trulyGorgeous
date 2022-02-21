@@ -12,7 +12,7 @@ function Nav() {
   const history = useHistory()
   const dispatch = useDispatch()
   const popAbout = useSelector((state)=> state.popUp.hover1);
-  console.log(popAbout)
+
 
 
   const popUpAbout = () => {

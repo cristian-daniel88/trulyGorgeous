@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FaPhone } from "react-icons/fa";
 
 export const LettersContainer = styled.div`
-width: 25%;
+width: 45%;
 height: auto;
 background-color: #0000003d;
 border-radius: 20px;
@@ -33,6 +33,11 @@ animation: taadaa2   0.7s cubic-bezier(.92,.29,.65,.59) 1;
     padding: 10px;
     margin-top: 50px;
     top: 50%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 `;
 
@@ -65,7 +70,7 @@ color: white;
 
 export const TitleH1 = styled.h1`
 color: white;
-font-size: 2.5em;
+font-size: 4.5em;
 
 @media screen and (max-width: 865px) { 
     font-size: 1.5em;

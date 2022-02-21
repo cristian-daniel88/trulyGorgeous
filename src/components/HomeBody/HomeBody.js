@@ -64,6 +64,8 @@ function HomeBody() {
     <Arrows countFunction={setCount} cuenta={count}/>
     <Balls bola={count}/>
 
+    
+
     </div>
   )
 }

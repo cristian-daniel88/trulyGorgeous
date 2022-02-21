@@ -237,6 +237,8 @@ height: 300px;
 position: absolute;
 background-color: azure;
 display: ${(props)=> props.popUp == 'true' ? 'block' : 'none'};
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
 `
 export const PopUpUl = styled.ul`
 
@@ -244,5 +246,7 @@ export const PopUpUl = styled.ul`
 
 export const PopUpLi = styled.li`
 list-style: none;
+color: black !important
+
 
 `

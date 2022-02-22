@@ -71,7 +71,8 @@ function Nav() {
                         </PopUpLi>
                     </PopUpUl>
                 </PopUpAboutUs>
-                </LinkA></Li>
+                </LinkA>
+                </Li>
                 <Li onClick={fucusHome}>Wedding Dresses
                 <PopUpWeddingDresses>
                     <UlWeddingDresses>

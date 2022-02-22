@@ -105,23 +105,29 @@ export const Ul = styled.ul`
 display: flex;
 justify-content: center;
 width: 100%;
+margin-right: 30px;
 @media screen and (max-width: 865px) {
     display: none;
   }
-
-
-`
+  
+  
+  `
 
 export const Li = styled.li`
 list-style: none;
 padding-top: 10px;
 margin-left: 20px;
 position: relative;
+//background-color: green;
+//width: 150px;
+text-align: center;
 text-transform: uppercase;
 font-weight: bolder;
-font-size: 12px;
-
-color: black;
+font-size: 13px;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+font-family: 'Cormorant Garamond', serif;
+font-weight: 500;
+color: #494261b5;
 cursor: pointer;
 &:hover {
     color: #bf6c4a;
@@ -160,9 +166,10 @@ margin-bottom: 10px;
 
 export const LinkA = styled(Link)`
 text-decoration: none;
+color: #494261b5;
 
-font-size: 12px;
-color: black;
+
+
 
 
 &:hover {
@@ -178,10 +185,7 @@ color: black;
 
 export const LinkAHome = styled(Link)`
 text-decoration: none;
-color: black;
-color: ${(props)=> props.focuss == 'true'  ? '#bf6c4a' : 'black' };
-
-
+color: ${(props)=> props.focuss == 'true'  ? '#bf6c4a' : '#494261b5' };
 &:hover {
     color: #bf6c4a;
 
@@ -207,8 +211,7 @@ export const UlAlterations = styled.ul`
 `
 
 export const LiAlterations = styled.li`
-list-style: none;
-text-align: center;
+
 
 `
 
@@ -249,7 +252,15 @@ export const PopUpUl = styled.ul`
 
 export const PopUpLi = styled.li`
 list-style: none;
-color: black !important
+font-size: 10px;
+text-align: left;
+padding-left: 4px;
+color: black;
+border-bottom: solid 1px black;
+
+&:hover {
+  color: green;
+}
 
 
 `

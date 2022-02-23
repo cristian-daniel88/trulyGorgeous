@@ -47,10 +47,12 @@ function HomeBody() {
   
 
   return (
+   
     <div onMouseEnter={activateSlider} onMouseLeave={activateSlider} style={{'overflowX':'hidden'}}>
 
     {count === 1 && (<BodyHome image={`./assets/banner${count}.jpg`}>
     {/* <Letters titulo={'Truly Gorgeous'} letters={'Bridalwear'} button={'01243 788090'} cuenta={count} />   */}
+    
     </BodyHome>)}
 
     {count === 2 && (<BodyHome image={`./assets/banner${count}.jpg`}>

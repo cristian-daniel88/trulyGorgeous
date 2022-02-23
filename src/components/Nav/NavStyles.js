@@ -261,7 +261,11 @@ margin-top: 20px;
 
 `
 
-export const LiAlterations = styled.li`
+export const LiAlterations = styled.button`
+display: block;
+background: transparent;
+border: none;
+width: 100%;
 list-style: none;
 font-size: 10px;
 text-align: left;
@@ -271,6 +275,16 @@ border-bottom: solid 1px #dfd4cb;
 margin-bottom: 15px;
 transition: color 2s;
 transition: border-bottom 2s;
+
+text-transform: uppercase;
+font-weight: bolder;
+font-size: 10px;
+cursor: pointer;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+font-family: 'Cormorant Garamond', serif;
+font-weight: 500;
+letter-spacing: 1.5px;
+color: #494261b5;
 
 
 &:hover {
@@ -342,18 +356,30 @@ margin-top: 20px;
 
 `
 
-export const LiWeddingDresses = styled.li`
-list-style: none;
-list-style: none;
-font-size: 10px;
+export const LiWeddingDresses = styled.button`
+
 text-align: left;
 padding-left: 4px;
 color: black;
-border-bottom: solid 1px #dfd4cb;
 margin-bottom: 15px;
+
+
+text-transform: uppercase;
+font-weight: bolder;
+font-size: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+font-family: 'Cormorant Garamond', serif;
+font-weight: 500;
+letter-spacing: 1.5px;
+display: block;
+background: transparent;
+border: none;
+border-bottom: solid 1px #dfd4cb;
+width: 100%;
 transition: color 2s;
 transition: border-bottom 2s;
-
+cursor: pointer;
+color: #494261b5;
 
 &:hover {
   color: #bf6c4a;
@@ -422,7 +448,11 @@ margin-top: 20px;
 
 `
 
-export const PopUpLi = styled.li`
+export const PopUpLi = styled.button`
+display: block;
+background: transparent;
+border: none;
+width: 100%;
 list-style: none;
 font-size: 10px;
 text-align: left;
@@ -432,6 +462,16 @@ border-bottom: solid 1px #dfd4cb;
 margin-bottom: 15px;
 transition: color 2s;
 transition: border-bottom 2s;
+
+text-transform: uppercase;
+font-weight: bolder;
+font-size: 10px;
+cursor: pointer;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+font-family: 'Cormorant Garamond', serif;
+font-weight: 500;
+letter-spacing: 1.5px;
+color: #494261b5;
 
 
 &:hover {

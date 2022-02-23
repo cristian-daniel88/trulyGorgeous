@@ -15,13 +15,14 @@ function Nav() {
   const popUpWed = useSelector((state) => state.popUp.hover3);
   const popUpAlt = useSelector((state) => state.popUp.hover2)
 
-
+  
 
   const popUpAbout = () => {
     dispatch(hoverPopUpAboutUs());
     setFocuss(false)
 
   }
+
 
   const popUpWedding = () => {
       dispatch(hoverPopUpWeddingDresses())
@@ -68,9 +69,9 @@ function Nav() {
                 <Li ><LinkAHome focuss={focuss == true ? 'true' : 'false'} to={'/'}>Home</LinkAHome></Li>
 
                 <Li onClick={fucusHome}>
-                <LinkA to='' onMouseEnter={popUpAbout} onMouseLeave={popUpAbout}>About Us 
+                <LinkA to='' onMouseEnter={popUpAbout} onMouseLeave={popUpAbout} onClick={''}>About Us 
                 <PopUpAboutUs popUp={popAbout ? 'true' : 'false'}>
-                    <PopUpUl popUp={popAbout ? 'true' : 'false'}>
+                    <PopUpUl popUp={popAbout ? 'true' : 'false'}> 
                         <PopUpLi>
                             Our Brides
                         </PopUpLi>
@@ -83,7 +84,7 @@ function Nav() {
                 </Li>
 
                 <Li onClick={fucusHome}>
-                <LinkA onMouseEnter={popUpWedding} onMouseLeave={popUpWedding} to=''>Wedding Dresses
+                <LinkA onMouseEnter={popUpWedding} onMouseLeave={popUpWedding} to='' onClick={''}>Wedding Dresses
                 <PopUpWeddingDresses  popUp={popUpWed ? 'true' : 'false'}>
                     <UlWeddingDresses>
                     <LiWeddingDresses>
@@ -110,7 +111,7 @@ function Nav() {
 
 
                 <Li onClick={fucusHome}>
-                <LinkA to=''  onMouseEnter={popUpAlterations} onMouseLeave={popUpAlterations}>Alterations 
+                <LinkA to='' onMouseEnter={popUpAlterations} onMouseLeave={popUpAlterations} onClick={''}>Alterations 
                 <PopUpAlterations popUp={popUpAlt ? 'true' : 'false'}>
                     <UlAlterations popUp={popUpAlt ? 'true' : 'false'}>
                         <LiAlterations>Price list</LiAlterations>
@@ -132,8 +133,9 @@ function Nav() {
           <AInstagram style={{'cursor':'pointer', 'zIndex': '1000000'}} href='https://www.instagram.com/trulygorgeousbridal' target='_blank'>
           <IconInstagram/>
           </AInstagram>
-          <a style={{'cursor':'pointer', 'zIndex': '1000000', 'display':'flex'}} href='tel:01243788090' target='_blank'>
-          
+
+
+          <a style={{'cursor':'pointer', 'zIndex': '1000000', 'display':'flex', 'color': '#484040'}} href='tel:01243788090' target='_blank'>
           <IconPhone></IconPhone> &nbsp;
           <div style={{'marginTop': '5px'}}>
             01243788090

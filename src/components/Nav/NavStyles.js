@@ -444,8 +444,8 @@ transition: border-bottom 2s;
 
 
 export const BoxContact = styled.div`
-width: 150px;
-height: 50px;
+width: 250px;
+height: 20px;
 position: absolute;
 //background-color: green;
 top: 10px;
@@ -479,4 +479,21 @@ export const IconPhone = styled(FaPhone)`
 font-size: 1.5em;
 cursor: pointer;
 z-index: 500000;
+`
+
+export const AInstagram = styled.a`
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+
+  line-height: 1.5em;
+  vertical-align: middle;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  display: flex;
+  align-items: center;
 `

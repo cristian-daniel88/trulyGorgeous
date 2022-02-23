@@ -134,7 +134,7 @@ function Nav() {
           </AInstagram>
           <a style={{'cursor':'pointer', 'zIndex': '1000000', 'display':'flex'}} href='tel:01243788090' target='_blank'>
           
-          <IconPhone></IconPhone>
+          <IconPhone></IconPhone> &nbsp;
           <div style={{'marginTop': '5px'}}>
             01243788090
           </div>

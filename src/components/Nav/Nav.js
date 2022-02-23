@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ContainerLogoAndH2, Designer, H1Container, Header, Li, LinkA, Logo, LogoContainer, MenuBurguer, Navegador, Ul, LinkAHome, PopUp, PopUpAlterations, UlAlterations, LiAlterations, UlWeddingDresses, LiWeddingDresses, PopUpWeddingDresses, PopUpAboutUs, PopUpUl, PopUpLi, BoxContact } from './NavStyles'
+import { ContainerLogoAndH2, Designer, H1Container, Header, Li, LinkA, Logo, LogoContainer, MenuBurguer, Navegador, Ul, LinkAHome, PopUp, PopUpAlterations, UlAlterations, LiAlterations, UlWeddingDresses, LiWeddingDresses, PopUpWeddingDresses, PopUpAboutUs, PopUpUl, PopUpLi, BoxContact, IconFaceBook, IconInstagram, IconPhone } from './NavStyles'
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleHamburguerHidden } from '../../redux/hamburguer/hamburguerActions';
@@ -126,7 +126,15 @@ function Nav() {
         <MenuBurguer onClick={toggleMenu}/>
         </Navegador>
       <BoxContact>
-          
+          <a style={{'cursor':'pointer', 'zIndex': '1000000'}} href='' target='_blank'>
+          <IconFaceBook/>
+          </a>
+          <a style={{'cursor':'pointer', 'zIndex': '1000000'}} href='' target='_blank'>
+          <IconInstagram/>
+          </a>
+          <a style={{'cursor':'pointer', 'zIndex': '1000000'}} href='' target='_blank'>
+          <IconPhone/>
+          </a>
       </BoxContact>
     </Header>
   )

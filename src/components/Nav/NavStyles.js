@@ -1,5 +1,5 @@
 import styled , {css} from "styled-components";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaFacebook, FaInstagram, FaPhone } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 
@@ -444,16 +444,39 @@ transition: border-bottom 2s;
 
 
 export const BoxContact = styled.div`
-width: 300px;
+width: 150px;
 height: 50px;
 position: absolute;
-background-color: green;
-top: 0;
+//background-color: green;
+top: 10px;
 right: 20px;
+display: flex;
+justify-content: space-around;
+color: black;
+
 
 @media screen and (max-width: 865px) {
     display: none;
     
   }
 
+`
+
+export const IconFaceBook =  styled(FaFacebook)`
+font-size: 1.5em;
+cursor: pointer;
+z-index: 500000;
+
+`
+export const IconInstagram = styled(FaInstagram)`
+font-size: 1.5em;
+cursor: pointer;
+z-index: 500000;
+
+`
+
+export const IconPhone = styled(FaPhone)`
+font-size: 1.5em;
+cursor: pointer;
+z-index: 500000;
 `

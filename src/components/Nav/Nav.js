@@ -3,7 +3,7 @@ import { ContainerLogoAndH2, Designer, H1Container, Header, Li, LinkA, Logo, Log
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleHamburguerHidden } from '../../redux/hamburguer/hamburguerActions';
-import { hoverPopUpAboutUs, hoverPopUpWeddingDresses } from '../../redux/popUp/popUpActions';
+import { hoverPopUpAboutUs, hoverPopUpAlterations, hoverPopUpWeddingDresses } from '../../redux/popUp/popUpActions';
 
 
 
@@ -12,7 +12,8 @@ function Nav() {
   const history = useHistory()
   const dispatch = useDispatch()
   const popAbout = useSelector((state)=> state.popUp.hover1);
-  const popUpWed = useSelector((state) => state.popUp.hover3)
+  const popUpWed = useSelector((state) => state.popUp.hover3);
+  const popUpAlt = useSelector((state) => state.popUp.hover2)
 
 
 
@@ -28,7 +29,8 @@ function Nav() {
   }
 
   const popUpAlterations = () => {
-      
+      dispatch(hoverPopUpAlterations())
+      setFocuss(false)
   }
 
 
@@ -105,13 +107,17 @@ function Nav() {
                 </Li>
                
                 <Li onClick={fucusHome}>Designers</Li>
-                <Li onClick={fucusHome}>Alterations 
-                <PopUpAlterations>
-                    <UlAlterations>
+
+
+                <Li onClick={fucusHome}>
+                <LinkA to=''  onMouseEnter={popUpAlterations} onMouseLeave={popUpAlterations}>Alterations 
+                <PopUpAlterations popUp={popUpAlt ? 'true' : 'false'}>
+                    <UlAlterations popUp={popUpAlt ? 'true' : 'false'}>
                         <LiAlterations>Price list</LiAlterations>
                         <LiAlterations>Our Creations</LiAlterations>
                     </UlAlterations>
                 </PopUpAlterations>
+                </LinkA>
                 </Li>
               
                 

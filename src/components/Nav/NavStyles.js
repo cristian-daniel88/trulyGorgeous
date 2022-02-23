@@ -204,20 +204,79 @@ color: ${(props)=> props.focuss == 'true'  ? '#bf6c4a' : '#494261b5' };
 `
 export const PopUpAlterations = styled.div`
 width: 120px;
-height: 300px;
 position: absolute;
-background-color: azure;
-display: none;
+height: 80px;
+display: ${(props) => props.popUp == 'true' && 'block'};
+background-color: white;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+${({popUp})=> popUp == 'false' && css`
+height: 0;
+opacity: 0;
+@keyframes taadaa3 { 
+    0% {
+        
+     
+      height: 80px;
+      
+      
+    }
+    
+    
+    100% {
+      
+    }    
+}
+
+animation: ${(props) => props.popUp == 'false' && 'taadaa3 1s cubic-bezier(.92,.29,.65,.59) 1'};
+
+` }
+
+${({popUp})=> popUp == 'true' && css`
+
+height: 80px;
+@keyframes taadaa3 { 
+    0% {
+        
+      
+      height: 0;
+    
+    }
+    
+    100% {
+     
+    }    
+}
+
+animation: ${(props) => props.popUp == 'true' && 'taadaa3   1s cubic-bezier(.92,.29,.65,.59) 1'};
+
+` }
+
 
 
 `
 
 export const UlAlterations = styled.ul`
-
+margin-top: 20px;
 
 `
 
 export const LiAlterations = styled.li`
+list-style: none;
+font-size: 10px;
+text-align: left;
+padding-left: 4px;
+color: black;
+border-bottom: solid 1px #dfd4cb;
+margin-bottom: 15px;
+transition: color 2s;
+transition: border-bottom 2s;
+
+
+&:hover {
+  color: #bf6c4a;
+  border-bottom: solid 1px #bf6c4a;
+}
 
 
 `

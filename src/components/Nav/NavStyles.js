@@ -441,3 +441,19 @@ transition: border-bottom 2s;
 
 
 `
+
+
+export const BoxContact = styled.div`
+width: 300px;
+height: 50px;
+position: absolute;
+background-color: green;
+top: 0;
+right: 20px;
+
+@media screen and (max-width: 865px) {
+    display: none;
+    
+  }
+
+`

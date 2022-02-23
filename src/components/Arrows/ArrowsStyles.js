@@ -3,7 +3,7 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 export const ArrowsContainer = styled.div`
 width: 100%;
-height: 60%;
+height: 80%;
 //border: solid 1px black;
 position: absolute;
 top: 0;

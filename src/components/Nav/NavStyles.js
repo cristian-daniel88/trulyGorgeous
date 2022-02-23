@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled , {css} from "styled-components";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -11,7 +11,7 @@ height: auto;
 padding: 10px 5%;
 position: fixed;
 background-color: white;
-z-index: 50;
+z-index: 2000;
 
 font-family: 'FuturaStd', sans-serif ;
 font-weight: 200;
@@ -118,6 +118,8 @@ list-style: none;
 padding-top: 10px;
 margin-left: 20px;
 position: relative;
+
+
 //background-color: green;
 //width: 150px;
 text-align: center;
@@ -161,6 +163,9 @@ display: none;
 
 export const ContainerLogoAndH2 = styled.div`
 margin-bottom: 10px;
+position: relative;
+z-index: 500;
+width: 100%;
 
 `
 
@@ -172,12 +177,13 @@ color: #494261b5;
 
 
 
+
 &:hover {
     color: #bf6c4a;
 
 }
 &:focus {
-  color: #bf6c4a;
+  
 }
 
 
@@ -186,6 +192,7 @@ color: #494261b5;
 export const LinkAHome = styled(Link)`
 text-decoration: none;
 color: ${(props)=> props.focuss == 'true'  ? '#bf6c4a' : '#494261b5' };
+
 &:hover {
     color: #bf6c4a;
 
@@ -217,36 +224,142 @@ export const LiAlterations = styled.li`
 
 export const PopUpWeddingDresses = styled.div`
 width: 120px;
-height: 300px;
 position: absolute;
-background-color: azure;
-left: 50px;
-display: none;
+height: 160px;
+display: ${(props) => props.popUp == 'true' && 'block'};
+background-color: white;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+${({popUp})=> popUp == 'false' && css`
+height: 0;
+opacity: 0;
+@keyframes taadaa3 { 
+    0% {
+        
+     
+      height: 160px;
+      
+      
+    }
+    
+    
+    100% {
+      
+    }    
+}
+
+animation: ${(props) => props.popUp == 'false' && 'taadaa3 1s cubic-bezier(.92,.29,.65,.59) 1'};
+
+` }
+
+${({popUp})=> popUp == 'true' && css`
+
+height: 160px;
+@keyframes taadaa3 { 
+    0% {
+        
+      
+      height: 0;
+    
+    }
+    
+    100% {
+     
+    }    
+}
+
+animation: ${(props) => props.popUp == 'true' && 'taadaa3   1s cubic-bezier(.92,.29,.65,.59) 1'};
+
+` }
+
+
+
 
 `
 
 
 export const UlWeddingDresses = styled.ul`
-
+margin-top: 20px;
 
 `
 
 export const LiWeddingDresses = styled.li`
 list-style: none;
+list-style: none;
+font-size: 10px;
+text-align: left;
+padding-left: 4px;
+color: black;
+border-bottom: solid 1px #dfd4cb;
+margin-bottom: 15px;
+transition: color 2s;
+transition: border-bottom 2s;
+
+
+&:hover {
+  color: #bf6c4a;
+  border-bottom: solid 1px #bf6c4a;
+}
 
 `
 
 
 export const PopUpAboutUs = styled.div`
 width: 120px;
-height: 300px;
 position: absolute;
-background-color: azure;
-display: ${(props)=> props.popUp == 'true' ? 'block' : 'none'};
+height: 100px;
+display: ${(props) => props.popUp == 'true' && 'block'};
+background-color: white;
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
+${({popUp})=> popUp == 'false' && css`
+height: 0;
+opacity: 0;
+@keyframes taadaa3 { 
+    0% {
+        
+     
+      height: 80px;
+      
+      
+    }
+    
+    
+    100% {
+      
+    }    
+}
+
+animation: ${(props) => props.popUp == 'false' && 'taadaa3 1s cubic-bezier(.92,.29,.65,.59) 1'};
+
+` }
+
+${({popUp})=> popUp == 'true' && css`
+
+height: 80px;
+@keyframes taadaa3 { 
+    0% {
+        
+      
+      height: 0;
+    
+    }
+    
+    100% {
+     
+    }    
+}
+
+animation: ${(props) => props.popUp == 'true' && 'taadaa3   1s cubic-bezier(.92,.29,.65,.59) 1'};
+
+` }
+
+
+
 `
 export const PopUpUl = styled.ul`
+display: ${({popUp})=> popUp == 'true' ? 'block' : 'none'};
+margin-top: 20px;
 
 `
 
@@ -256,10 +369,15 @@ font-size: 10px;
 text-align: left;
 padding-left: 4px;
 color: black;
-border-bottom: solid 1px black;
+border-bottom: solid 1px #dfd4cb;
+margin-bottom: 15px;
+transition: color 2s;
+transition: border-bottom 2s;
+
 
 &:hover {
-  color: green;
+  color: #bf6c4a;
+  border-bottom: solid 1px #bf6c4a;
 }
 
 

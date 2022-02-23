@@ -3,7 +3,7 @@ import { ContainerLogoAndH2, Designer, H1Container, Header, Li, LinkA, Logo, Log
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleHamburguerHidden } from '../../redux/hamburguer/hamburguerActions';
-import { hoverPopUpAboutUs } from '../../redux/popUp/popUpActions';
+import { hoverPopUpAboutUs, hoverPopUpWeddingDresses } from '../../redux/popUp/popUpActions';
 
 
 
@@ -12,15 +12,19 @@ function Nav() {
   const history = useHistory()
   const dispatch = useDispatch()
   const popAbout = useSelector((state)=> state.popUp.hover1);
+  const popUpWed = useSelector((state) => state.popUp.hover3)
 
 
 
   const popUpAbout = () => {
-    dispatch(hoverPopUpAboutUs())
+    dispatch(hoverPopUpAboutUs());
+    setFocuss(false)
+
   }
 
   const popUpWedding = () => {
-      
+      dispatch(hoverPopUpWeddingDresses())
+      setFocuss(false)
   }
 
   const popUpAlterations = () => {
@@ -60,9 +64,11 @@ function Nav() {
         <Navegador>
             <Ul>
                 <Li ><LinkAHome focuss={focuss == true ? 'true' : 'false'} to={'/'}>Home</LinkAHome></Li>
-                <Li onClick={fucusHome}><LinkA to='./about-us' onMouseEnter={popUpAbout} onMouseLeave={popUpAbout}>About Us 
+
+                <Li onClick={fucusHome}>
+                <LinkA to='' onMouseEnter={popUpAbout} onMouseLeave={popUpAbout}>About Us 
                 <PopUpAboutUs popUp={popAbout ? 'true' : 'false'}>
-                    <PopUpUl>
+                    <PopUpUl popUp={popAbout ? 'true' : 'false'}>
                         <PopUpLi>
                             Our Brides
                         </PopUpLi>
@@ -73,8 +79,10 @@ function Nav() {
                 </PopUpAboutUs>
                 </LinkA>
                 </Li>
-                <Li onClick={fucusHome}>Wedding Dresses
-                <PopUpWeddingDresses>
+
+                <Li onClick={fucusHome}>
+                <LinkA onMouseEnter={popUpWedding} onMouseLeave={popUpWedding} to=''>Wedding Dresses
+                <PopUpWeddingDresses  popUp={popUpWed ? 'true' : 'false'}>
                     <UlWeddingDresses>
                     <LiWeddingDresses>
                             Fairytale
@@ -93,6 +101,7 @@ function Nav() {
                     </LiWeddingDresses>
                     </UlWeddingDresses>
                 </PopUpWeddingDresses>
+                </LinkA>
                 </Li>
                
                 <Li onClick={fucusHome}>Designers</Li>

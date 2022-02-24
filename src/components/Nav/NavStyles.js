@@ -555,7 +555,7 @@ font-family: 'Alef', sans-serif;
 font-family: 'Raleway', sans-serif;
 display: none;
 position: absolute;
-background-color: azure;
+
 z-index: 60000;
 top: 1;
 font-size: 14px;

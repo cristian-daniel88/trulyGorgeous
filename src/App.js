@@ -7,7 +7,7 @@ import AboutUs from './pages/AboutUs';
 import Top from './components/Top/Top';
 import ToggleMenu from './components/ToggleMenu/ToggleMenu';
 import Home from './pages/Home';
-import Contact from './components/Contact/Contact';
+
 
 
 function App() {
@@ -33,8 +33,7 @@ function App() {
       
     </Switch>
 
-  
-    <Contact/>
+ 
 
    
     

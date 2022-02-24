@@ -9,7 +9,7 @@ background-color: #f0f4f8;
 //background-image: url('./assets/marcaDeAgua.png');
 
 position: fixed;
-
+top: 0;
 z-index: 500;
 display: none;
 transform: ${(props) => (props.toggle ? "translateX(0%)" : "translateX(-150%)")};

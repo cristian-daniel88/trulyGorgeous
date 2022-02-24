@@ -22,6 +22,8 @@ color: #6f3333;
 @media screen and (max-width: 865px) {
    display: flex;
    justify-content: space-between;
+  
+   
   }
 
 
@@ -45,6 +47,7 @@ height: 70px;
 background-size: contain ;
 background-repeat: no-repeat;
 cursor: pointer;
+margin-top: 10px;
 
 @media screen and (max-width: 1300px) {
     width: 100%;
@@ -536,4 +539,33 @@ export const AInstagram = styled.a`
   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
   display: flex;
   align-items: center;
+`
+export const TelophoneNumber = styled.div`
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=Raleway:ital@1&display=swap');
+font-weight: 600;
+margin-top: 5px;
+font-family: 'Alef', sans-serif;
+font-family: 'Raleway', sans-serif;
+`
+
+export const TelephoneNumber2 = styled.a`
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=Raleway:ital@1&display=swap');
+font-weight: 600;
+font-family: 'Alef', sans-serif;
+font-family: 'Raleway', sans-serif;
+display: none;
+position: absolute;
+background-color: azure;
+z-index: 60000;
+top: 1;
+font-size: 14px;
+color: black;
+
+
+@media screen and (max-width: 865px) {
+ display: flex;
+
+   
+  }
+
 `

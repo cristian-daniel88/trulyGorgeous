@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ContainerLogoAndH2, Designer, H1Container, Header, Li, LinkA, Logo, LogoContainer, MenuBurguer, Navegador, Ul, LinkAHome, PopUp, PopUpAlterations, UlAlterations, LiAlterations, UlWeddingDresses, LiWeddingDresses, PopUpWeddingDresses, PopUpAboutUs, PopUpUl, PopUpLi, BoxContact, IconFaceBook, IconInstagram, IconPhone, AInstagram } from './NavStyles'
+import { ContainerLogoAndH2, Designer, H1Container, Header, Li, LinkA, Logo, LogoContainer, MenuBurguer, Navegador, Ul, LinkAHome, PopUp, PopUpAlterations, UlAlterations, LiAlterations, UlWeddingDresses, LiWeddingDresses, PopUpWeddingDresses, PopUpAboutUs, PopUpUl, PopUpLi, BoxContact, IconFaceBook, IconInstagram, IconPhone, AInstagram, TelophoneNumber, TelephoneNumber2 } from './NavStyles'
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleHamburguerHidden } from '../../redux/hamburguer/hamburguerActions';
@@ -49,6 +49,11 @@ function Nav() {
 
   return (
     <Header>
+        <TelephoneNumber2 href='a'>
+            <IconPhone style={{'fontSize': '1.3em', 'color':'black'}}/>
+            &nbsp;
+            01243788090
+        </TelephoneNumber2>
 
         <ContainerLogoAndH2>
 
@@ -137,9 +142,9 @@ function Nav() {
 
           <a style={{'cursor':'pointer', 'zIndex': '1000000', 'display':'flex', 'color': '#484040'}} href='tel:01243788090' target='_blank'>
           <IconPhone></IconPhone> &nbsp;
-          <div style={{'marginTop': '5px'}}>
+          <TelophoneNumber>
             01243788090
-          </div>
+          </TelophoneNumber>
           </a>
       </BoxContact>
     </Header>

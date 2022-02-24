@@ -21,7 +21,7 @@ function ToggleMenu() {
               </ButtonMenu>
             </LiBurguer>
 
-            <DetailsLanguage>
+            <DetailsLanguage open>
               <SummaryLanguage>
                 ABOUT US
               </SummaryLanguage>
@@ -33,7 +33,7 @@ function ToggleMenu() {
               </ButtonMenu>
             </DetailsLanguage>
 
-            <DetailsLanguage>
+            <DetailsLanguage open>
               <SummaryLanguage> 
                WEDDING DRESSES
               </SummaryLanguage>
@@ -55,13 +55,13 @@ function ToggleMenu() {
 
             </DetailsLanguage>
 
-            <LiBurguer >
+            <LiBurguer>
               <ButtonMenu>
               DESIGNERS  
              </ButtonMenu>
             </LiBurguer>
             
-            <DetailsLanguage>
+            <DetailsLanguage open>
               <SummaryLanguage>
                 ALTERATIONS
               </SummaryLanguage>

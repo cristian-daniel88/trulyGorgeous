@@ -49,7 +49,7 @@ function Nav() {
 
   return (
     <Header>
-        <TelephoneNumber2 href='a'>
+        <TelephoneNumber2 href='tel:01243788090' target='_blank'>
             <IconPhone style={{'fontSize': '1.3em', 'color':'black'}}/>
             &nbsp;
             01243788090

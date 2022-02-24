@@ -69,7 +69,7 @@ function Nav() {
                 <Li ><LinkAHome focuss={focuss == true ? 'true' : 'false'} to={'/'}>Home</LinkAHome></Li>
 
                 <Li onClick={fucusHome}>
-                <LinkA to='' onMouseEnter={popUpAbout} onMouseLeave={popUpAbout} onClick={''}>About Us 
+                <LinkA to='' onMouseEnter={popUpAbout} onMouseLeave={popUpAbout}>About Us 
                 <PopUpAboutUs popUp={popAbout ? 'true' : 'false'}>
                     <PopUpUl popUp={popAbout ? 'true' : 'false'}> 
                         <PopUpLi>
@@ -84,7 +84,7 @@ function Nav() {
                 </Li>
 
                 <Li onClick={fucusHome}>
-                <LinkA onMouseEnter={popUpWedding} onMouseLeave={popUpWedding} to='' onClick={''}>Wedding Dresses
+                <LinkA onMouseEnter={popUpWedding} onMouseLeave={popUpWedding} to='' >Wedding Dresses
                 <PopUpWeddingDresses  popUp={popUpWed ? 'true' : 'false'}>
                     <UlWeddingDresses>
                     <LiWeddingDresses>
@@ -111,7 +111,7 @@ function Nav() {
 
 
                 <Li onClick={fucusHome}>
-                <LinkA to='' onMouseEnter={popUpAlterations} onMouseLeave={popUpAlterations} onClick={''}>Alterations 
+                <LinkA to='' onMouseEnter={popUpAlterations} onMouseLeave={popUpAlterations}>Alterations 
                 <PopUpAlterations popUp={popUpAlt ? 'true' : 'false'}>
                     <UlAlterations popUp={popUpAlt ? 'true' : 'false'}>
                         <LiAlterations>Price list</LiAlterations>

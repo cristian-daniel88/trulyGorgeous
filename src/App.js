@@ -7,6 +7,7 @@ import AboutUs from './pages/AboutUs';
 import Top from './components/Top/Top';
 import ToggleMenu from './components/ToggleMenu/ToggleMenu';
 import Home from './pages/Home';
+import Cover from './components/Cover/Cover';
 
 
 
@@ -16,8 +17,9 @@ function App() {
     <GlobalStyles/>
     <Nav/>
     <Top/>
+    <Cover/>
     <ToggleMenu/>
-
+    
     <Switch>
 
 

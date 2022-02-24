@@ -25,10 +25,10 @@ function ToggleMenu() {
               <SummaryLanguage>
                 ABOUT US
               </SummaryLanguage>
-              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'10px'}}>
+              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'15px'}}>
                 OUR BRIDES
               </ButtonMenu>
-              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'10px'}}>
+              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'15px', 'marginBottom':'-10px'}}>
                 TESTIMONIAL
               </ButtonMenu>
             </DetailsLanguage>
@@ -37,41 +37,45 @@ function ToggleMenu() {
               <SummaryLanguage> 
                WEDDING DRESSES
               </SummaryLanguage>
+              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'15px'}}>
+               FAIRYTALE
+              </ButtonMenu>
+              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'15px'}}>
+               ROMANTIC
+              </ButtonMenu>
+              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'15px'}}>
+               SOPHISTICATED
+              </ButtonMenu>
+              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'15px'}}>
+               ELEGANT
+              </ButtonMenu>
+              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'15px', 'marginBottom':'-10px'}}>
+               SALE
+              </ButtonMenu>
+
             </DetailsLanguage>
 
             <LiBurguer >
               <ButtonMenu>
-              Our Brides    
+              DESIGNERS  
              </ButtonMenu>
             </LiBurguer>
             
-            <LiBurguer >
-              <ButtonMenu> 
-               Designers
+            <DetailsLanguage>
+              <SummaryLanguage>
+                ALTERATIONS
+              </SummaryLanguage>
+              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'15px'}}>
+               PRICE LIST
               </ButtonMenu>
-            </LiBurguer>
+              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'15px', 'marginBottom':'-10px'}}>
+               OUR CREATIONS
+              </ButtonMenu>
+            </DetailsLanguage>
 
             <LiBurguer >
               <ButtonMenu> 
-                Our Creations
-              </ButtonMenu>
-            </LiBurguer>
-
-            <LiBurguer >
-              <ButtonMenu> 
-                  Sale
-              </ButtonMenu>
-            </LiBurguer>
-
-            <LiBurguer >
-              <ButtonMenu>
-                  Blog     
-              </ButtonMenu>
-            </LiBurguer>
-
-            <LiBurguer >
-              <ButtonMenu> 
-               Contact
+               CONTACT
               </ButtonMenu>
             </LiBurguer>
 

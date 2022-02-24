@@ -90,6 +90,10 @@ export const SummaryLanguage = styled.summary`
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 font-family: 'Cormorant Garamond', serif;
 font-size: 15px;
+&:hover{
+    color: #bf6c4a;
+
+  }
 `
 
 export const ButtonMenuLanguage = styled.button`

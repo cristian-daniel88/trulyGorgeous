@@ -54,6 +54,7 @@ margin: 15px;
 margin-bottom: 10px;
 
 
+
 `;
 
 export  const ButtonBurguerContainer = styled.div`
@@ -110,6 +111,7 @@ export const ButtonMenuLanguage = styled.button`
   display: flex;
   justify-content: space-between;
   opacity: ${(props) => (props.switch ? ".3" : "1")};
+
   
 
   &:hover{
@@ -132,6 +134,9 @@ cursor: pointer;
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 font-family: 'Cormorant Garamond', serif;
 font-size: 15px;
+
+
+text-align: start;
 &:hover{
     color: #bf6c4a;
 

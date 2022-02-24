@@ -7,7 +7,7 @@ background-color: white;
 z-index: 600;
 
 @media screen and (max-width: 865px) {
-    height: 100px;
+    height: 120px;
     //background-color: green;
   }
   @media screen and (max-width: 300px) {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleHamburguerHidden } from '../../redux/hamburguer/hamburguerActions';
-import { ButtonBurguer, ButtonBurguerContainer, ButtonMenu, ButtonMenuLanguage, DetailsLanguage, LiBurguer, Menu, MenuContainer, NavBurguer, UlBurguer } from './ToggleMenuStyles';
+import { ButtonBurguer, ButtonBurguerContainer, ButtonMenu,DetailsLanguage,LiBurguer, Menu, MenuContainer, NavBurguer, SummaryLanguage, UlBurguer } from './ToggleMenuStyles';
 
 function ToggleMenu() {
   const toggle = useSelector((state) => state.hamburguer.hidden);
@@ -17,21 +17,27 @@ function ToggleMenu() {
           <UlBurguer>
             <LiBurguer>
               <ButtonMenu >
-                Home
+              HOME
               </ButtonMenu>
             </LiBurguer>
 
-            <LiBurguer >
-              <ButtonMenu> 
-                About us
+            <DetailsLanguage>
+              <SummaryLanguage>
+                ABOUT US
+              </SummaryLanguage>
+              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'10px'}}>
+                OUR BRIDES
               </ButtonMenu>
-            </LiBurguer>
+              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'10px'}}>
+                TESTIMONIAL
+              </ButtonMenu>
+            </DetailsLanguage>
 
-            <LiBurguer >
-              <ButtonMenu> 
-                Wedding Dresses
-              </ButtonMenu>
-            </LiBurguer>
+            <DetailsLanguage>
+              <SummaryLanguage> 
+               WEDDING DRESSES
+              </SummaryLanguage>
+            </DetailsLanguage>
 
             <LiBurguer >
               <ButtonMenu>
@@ -68,6 +74,8 @@ function ToggleMenu() {
                Contact
               </ButtonMenu>
             </LiBurguer>
+
+           
 
           
           </UlBurguer>

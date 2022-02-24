@@ -9,7 +9,7 @@ background-color: #f0f4f8;
 //background-image: url('./assets/marcaDeAgua.png');
 
 position: fixed;
-top: 0;
+
 z-index: 500;
 display: none;
 transform: ${(props) => (props.toggle ? "translateX(0%)" : "translateX(-150%)")};
@@ -17,6 +17,8 @@ transition: transform 0.6s ease-in-out;
 //border-right: solid 1px gold;
 //border-top: solid 1px gold;
 border-top-right-radius: 10px;
+
+padding-top: 20px;
 @media screen and (max-width: 865px) {
 display: block;
 }
@@ -48,7 +50,7 @@ height: 100%;
 export const LiBurguer = styled.li`
 color: white;
 display: block;
-margin: 20px;
+margin: 15px;
 margin-bottom: 10px;
 
 
@@ -75,21 +77,19 @@ transform: ${(props) => (props.toggle === 'true' ? "rotate(90%)" : "translateX(0
 transition: ${(props) => (props.toggle === 'true' ? "transform 1s ease-in-out" : "transform 1s cubic-bezier(.94,-0.05,1,1)")};
 `;
 export const DetailsLanguage = styled.details`
+color: #683535;
+display: block;
+margin: 15px;
 
+color: #683535;
+font-size: 1.3rem;
 `
 
 
 export const SummaryLanguage = styled.summary`
-margin-bottom: 15px;
-font-size : 1.3rem;
-cursor: pointer;
-&:hover, &:focus{
-    color: #ffffff;
-    text-shadow: 0 0 8px #0e54ea, 0 0 2px #0e54ea, 0 0 10px #0e54ea,
-      0 0 6px #0e54ea, 0 0 20px #0e54ea, 0 0 20px #0e54ea, 0 0 1px #0e54ea,
-      0 0 12px #0e54ea;
-      border: none;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+font-family: 'Cormorant Garamond', serif;
+font-size: 15px;
 `
 
 export const ButtonMenuLanguage = styled.button`
@@ -106,6 +106,7 @@ export const ButtonMenuLanguage = styled.button`
   display: flex;
   justify-content: space-between;
   opacity: ${(props) => (props.switch ? ".3" : "1")};
+  
 
   &:hover{
     color: #ffffff;
@@ -124,6 +125,9 @@ background-color: transparent;
 color: #683535;
 font-size: 1.3rem;
 cursor: pointer;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+font-family: 'Cormorant Garamond', serif;
+font-size: 15px;
 &:hover{
     color: #bf6c4a;
 

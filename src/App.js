@@ -8,6 +8,7 @@ import Top from './components/Top/Top';
 import ToggleMenu from './components/ToggleMenu/ToggleMenu';
 import Home from './pages/Home';
 import Cover from './components/Cover/Cover';
+import Contact from './pages/Contact';
 
 
 
@@ -30,6 +31,10 @@ function App() {
 
     <Route exact path='/about-us'>
         <AboutUs/>
+    </Route>
+
+    <Route exact path='/contact'>
+        <Contact/>
     </Route>
 
       

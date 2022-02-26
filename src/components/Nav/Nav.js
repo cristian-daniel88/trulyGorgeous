@@ -15,13 +15,19 @@ function Nav() {
   const popUpWed = useSelector((state) => state.popUp.hover3);
   const popUpAlt = useSelector((state) => state.popUp.hover2)
 
+
   
 
   const popUpAbout = () => {
+ 
     dispatch(hoverPopUpAboutUs());
     setFocuss(false)
 
+   
+
   }
+
+
 
 
   const popUpWedding = () => {
@@ -125,9 +131,11 @@ function Nav() {
                 </PopUpAlterations>
                 </LinkA>
                 </Li>
-              
-                
-                <Li onClick={fucusHome}>Contact</Li>
+                <Li onClick={fucusHome}>
+                    <LinkA to='/contact'>
+                    Contact  
+                    </LinkA>
+                </Li>
             </Ul>
         <MenuBurguer onClick={toggleMenu}/>
         </Navegador>

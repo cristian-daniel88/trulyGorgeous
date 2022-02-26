@@ -17,6 +17,7 @@ font-family: 'FuturaStd', sans-serif ;
 font-weight: 200;
 letter-spacing: 1.5px;
 color: #6f3333;
+border-bottom: solid 1px #e8d8d8;
 
 
 @media screen and (max-width: 865px) {
@@ -216,9 +217,10 @@ border-bottom-right-radius: 10px;
 ${({popUp})=> popUp == 'false' && css`
 height: 0;
 opacity: 0;
+
 @keyframes taadaa3 { 
     0% {
-        
+      
      
       height: 80px;
       
@@ -229,16 +231,19 @@ opacity: 0;
     100% {
       
     }    
-}
-
-animation: ${(props) => props.popUp == 'false' && 'taadaa3 1s cubic-bezier(.92,.29,.65,.59) 1'};
-
-` }
-
-${({popUp})=> popUp == 'true' && css`
-
-height: 80px;
-@keyframes taadaa3 { 
+  }
+  
+  animation: ${(props) => props.popUp == 'false' && 'taadaa3 1s cubic-bezier(.92,.29,.65,.59) 1'};
+  
+  ` }
+  
+  ${({popUp})=> popUp == 'true' && css`
+  border-bottom: solid 1px #e8d8d8;
+  border-left: solid 1px #e8d8d8;
+  border-right: solid 1px #e8d8d8;
+  
+  height: 80px;
+  @keyframes taadaa3 { 
     0% {
         
       
@@ -261,6 +266,7 @@ animation: ${(props) => props.popUp == 'true' && 'taadaa3   1s cubic-bezier(.92,
 
 export const UlAlterations = styled.ul`
 margin-top: 20px;
+
 
 `
 
@@ -329,7 +335,9 @@ animation: ${(props) => props.popUp == 'false' && 'taadaa3 1s cubic-bezier(.92,.
 ` }
 
 ${({popUp})=> popUp == 'true' && css`
-
+border-bottom: solid 1px #e8d8d8;
+border-left: solid 1px #e8d8d8;
+border-right: solid 1px #e8d8d8;
 height: 160px;
 @keyframes taadaa3 { 
     0% {
@@ -423,7 +431,9 @@ animation: ${(props) => props.popUp == 'false' && 'taadaa3 1s cubic-bezier(.92,.
 ` }
 
 ${({popUp})=> popUp == 'true' && css`
-
+border-bottom: solid 1px #e8d8d8;
+border-left: solid 1px #e8d8d8;
+border-right: solid 1px #e8d8d8;
 height: 80px;
 @keyframes taadaa3 { 
     0% {

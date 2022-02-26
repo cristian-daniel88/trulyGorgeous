@@ -1,5 +1,5 @@
 import React from 'react'
-import { BoldContact, ContactBoxes1, ContactBoxes2, ContactDetails, ContactDetailsContainer, ContactForm, ContainerBoxesContact, ContainerContact, AdressContainer, Form, IframeBox, PContact, PhoneContainer, IframeBoxContainer } from './ContactContainerStyles'
+import { BoldContact, ContactBoxes1, ContactBoxes2, ContactDetails, ContactDetailsContainer, ContactForm, ContainerBoxesContact, ContainerContact, AdressContainer, Form, IframeBox, PContact, PhoneContainer, IframeBoxContainer, Label, Input, TextArea } from './ContactContainerStyles'
 
 function ContactContainer() {
   return (
@@ -23,7 +23,41 @@ function ContactContainer() {
 
                 <ContactForm>
                     <Form>
-                        Form
+
+                        <Label>
+                            Your Name
+                        </Label>
+                        <Input/>
+
+                        <Label>
+                            Your Name
+                        </Label>
+                        <Input/>
+
+                        <Label>
+                            Your Name
+                        </Label>
+                        <Input/>
+
+                        <Label>
+                            Your Name
+                        </Label>
+                        <Input/>
+
+                        <Label>
+                            Your Name
+                        </Label>
+                        <Input/>
+
+                        <Label>
+                            Details
+                        </Label>
+                        <TextArea>
+
+                        </TextArea>
+                        
+
+
                     </Form>
                 </ContactForm>
 

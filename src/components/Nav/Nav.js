@@ -56,9 +56,12 @@ function Nav() {
   return (
     <Header>
         <TelephoneNumber2 href='tel:01243788090' target='_blank'>
-            <IconPhone style={{'fontSize': '1.3em', 'color':'black'}}/>
+            <IconPhone style={{'fontSize': '1.3em', 'color':'rgb(72, 64, 64)'}}/>
             &nbsp;
+            <div  style={{ 'color':'rgb(72, 64, 64)'}}>
+
             01243788090
+            </div>
         </TelephoneNumber2>
 
         <ContainerLogoAndH2>

@@ -76,6 +76,7 @@ min-width: 200px;
 padding-top: 5px;
 padding-bottom: 10px;
 padding-right: 2px;
+padding-left: 5px;
 @import url('https://fonts.googleapis.com/css2?family=Alef&family=PT+Sans&family=Raleway:ital@1&display=swap');
 font-family: 'Alef', sans-serif;
 font-family: 'Raleway', sans-serif;

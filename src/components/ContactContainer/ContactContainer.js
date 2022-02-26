@@ -15,7 +15,7 @@ function ContactContainer() {
 
 
                             <AdressContainer>
-                            <PContact><BoldContact>Adress: </BoldContact>Truly Gorgeous Unit 4 (South) Vinnetrow Business Park Vinnetrow Road Chichester – West Sussex PO20 1QH</PContact>
+                            <PContact><BoldContact>Address: </BoldContact>Truly Gorgeous Unit 4 (South) Vinnetrow Business Park Vinnetrow Road Chichester – West Sussex PO20 1QH</PContact>
                             </AdressContainer>
                     </ContactDetailsContainer>
                 </ContactDetails>

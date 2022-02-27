@@ -117,17 +117,39 @@ border: solid 1px #e8d8d8;
 background-color: white;
 display: flex;
 flex-direction: column;
-padding: 10px;
+padding: 20px;
+
+
 `
 
 export const Label = styled.label`
 display: block;
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=PT+Sans&family=Raleway:ital@1&display=swap');
+font-family: 'Raleway', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Alef', sans-serif;
+color: #747474;
+margin-left: 4%;
+
 
 `
 
 export const Input = styled.input`
 width: 90%;
 margin-bottom: 10px;
+outline: none;
+height: 30px;
+border-radius: 10px;
+border: none;
+background-color: #f0f4f8;
+padding: 5px;
+//color: #747474;
+margin-left: 4%;
+margin-bottom: 15px;
+
+
+
+
 `
 
 export const TextArea = styled.textarea`
@@ -135,11 +157,37 @@ width: 90%;
 height: 200px;
 resize: none;
 width: 90%;
+outline: none;
+
+border-radius: 10px;
+border: none;
+background-color: #f0f4f8;
+padding: 10px;
+margin-left: 4%;
 
 `
 
 export const Send = styled.button`
+height: 40px;
+border: none;
+border-radius: 10px;
+width: 20%;
+margin: auto;
+margin-top: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=PT+Sans&family=Raleway:ital@1&display=swap');
+font-family: 'Raleway', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Alef', sans-serif;
+color: #747474;
+font-weight: 800;
+background: transparent;
+background-color: #a3cbd9;
+cursor: pointer;
+letter-spacing: 2px;
 
+&:active {
+    opacity: 0.5;
+}
 
 `
 

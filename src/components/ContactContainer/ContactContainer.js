@@ -1,7 +1,12 @@
 import React from 'react'
-import { BoldContact, ContactBoxes1, ContactBoxes2, ContactDetails, ContactDetailsContainer, ContactForm, ContainerBoxesContact, ContainerContact, AdressContainer, Form, IframeBox, PContact, PhoneContainer, IframeBoxContainer, Label, Input, TextArea } from './ContactContainerStyles'
+import { BoldContact, ContactBoxes1, ContactBoxes2, ContactDetails, ContactDetailsContainer, ContactForm, ContainerBoxesContact, ContainerContact, AdressContainer, Form, IframeBox, PContact, PhoneContainer, IframeBoxContainer, Label, Input, TextArea, Send } from './ContactContainerStyles'
 
 function ContactContainer() {
+
+    const send = (e) => {
+        e.preventDefault()
+    }
+
   return (
     <ContainerContact>
         <ContainerBoxesContact>
@@ -22,7 +27,7 @@ function ContactContainer() {
 
 
                 <ContactForm>
-                    <Form>
+                    <Form onClick={(e)=> send(e)}>
 
                         <Label>
                             Your Name
@@ -30,22 +35,22 @@ function ContactContainer() {
                         <Input/>
 
                         <Label>
-                            Your Name
+                            Email Address
                         </Label>
                         <Input/>
 
                         <Label>
-                            Your Name
+                            Phone
                         </Label>
                         <Input/>
 
                         <Label>
-                            Your Name
+                            Wedding Date
                         </Label>
                         <Input/>
 
                         <Label>
-                            Your Name
+                        Appointment Date
                         </Label>
                         <Input/>
 
@@ -56,7 +61,9 @@ function ContactContainer() {
 
                         </TextArea>
                         
-
+                        <Send type='submit'>
+                            Send
+                        </Send>
 
                     </Form>
                 </ContactForm>

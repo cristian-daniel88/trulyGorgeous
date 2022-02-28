@@ -23,6 +23,7 @@ height: auto;
 //border: solid 1px green;
 min-width: 300px;
 
+
 @media screen and (max-width: 865px) {
    width: 100%;
   
@@ -64,6 +65,7 @@ color: #747474;
 padding-top: 10px;
 padding-bottom: 10px;
 padding-left: 5px;
+
 @media screen and (max-width: 1200px) {
     width: 100%;
   }
@@ -91,12 +93,13 @@ color: #747474;
 `
 
 export const BoldContact = styled.strong`
-
+user-select: text;
 
 
 `
 export const PContact = styled.p`
-font-size: 12px;
+font-size: 14px;
+user-select: text;
 
 `
 
@@ -146,6 +149,15 @@ padding: 5px;
 //color: #747474;
 margin-left: 4%;
 margin-bottom: 15px;
+margin-top: 8px;
+
+&:focus {
+    box-shadow: 2px 6px 13px -4px rgba(0,0,0,0.54);
+}
+
+&::placeholder {
+    color:#b3bfca;
+}
 
 
 
@@ -165,6 +177,16 @@ background-color: #f0f4f8;
 padding: 10px;
 margin-left: 4%;
 
+
+&::placeholder {
+    color:#b3bfca;
+}
+
+&:focus {
+    box-shadow: 2px 6px 13px -4px rgba(0,0,0,0.54);
+}
+
+
 `
 
 export const Send = styled.button`
@@ -181,7 +203,7 @@ font-family: 'Alef', sans-serif;
 color: #747474;
 font-weight: 800;
 background: transparent;
-background-color: #a3cbd9;
+background-color: #bde9dc;
 cursor: pointer;
 letter-spacing: 2px;
 
@@ -208,7 +230,7 @@ letter-spacing: 2px;
 
 export const ContactBoxes2 = styled.div`
 width: 55%;
-height: auto;
+height: 500px;
 
 display: flex;
 justify-content: center;
@@ -239,5 +261,13 @@ height: 400px;
 width: 90%;
 margin-top: 0px;
 
+
+`
+
+
+export const Aside = styled.div`
+width: 100%;
+border-bottom: solid 1px black;
+padding-bottom: 10px;
 
 `

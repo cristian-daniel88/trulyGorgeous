@@ -9,6 +9,7 @@ import ToggleMenu from './components/ToggleMenu/ToggleMenu';
 import Home from './pages/Home';
 import Cover from './components/Cover/Cover';
 import Contact from './pages/Contact';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -42,10 +43,17 @@ function App() {
 
  
 
-   
+     <Footer>
+       Footer
+     </Footer>
     
     </>
   );
 }
 
 export default App;
+
+//https://my.hosting.co.uk/
+
+//Please ensure you have unlocked your domain at your current registrar before continuing.
+//Transfer to us and extend by 1 year* for

@@ -82,8 +82,8 @@ function Nav() {
             <Ul>
                 <Li ><LinkAHome focuss={focuss == true ? 'true' : 'false'} to={'/'}>Home</LinkAHome></Li>
 
-                <Li onClick={fucusHome}>
-                <LinkA to='' onMouseEnter={popUpAbout} onMouseLeave={popUpAbout}>About Us 
+                <Li onClick={fucusHome} onMouseEnter={popUpAbout} onMouseLeave={popUpAbout}>
+                About Us 
                 <PopUpAboutUs popUp={popAbout ? 'true' : 'false'}>
                     <PopUpUl popUp={popAbout ? 'true' : 'false'}> 
                         <PopUpLi>
@@ -94,11 +94,11 @@ function Nav() {
                         </PopUpLi>
                     </PopUpUl>
                 </PopUpAboutUs>
-                </LinkA>
+                
                 </Li>
 
-                <Li onClick={fucusHome}>
-                <LinkA onMouseEnter={popUpWedding} onMouseLeave={popUpWedding} to='' >Wedding Dresses
+                <Li onClick={fucusHome} onMouseEnter={popUpWedding} onMouseLeave={popUpWedding}>
+                Wedding Dresses
                 <PopUpWeddingDresses  popUp={popUpWed ? 'true' : 'false'}>
                     <UlWeddingDresses>
                     <LiWeddingDresses>
@@ -118,21 +118,21 @@ function Nav() {
                     </LiWeddingDresses>
                     </UlWeddingDresses>
                 </PopUpWeddingDresses>
-                </LinkA>
+              
                 </Li>
                
                 <Li onClick={fucusHome}>Designers</Li>
 
 
-                <Li onClick={fucusHome}>
-                <LinkA to='' onMouseEnter={popUpAlterations} onMouseLeave={popUpAlterations}>Alterations 
+                <Li onClick={fucusHome} onMouseEnter={popUpAlterations} onMouseLeave={popUpAlterations}>
+               Alterations 
                 <PopUpAlterations popUp={popUpAlt ? 'true' : 'false'}>
                     <UlAlterations popUp={popUpAlt ? 'true' : 'false'}>
                         <LiAlterations>Price list</LiAlterations>
                         <LiAlterations>Our Creations</LiAlterations>
                     </UlAlterations>
                 </PopUpAlterations>
-                </LinkA>
+               
                 </Li>
                 <Li onClick={fucusHome}>
                     <LinkA to='/contact'>

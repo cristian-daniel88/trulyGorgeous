@@ -1,5 +1,5 @@
 import React from 'react'
-import { BoldContact, ContactBoxes1, ContactBoxes2, ContactDetails, ContactDetailsContainer, ContactForm, ContainerBoxesContact, ContainerContact, AdressContainer, Form, IframeBox, PContact, PhoneContainer, IframeBoxContainer, Label, Input, TextArea, Send } from './ContactContainerStyles'
+import { BoldContact, ContactBoxes1, ContactBoxes2, ContactDetails, ContactDetailsContainer, ContactForm, ContainerBoxesContact, ContainerContact, AdressContainer, Form, IframeBox, PContact, PhoneContainer, IframeBoxContainer, Label, Input, TextArea, Send, Aside } from './ContactContainerStyles'
 
 function ContactContainer() {
 
@@ -9,6 +9,7 @@ function ContactContainer() {
 
   return (
     <ContainerContact>
+   
         <ContainerBoxesContact>
             <ContactBoxes1>
                 <ContactDetails>
@@ -57,11 +58,11 @@ function ContactContainer() {
                         <Label>
                             Details
                         </Label>
-                        <TextArea>
+                        <TextArea placeholder='write here'>
 
                         </TextArea>
                         
-                        <Send type='submit'>
+                        <Send type='submit' >
                             Send
                         </Send>
 

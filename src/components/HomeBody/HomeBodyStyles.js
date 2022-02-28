@@ -11,7 +11,9 @@ background-size: cover;
 background-repeat: no-repeat;
 position: relative;
 background-position-y: 10px;
+//background-size: ${({image})=> image == './assets/banner2.jpg' ? 'c' : '' };
 overflow-x: hidden;
+
 
 
 @keyframes taadaa { 

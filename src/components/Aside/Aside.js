@@ -1,5 +1,5 @@
 import React from 'react'
-import { P4 } from '../Footer/FooterStyles'
+
 import { AsideContainer } from './AsideStyles'
 
 function Aside() {

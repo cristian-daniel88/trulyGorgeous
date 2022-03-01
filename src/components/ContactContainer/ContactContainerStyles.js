@@ -4,7 +4,15 @@ export const ContainerContact = styled.section`
 width: 100%;
 height: auto;
 background-color: #f0f4f8;
-padding: 8% 10%;
+padding: 2% 10%;
+
+@media screen and (max-width: 865px) {
+  padding: 8% 10%;
+   
+  }
+
+
+
 
 
 `

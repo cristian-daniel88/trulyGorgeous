@@ -16,6 +16,7 @@ import Aside from './components/Aside/Aside';
 
 
 
+
 function App() {
   return (
     <>
@@ -47,11 +48,13 @@ function App() {
     </Switch>
 
     
+    <Aside/>
+
      <Footer/>
     
        
     
- 
+
     
     </HashRouter>
     </>

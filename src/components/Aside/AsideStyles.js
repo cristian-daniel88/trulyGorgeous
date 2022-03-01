@@ -12,6 +12,7 @@ text-transform: uppercase;
 text-align: center;
 font-size: 11px;
 padding-top: 10px;
+padding: 10px;
 
 
 

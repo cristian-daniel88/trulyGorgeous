@@ -7,7 +7,7 @@ export const Footer1 = styled.footer`
 width: 100%;
 height: auto;
 background: #333333;
-
+padding: 0 10%;
 
 display: flex;
 flex-wrap: wrap;
@@ -29,7 +29,7 @@ align-items: center;
 @media screen and (max-width: 865px) {
  width: 100%;
  margin-top: 0px;
- width: 300px;
+
    
   }
 `;

@@ -54,11 +54,13 @@ font-family: 'Carattere', cursive !important;
 font-size: 40px;
 margin-bottom: 13px;
 text-align: center;
+user-select: text;
 `
 export const P2 = styled.p`
 font-size: 11px;
 letter-spacing: 2px;
 text-align: center;
+user-select: text;
 `
 
 export const FooterBox2 = styled.div`
@@ -99,6 +101,7 @@ margin-top: 20px;
 font-size: 20px;
 text-transform: uppercase;
 letter-spacing: 1.5px;
+user-select: text;
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 font-family: 'Cormorant Garamond', serif;
@@ -110,7 +113,7 @@ export const P4 = styled.p`
 color: white;
 text-align: center;
 margin-top: 20px;
-
+user-select: text;
 
 `
 

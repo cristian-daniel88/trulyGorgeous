@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
+
+
+
 export const Footer1 = styled.footer`
 width: 100%;
 height: auto;
 background: #333333;
-padding: 0 10%;
+
+
 display: flex;
 flex-wrap: wrap;
 
@@ -21,10 +25,11 @@ min-width: 200px;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-top: 20px;
+
 @media screen and (max-width: 865px) {
  width: 100%;
  margin-top: 0px;
+ width: 300px;
    
   }
 `;
@@ -68,7 +73,7 @@ min-width: 200px;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-top: 20px;
+
 
 @media screen and (max-width: 865px) {
  width: 100%;
@@ -122,7 +127,7 @@ min-width: 200px;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-top: 20px;
+
 @media screen and (max-width: 865px) {
  width: 100%;
  margin-top: 0px;

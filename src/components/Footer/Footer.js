@@ -1,10 +1,12 @@
 import React from 'react'
-import { Footer1, FooterBox1, FooterBox2, FooterBox3, FooterBox4, LogoFooter, P, P2 , FooterBox2Container, P3, P4, IframeFooter} from './FooterStyles'
+import Aside from '../Aside/Aside'
+import { Footer1, FooterBox1, FooterBox2, FooterBox3, FooterBox4, LogoFooter, P, P2 , FooterBox2Container, P3, P4, IframeFooter, FooterPrim} from './FooterStyles'
 
 function Footer() {
   return (
+    
     <Footer1>
-
+        
         <FooterBox1>
             <LogoFooter>
             <P>Truly Gorgeous</P>
@@ -47,6 +49,8 @@ function Footer() {
         </FooterBox4>
 
     </Footer1>
+    
+    
   )
 }
 

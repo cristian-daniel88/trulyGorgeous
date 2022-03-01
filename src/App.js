@@ -11,6 +11,8 @@ import Cover from './components/Cover/Cover';
 import Contact from './pages/Contact';
 import Footer from './components/Footer/Footer';
 import { HashRouter } from 'react-router-dom';
+import Aside from './components/Aside/Aside';
+
 
 
 
@@ -44,11 +46,12 @@ function App() {
       
     </Switch>
 
+    
+     <Footer/>
+    
+       
+    
  
-
-     <Footer>
-       Footer
-     </Footer>
     
     </HashRouter>
     </>

@@ -4,7 +4,8 @@ export const ContainerContact = styled.section`
 width: 100%;
 height: auto;
 background-color: #f0f4f8;
-padding: 2% 10%;
+padding: 8% 10%;
+
 
 `
 
@@ -21,7 +22,7 @@ export const ContactBoxes1 = styled.div`
 width: 45%;
 height: auto;
 //border: solid 1px green;
-min-width: 300px;
+min-width: 200px;
 
 
 @media screen and (max-width: 865px) {

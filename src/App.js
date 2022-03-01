@@ -12,6 +12,8 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer/Footer';
 import { HashRouter } from 'react-router-dom';
 import Aside from './components/Aside/Aside';
+import VictoriaJane from './components/Designers/VictoriaJane';
+import RonaldJoyce from './components/Designers/RonaldJoyce';
 
 
 
@@ -42,6 +44,15 @@ function App() {
 
     <Route exact path='/contact'>
         <Contact/>
+    </Route>
+
+    
+    <Route exact path='/designers/victoria-janes'>
+         <VictoriaJane/>
+    </Route>
+
+    <Route exact path='/designers/ronald-joyce'>
+         <RonaldJoyce/>
     </Route>
 
       

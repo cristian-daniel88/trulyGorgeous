@@ -1,9 +1,10 @@
-import {HOVER_ABOUT, HOVER_ALTERATIONS, HOVER_WEDDING} from './popUpActions'
+import {HOVER_ABOUT, HOVER_ALTERATIONS, HOVER_DESIGNERS, HOVER_WEDDING} from './popUpActions'
 
 const INITIAL_STATE = {
   hover1: false,
   hover2: false,
-  hover3: false
+  hover3: false,
+  hover4: false
 };
 
 const popUpReducer = (state = INITIAL_STATE, action) => {
@@ -27,6 +28,13 @@ const popUpReducer = (state = INITIAL_STATE, action) => {
             ...state,
             hover3: !state.hover3,
           };
+
+    case HOVER_DESIGNERS:
+      return {
+        ... state,
+        hover4: !state.hover4,
+      }
+    
     default:
       return state;
   }

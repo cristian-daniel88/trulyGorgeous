@@ -1,6 +1,7 @@
 export const HOVER_WEDDING = "HOVER_WEDDING";
 export const HOVER_ALTERATIONS = "HOVER_ALTERATIONS";
 export const HOVER_ABOUT = "HOVER_ABOUT";
+export const HOVER_DESIGNERS = "HOVER_DESIGNERS";
 
 
 
@@ -17,6 +18,9 @@ export const hoverPopUpAboutUs = () => ({
     type: HOVER_ABOUT,
   });
 
+export const hoverPopDesigners = () => ({
+  type: HOVER_DESIGNERS,
+})
 
 
 

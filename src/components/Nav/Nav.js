@@ -3,7 +3,7 @@ import { ContainerLogoAndH2, Designer, H1Container, Header, Li, LinkA, Logo, Log
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleHamburguerHidden } from '../../redux/hamburguer/hamburguerActions';
-import { hoverPopUpAboutUs, hoverPopUpAlterations, hoverPopUpWeddingDresses } from '../../redux/popUp/popUpActions';
+import { hoverPopDesigners, hoverPopUpAboutUs, hoverPopUpAlterations, hoverPopUpWeddingDresses } from '../../redux/popUp/popUpActions';
 
 
 
@@ -13,7 +13,8 @@ function Nav() {
   const dispatch = useDispatch()
   const popAbout = useSelector((state)=> state.popUp.hover1);
   const popUpWed = useSelector((state) => state.popUp.hover3);
-  const popUpAlt = useSelector((state) => state.popUp.hover2)
+  const popUpAlt = useSelector((state) => state.popUp.hover2);
+  const popUpDes = useSelector((state)=> state.popUp.hover4);
 
 
   
@@ -40,10 +41,22 @@ function Nav() {
       setFocuss(false)
   }
 
+  const popUpDesigners = () => {
+      dispatch(hoverPopDesigners())
+      setFocuss(false)
+  }
 
   
   const toggleMenu = () => {
       dispatch(toggleHamburguerHidden())
+  }
+
+  const pushVictoriaJanes = () => {
+      history.push('/designers/victoria-janes')
+  }
+
+  const pushRonaldJoyce = () => {
+    history.push('/designers/ronald-joyce')
   }
 
 
@@ -121,7 +134,22 @@ function Nav() {
               
                 </Li>
                
-                <Li onClick={fucusHome}>Designers</Li>
+                <Li onClick={fucusHome} onMouseEnter={popUpDesigners} onMouseLeave={popUpDesigners}>
+                 Designers
+                 <PopUpWeddingDresses popUp={popUpDes ? 'true' : 'false'} style={{height:'80px'}}>
+                    <UlWeddingDresses>
+                       
+                       <LiWeddingDresses onClick={pushRonaldJoyce}>
+                            Ronald Joyce
+                       </LiWeddingDresses>
+
+                       <LiWeddingDresses onClick={pushVictoriaJanes}>
+                            Victoria Jane
+                       </LiWeddingDresses>
+
+                    </UlWeddingDresses>
+                 </PopUpWeddingDresses>
+                 </Li>
 
 
                 <Li onClick={fucusHome} onMouseEnter={popUpAlterations} onMouseLeave={popUpAlterations}>

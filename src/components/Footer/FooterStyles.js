@@ -24,7 +24,7 @@ align-items: center;
 margin-top: 20px;
 @media screen and (max-width: 865px) {
  width: 100%;
-  
+ margin-top: 0px;
    
   }
 `;
@@ -72,7 +72,7 @@ margin-top: 20px;
 
 @media screen and (max-width: 865px) {
  width: 100%;
-  
+ margin-top: 0px;
    
   }
 
@@ -125,6 +125,7 @@ align-items: center;
 margin-top: 20px;
 @media screen and (max-width: 865px) {
  width: 100%;
+ margin-top: 0px;
   
    
   }
@@ -134,7 +135,7 @@ margin-top: 20px;
 export const FooterBox4 = styled.div`
 width: 25%;
 height: 200px;
-border: solid 1px black;
+//border: solid 1px black;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -146,9 +147,16 @@ margin-top: 20px;
 margin-bottom: 20px;
 @media screen and (max-width: 865px) {
  width: 100%;
-  
+ margin-top: 0px;
    
   }
+
+`
+
+export const IframeFooter = styled.iframe`
+border: none;
+height: 100%;
+width: 100%;
 
 `
 

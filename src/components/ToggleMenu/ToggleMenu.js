@@ -21,7 +21,7 @@ function ToggleMenu() {
               </ButtonMenu>
             </LiBurguer>
 
-            <DetailsLanguage open>
+            <DetailsLanguage >
               <SummaryLanguage>
                 ABOUT US
               </SummaryLanguage>
@@ -33,7 +33,7 @@ function ToggleMenu() {
               </ButtonMenu>
             </DetailsLanguage>
 
-            <DetailsLanguage open>
+            <DetailsLanguage >
               <SummaryLanguage> 
                WEDDING DRESSES
               </SummaryLanguage>
@@ -55,13 +55,32 @@ function ToggleMenu() {
 
             </DetailsLanguage>
 
-            <LiBurguer>
-              <ButtonMenu>
-              DESIGNERS  
-             </ButtonMenu>
-            </LiBurguer>
+          
+            <DetailsLanguage >
+              <SummaryLanguage>
+                DESIGNERS
+              </SummaryLanguage>
+              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'15px'}}>
+                RONALD JOYCE
+              </ButtonMenu>
+              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'15px', 'marginBottom':'-10px'}}>
+                VICTORIA JANE
+              </ButtonMenu>
+            </DetailsLanguage>
+
+            {/* <DetailsLanguage open>
+              <SummaryLanguage>
+                ALTERATIONS
+              </SummaryLanguage>
+              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'15px'}}>
+               PRICE LIST
+              </ButtonMenu>
+              <ButtonMenu style={{'fontSize': '12px ', 'display':'block', 'marginTop':'15px', 'marginBottom':'-10px'}}>
+               OUR CREATIONS
+              </ButtonMenu>
+            </DetailsLanguage> */}
             
-            <DetailsLanguage open>
+            <DetailsLanguage>
               <SummaryLanguage>
                 ALTERATIONS
               </SummaryLanguage>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
+import ScrollContainer from "react-indiana-drag-scroll";
 
 export const Menu = styled.div`
 width: 70%;
@@ -7,6 +8,8 @@ height: 100vh;
 background-color: aliceblue;
 background-color: #f0f4f8;
 //background-image: url('./assets/marcaDeAgua.png');
+
+
 
 position: fixed;
 
@@ -25,9 +28,11 @@ display: block;
 
 `
 
-export const MenuContainer = styled.div`
-height: 100%;
+export const MenuContainer = styled(ScrollContainer)`
+height: 80%;
 width: 100%;
+overflow-y: scroll;
+overflow-x: scroll;
 
 `
 

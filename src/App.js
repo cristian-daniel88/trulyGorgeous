@@ -10,12 +10,15 @@ import Home from './pages/Home';
 import Cover from './components/Cover/Cover';
 import Contact from './pages/Contact';
 import Footer from './components/Footer/Footer';
+import { HashRouter } from 'react-router-dom';
 
 
 
 function App() {
   return (
     <>
+    <HashRouter>
+
     <GlobalStyles/>
     <Nav/>
     <Top/>
@@ -47,6 +50,7 @@ function App() {
        Footer
      </Footer>
     
+    </HashRouter>
     </>
   );
 }

@@ -7,11 +7,11 @@ background-color: white;
 z-index: 600;
 
 @media screen and (max-width: 865px) {
-    height: 120px;
+    height: 100px;
     //background-color: green;
   }
   @media screen and (max-width: 300px) {
-    height: 107px;
+    height: 100px;
     //background-color: aliceblue ;
   }
 

@@ -65,10 +65,11 @@ margin-top: 10px;
 
 `;
 
-export const H1Container = styled.div`
+export const H1Container = styled.h1`
 width: 100%;
 display: flex;
 justify-content: center;
+font-size: 16px;
 `
 
 

@@ -13,7 +13,7 @@ flex-wrap: wrap;
 export const FooterBox1 = styled.div`
 width: 25%;
 height: 200px;
-border: solid 1px black;
+//border: solid 1px black;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -48,17 +48,19 @@ color: white;
 font-family: 'Carattere', cursive !important;
 font-size: 40px;
 margin-bottom: 13px;
+text-align: center;
 `
 export const P2 = styled.p`
 font-size: 11px;
 letter-spacing: 2px;
+text-align: center;
 `
 
 export const FooterBox2 = styled.div`
 
 width: 25%;
 height: 200px;
-border: solid 1px black;
+//border: solid 1px black;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -76,10 +78,43 @@ margin-top: 20px;
 
 `
 
+export const FooterBox2Container = styled.div`
+width: 90%;
+//border: solid 1px white;
+height: 90%;
+margin: auto;
+
+
+`
+
+export const P3 = styled.p`
+text-align: center;
+color: white;
+margin-top: 20px;
+font-size: 20px;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+font-family: 'Cormorant Garamond', serif;
+font-family:'Open Sans';
+
+`
+
+export const P4 = styled.p`
+color: white;
+text-align: center;
+margin-top: 20px;
+
+
+`
+
+
+
 export const FooterBox3 = styled.div`
 width: 25%;
 height: 200px;
-border: solid 1px black;
+//border: solid 1px black;
 display: flex;
 justify-content: center;
 align-items: center;

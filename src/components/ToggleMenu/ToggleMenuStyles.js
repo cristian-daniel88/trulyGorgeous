@@ -32,7 +32,7 @@ export const MenuContainer = styled(ScrollContainer)`
 height: 80%;
 width: 100%;
 overflow-y: scroll;
-overflow-x: scroll;
+
 
 `
 

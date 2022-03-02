@@ -3,7 +3,7 @@ export const designers = [
     {
         uid: 0,
         name:'Ronald Joyce',
-        brand: './ronald-joyce.png',
+        brand: 'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251806/designers/ronaldJoyce/ronald-joyce_zadxej.png',
         models: [
 
             { 
@@ -163,6 +163,7 @@ export const designers = [
     {
         uid: 1,
         name:'Victoria Jane',
+        brand: '',
         models: [
 
             { 

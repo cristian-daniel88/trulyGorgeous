@@ -1,6 +1,6 @@
 import React from 'react'
 import { designers } from '../../database/designers'
-import { BrandDesigner, DesignersContainer, NameDesigner } from './DesignersStyles'
+import { BrandDesigner, DesignersContainer} from './DesignersStyles'
 
 
 function RonaldJoyce() {

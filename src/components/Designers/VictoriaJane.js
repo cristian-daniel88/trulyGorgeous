@@ -1,9 +1,12 @@
 import React from 'react'
-import { DesignersContainer } from './DesignersStyles'
+import { DesignersContainer, NameDesigner } from './DesignersStyles'
 
 function VictoriaJane() {
   return (
-    <DesignersContainer>VictoriaJane</DesignersContainer>
+    <DesignersContainer>
+        <NameDesigner>Victoria Jane</NameDesigner>
+
+    </DesignersContainer>
   )
 }
 

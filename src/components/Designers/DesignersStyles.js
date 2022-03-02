@@ -17,6 +17,8 @@ font-size: 2em;
 font-family: 'Cormorant Garamond', serif;
 font-weight: 500;
 color: #332f40b5;
+letter-spacing: 2px;
+text-transform: uppercase;
 
 `
 

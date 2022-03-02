@@ -10,12 +10,12 @@ export const designers = [
              uid: '69714',   
              name: '', 
              imgs: [
+                 
+               'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251805/designers/ronaldJoyce/69714/69714-1342_ngn7xr.jpg',
 
                'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251806/designers/ronaldJoyce/69714/69714-1428_amcmoc.jpg',
                
                'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251805/designers/ronaldJoyce/69714/69714-1386_ddyuml.jpg',
-
-               'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251805/designers/ronaldJoyce/69714/69714-1342_ngn7xr.jpg',
 
                'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251804/designers/ronaldJoyce/69714/69714-1269_jrr2v1.jpg',
 
@@ -45,10 +45,10 @@ export const designers = [
                 uid: '69555',   
                 name: '', 
                 imgs: [
+                    
+                  'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251820/designers/ronaldJoyce/69555/69555_5144_xgpzo8.jpg',
 
                   'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251826/designers/ronaldJoyce/69555/69555_5187_gvbtjo.jpg',
-
-                  'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251820/designers/ronaldJoyce/69555/69555_5144_xgpzo8.jpg',
 
                   'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251800/designers/ronaldJoyce/69555/69555_5031_uphsxm.jpg',
 
@@ -100,6 +100,8 @@ export const designers = [
                 uid: '69153',   
                 name: '', 
                 imgs: [
+                
+                 'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251793/designers/ronaldJoyce/69153/69153-0049_cmztfu.jpg',
 
                  'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251795/designers/ronaldJoyce/69153/69153-0164_wqfyta.jpg',
                  
@@ -109,9 +111,8 @@ export const designers = [
 
                  'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251795/designers/ronaldJoyce/69153/69153-0143R_z7bmoc.jpg',
 
-                 'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251793/designers/ronaldJoyce/69153/69153-0049R_p5g8ig.jpg',
+                 'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251793/designers/ronaldJoyce/69153/69153-0049R_p5g8ig.jpg'
 
-                 'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251793/designers/ronaldJoyce/69153/69153-0049_cmztfu.jpg'
 
                 ],
             },

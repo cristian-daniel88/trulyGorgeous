@@ -29,6 +29,10 @@ a {
 li {
     
 }
+
+body {
+    background-color: #f0f4f8 !important;
+}
 `
 
 

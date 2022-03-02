@@ -47,19 +47,25 @@ margin: auto;
 margin-bottom: 20px;
 background-color: white;
 border: solid 1px #e8d8d8;
+border-radius: 10px;
+
+padding-left : 20px;
+display: flex;
+align-items: center;
 `
 
 export const MainPhotoContainer = styled.div`
 
-width: 40%;
-height: 700px; 
-//border: solid 1px black;
-padding: 0%;
+width: 30%;
+height: 660px; 
+
 background-image: ${({img})=> `url(${img})`};
 background-position: center;
 background-repeat: no-repeat;
-background-size: contain;
+background-size: cover;
+border: solid 3px #e8d8d8;
 
+border-radius: 10px;
 
 
 `

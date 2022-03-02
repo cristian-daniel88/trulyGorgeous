@@ -63,7 +63,7 @@ background-image: ${({img})=> `url(${img})`};
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-border: solid 3px #e8d8d8;
+border: solid 1px #e8d8d8;
 
 border-radius: 10px;
 

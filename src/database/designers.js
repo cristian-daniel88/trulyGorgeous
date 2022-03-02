@@ -174,7 +174,15 @@ export const designers = [
             { 
                 uid: '18563s',   
                 name: '', 
-                imgs: [],
+                imgs: [
+                  
+                  'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251821/designers/victoriaJane/18563s/18563S_031_puyikh.jpg',
+                  
+                  'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251817/designers/victoriaJane/18563s/18563S_077_q4wtg0.jpg',
+
+                  'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251817/designers/victoriaJane/18563s/18563S_042_lkz6m1.jpg'
+
+                ],
             },
             { 
                 uid: '18501',   
@@ -188,7 +196,7 @@ export const designers = [
                   'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251821/designers/victoriaJane/18501/18501-02_23894_nrqmcg.jpg',
 
                   'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251817/designers/victoriaJane/18501/18501-02_23745_goz5cz.jpg'
-                  
+
                 ],
             },
             { 

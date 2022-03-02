@@ -204,7 +204,17 @@ export const designers = [
             { 
                 uid: '18158',   
                 name: '', 
-                imgs: [],
+                imgs: [
+
+                  'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251811/designers/victoriaJane/18158/18158_2323_mcknjd.jpg',
+                  
+                  'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251811/designers/victoriaJane/18158/18158_2332_nzn8wv.jpg',
+
+                  'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251810/designers/victoriaJane/18158/18158_2246_aunh7w.jpg',
+
+                  'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251810/designers/victoriaJane/18158/18158_2231_a3kfzq.jpg'
+
+                ],
             },
             { 
                 uid: '18053',   
@@ -218,13 +228,21 @@ export const designers = [
                   'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251807/designers/victoriaJane/18053/18053-0035_tlknxv.jpg',
 
                   'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251807/designers/victoriaJane/18053/18053-0055_wryysa.jpg'
-                  
+
                 ],
             },
             { 
                 uid: '18057',   
                 name: '', 
-                imgs: [],
+                imgs: [
+                   
+                  'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251809/designers/victoriaJane/18057/18057-0043_ehp6b3.jpg',
+
+                  'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251809/designers/victoriaJane/18057/18057-0058_dnjfz4.jpg',
+
+                  'https://res.cloudinary.com/truly-gorgeous/image/upload/v1646251809/designers/victoriaJane/18057/18057-0095_bqghd9.jpg'
+
+                ],
             }
            ]
     },

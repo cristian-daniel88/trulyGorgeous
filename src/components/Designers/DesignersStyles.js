@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const DesignersContainer = styled.section`
 width: 100%;
-height: 100vh;
-//background-color: aqua;
-padding: 0 10%;
-padding-top: 40px;
+height: auto;
+background-color: #f0f4f8;
+padding-top: 10px;
+
+
 
 
 `
@@ -36,4 +37,38 @@ margin: auto;
   width: 70%;
    
   }
+`
+
+export const ProductContainer = styled.div`
+width: 95%;
+height: auto;
+display: flex;
+margin: auto;
+margin-bottom: 20px;
+background-color: white;
+border: solid 1px #e8d8d8;
+`
+
+export const MainPhotoContainer = styled.div`
+
+width: 40%;
+height: 700px; 
+//border: solid 1px black;
+padding: 0%;
+background-image: ${({img})=> `url(${img})`};
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+
+
+
+`
+
+export const GridPhotoContainer = styled.div`
+
+width: 60%;
+height: 700px;
+//border: solid 1px black;
+
+
 `

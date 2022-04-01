@@ -14,6 +14,7 @@ import { HashRouter } from 'react-router-dom';
 import Aside from './components/Aside/Aside';
 import VictoriaJane from './components/Designers/VictoriaJane';
 import RonaldJoyce from './components/Designers/RonaldJoyce';
+import AssetsBottom from './components/AssetsBottom/AssetsBottom';
 
 
 
@@ -62,6 +63,7 @@ function App() {
     <Aside/>
 
      <Footer/>
+     <AssetsBottom/>
     
        
     

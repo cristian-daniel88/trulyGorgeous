@@ -10,7 +10,7 @@ const sliderReducer = (state = INITIAL_STATE, action) => {
     case HOVER_SLIDER:
       return {
         ...state,
-        hover: !state.hover,
+        hover: action.payload,
       };
       
     case SLIDER_MANUAL:

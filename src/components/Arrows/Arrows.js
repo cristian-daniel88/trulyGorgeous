@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { ArrowLeft, ArrowLeftPhone, ArrowRight, ArrowRightPhone, ArrowsBox, ArrowsBoxL, ArrowsBoxR, ArrowsColumnLeft, ArrowsColumnRight, ArrowsContainer } from './ArrowsStyles'
 import {sliderManual} from '../../redux/slider/sliderActions'
+import { countLess, countPlus, countPut } from '../../redux/count/countActions';
 function Arrows({countFunction, cuenta}) {
 
   const hover = useSelector((state)=> state.slider.hover);
@@ -11,18 +12,22 @@ function Arrows({countFunction, cuenta}) {
     dispatch(sliderManual())
     if(cuenta == 3){
       countFunction(1)
+      dispatch(countPut(1))
       return
    }  
     countFunction(cuenta + 1);
+    dispatch(countPlus())
   }
 
   const backPhoto = () => {
     dispatch(sliderManual())
     if(cuenta == 1){
       countFunction(3)
+      dispatch(countPut(3))
       return
    }  
     countFunction(cuenta - 1);
+    dispatch(countLess())
   }
 
 

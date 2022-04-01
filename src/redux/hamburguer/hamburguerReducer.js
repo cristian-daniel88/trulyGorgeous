@@ -9,7 +9,7 @@ const hamburguerReducer = (state = INITIAL_STATE, action) => {
     case TOGGLE_HAMBURGUER_HIDDEN:
       return {
         ...state,
-        hidden: !state.hidden,
+        hidden: action.payload,
       };
 
 

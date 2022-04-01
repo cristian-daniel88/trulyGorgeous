@@ -14,25 +14,25 @@ const popUpReducer = (state = INITIAL_STATE, action) => {
     case HOVER_ABOUT:
       return {
         ...state,
-        hover1: !state.hover1,
+        hover1: action.payload,
       };
 
     case HOVER_ALTERATIONS:
         return {
           ...state,
-          hover2: !state.hover2,
+          hover2: action.payload,
         };
 
     case HOVER_WEDDING:
           return {
             ...state,
-            hover3: !state.hover3,
+            hover3: action.payload,
           };
 
     case HOVER_DESIGNERS:
       return {
         ... state,
-        hover4: !state.hover4,
+        hover4: action.payload,
       }
     
     default:

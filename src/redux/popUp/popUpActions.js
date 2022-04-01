@@ -5,21 +5,25 @@ export const HOVER_DESIGNERS = "HOVER_DESIGNERS";
 
 
 
-export const hoverPopUpWeddingDresses = () => ({
+export const hoverPopUpWeddingDresses = (value) => ({
   type: HOVER_WEDDING,
+  payload:value,
 });
 
-export const hoverPopUpAlterations = () => ({
+export const hoverPopUpAlterations = (value) => ({
     type: HOVER_ALTERATIONS,
+    payload: value
   });
 
 
-export const hoverPopUpAboutUs = () => ({
+export const hoverPopUpAboutUs = (value) => ({
     type: HOVER_ABOUT,
+    payload: value,
   });
 
-export const hoverPopDesigners = () => ({
+export const hoverPopDesigners = (value) => ({
   type: HOVER_DESIGNERS,
+  payload: value
 })
 
 

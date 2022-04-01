@@ -4,22 +4,40 @@ import Arrows from '../Arrows/Arrows'
 import Balls from '../Balls/Balls'
 import { useDispatch, useSelector } from 'react-redux'
 import { hoverSlider, sliderManual } from '../../redux/slider/sliderActions'
+import { countPlus, countPut } from '../../redux/count/countActions'
 
 
 
 
-function HomeBody() {
-  const [count, setCount] = useState(1)
+
+
+
+
+function HomeBody({toggle}) {
+  const count2 = useSelector(state => state.count.count)
+  //console.log(count2)
+  const [count, setCount] = useState(1);
+
+
+  
+  const [opaci , setOpaci] = useState(1);
+  
   const dispatch = useDispatch()
   const stopAutoSlider = useSelector((state)=> state.slider.slider)
   
   const stopSlider = () => {
-    dispatch(sliderManual())
+    dispatch(sliderManual(false))
+    dispatch(hoverSlider(true));
+
+    return
   }
 
-  const activateSlider = () => {
-    dispatch(hoverSlider())
-  }
+  const activateSlider = (value) => {
+    dispatch(hoverSlider(value))
+  } 
+
+
+
   
 
   useEffect(() => {
@@ -27,20 +45,66 @@ function HomeBody() {
 
     if (!stopAutoSlider) {
       let timer = setTimeout(()=> {
-        if(count == 3){
-          setCount(1)
+        setOpaci(1)
+        if(count2 == 3){
+          setCount(1);
+          dispatch(countPut(1))
           return
        }
-       setCount(count + 1)
-      } , 4000)
+       setCount(count2 + 1);
+       dispatch(countPlus())
+      } , 4000);
+
+      let timerOpacity1 = setTimeout(()=> {
+          setOpaci(.5)
+      } , 3000);
+
+      let timerOpacity2 = setTimeout(()=> {
+        setOpaci(.4)
+      } , 3100);
+
+      let timerOpacity3 = setTimeout(()=> {
+        setOpaci(.3)
+      } , 3200);
+
+      let timerOpacity4 = setTimeout(()=> {
+        setOpaci(.2)
+      } , 3300);
+
+      let timerOpacity5 = setTimeout(()=> {
+        setOpaci(.1)
+      } , 3400);
+
+      let timerOpacity6 = setTimeout(()=> {
+        setOpaci(0)
+      } , 3500);
+
+
+      
+
+
+
+
+
+
 
       return () => {
-        clearTimeout(timer)
+        clearTimeout(timer);
+        clearTimeout(timerOpacity1);
+        clearTimeout(timerOpacity2);
+        clearTimeout(timerOpacity3);
+        clearTimeout(timerOpacity4);
+        clearTimeout(timerOpacity5);
+        clearTimeout(timerOpacity6)
+        
+        
       }
 
     }
+
     
-  }, [count])
+    
+  }, [count2])
 
 
   
@@ -51,25 +115,59 @@ function HomeBody() {
 
   return (
    
-    <div onMouseEnter={activateSlider} onMouseLeave={activateSlider} style={{'overflowX':'hidden'}} onClick={stopSlider}>
+    <div onMouseEnter={() => activateSlider(true)} onMouseLeave={ () => activateSlider(false) } style={{'overflowX':'hidden'}} onClick={stopSlider}>
 
-    {count === 1 && (<BodyHome image={`./assets/banner${count}.jpg`}>
+    {count2 === 1 && (<BodyHome image={`./assets/banner${count2}.jpg`} op={opaci} indx={count2} toggle={toggle}>
+
+
     {/* <Letters titulo={'Truly Gorgeous'} letters={'Bridalwear'} button={'01243 788090'} cuenta={count} />   */}
+
+
+
     
     </BodyHome>)}
 
-    {count === 2 && (<BodyHome image={`./assets/banner${count}.jpg`}>
+    {count2 === 2 && (<BodyHome image={`./assets/banner${count2}.jpg`} op={opaci} indx={count2}>
+
+    <div
+    style={{
+      'position':'absolute',
+      'bottom':'0',
+      'right':'10px'
+    }}
+    >
+      <p
+      style={{
+        'fontSize':'10px',
+        'color':'white'
+
+      }}
+      >
+        MALCOLM HARRIS | PHOTOGRAPHY
+      </p>
+    </div>
     {/* <Letters titulo={'titulo 2'} letters={'letters 2'} button={'button 2'} cuenta={count}/> */}
+
+
+  
     </BodyHome>)}
 
-    {count === 3 && (<BodyHome image={`./assets/banner${count}.jpg`}>
+    {count2 === 3 && (<BodyHome image={`./assets/banner${count2}.jpg`} op={opaci}  indx={count2}>
     {/* <Letters  titulo={'titulo 3'}  letters={'letters3'} button={'button 3'} cuenta={count}/>  */}
-    </BodyHome>)}
 
-    <Arrows countFunction={setCount} cuenta={count}/>
-    <Balls bola={count}/>
 
     
+  
+    </BodyHome>)}
+
+    <Arrows countFunction={setCount} cuenta={count2}/>
+    <Balls bola={count2}/>
+
+
+   
+
+    
+
 
     </div>
   )

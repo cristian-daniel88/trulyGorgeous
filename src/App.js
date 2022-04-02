@@ -12,8 +12,7 @@ import Cover from './components/Cover/Cover';
 import Footer from './components/Footer/Footer';
 import { HashRouter } from 'react-router-dom';
 import Aside from './components/Aside/Aside';
-import VictoriaJane from './components/Designers/VictoriaJane';
-import RonaldJoyce from './components/Designers/RonaldJoyce';
+
 import AssetsBottom from './components/AssetsBottom/AssetsBottom';
 import ContactPage from './pages/ContactPage';
 import WeddingDressesPage from './pages/WeddingDressesPage';
@@ -24,6 +23,12 @@ import SophisticatedPage from './pages/SophisticatedPage';
 import DesignersPage from './pages/DesignersPage';
 import PalomaBlancaPage from './pages/PalomaBlancaPage';
 import RonaldJoycePages from './pages/RonaldJoycePages';
+import VictoriaJanePages from './pages/VictoriaJanePages';
+
+import AlanHannahPages from './pages/AlanHannahPages';
+import SofiaBiancaPages from './pages/SofiaBiancaPages';
+
+import LusanMandongusPage from './pages/LusanMandongusPage';
 
 
 
@@ -90,6 +95,24 @@ function App() {
     <Route exact path='/ronald-joyce'>
          <RonaldJoycePages/>
     </Route>
+
+    <Route exact path='/victoria-jane'>
+         <VictoriaJanePages/>
+    </Route>
+
+    <Route exact path='/alan-hannah'>
+         <AlanHannahPages/>
+    </Route>
+
+    <Route exact path='/sofia-bianca'>
+         <SofiaBiancaPages/>
+    </Route>
+
+
+    <Route exact path='/lusan-mandongus'>
+         <LusanMandongusPage/>
+    </Route>
+
 
 
 

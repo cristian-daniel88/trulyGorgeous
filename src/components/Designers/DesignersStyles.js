@@ -170,16 +170,15 @@ export const ModelNameTitle = styled.h4`
 export const DesignersMainContainer = styled.div`
   width: 60%;
   height: auto;
-  //background-color: #f0f4f8;
-
   margin: auto;
-
-  margin-top: ${({alterationsMargin}) => alterationsMargin && '200px'} ;
+  margin-top: ${({alterationsMargin}) => alterationsMargin && '200px'};
+  margin-top: ${({designer}) => designer && '50px'};
 
 
   @media screen and (max-width: 865px) {
     margin-top: ${({alterationsMargin}) => alterationsMargin && '150px'} ;
     margin:auto ;
+    display: ${({designer}) => designer && 'none'};
    
  
   }
@@ -246,3 +245,23 @@ export const TitleBrand = styled.div`
   color:#494261b5;
   //color: #a59797;
 `;
+
+
+export const DesignersPhoneDiv = styled.div`
+display:none ;
+
+
+@media screen and (max-width: 865px) {
+  
+    display: ${({designer}) => designer && 'flex'};
+    width:100% ;
+   // background-color:green ;
+    flex-direction:column ;
+    justify-content:center ;
+    align-items:center ;
+   
+ 
+  }
+
+
+`

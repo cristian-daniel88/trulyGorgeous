@@ -61,7 +61,7 @@ function SofiaBianca() {
               ""
             ) : (
               <NameDesigner style={{ margin: "30px" }}>
-                Ronald Joyce
+                Sofia Bianca
               </NameDesigner>
             )}
           </ProductContainerPhone>

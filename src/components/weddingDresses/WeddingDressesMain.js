@@ -34,7 +34,7 @@ function WeddingDressesMain() {
       </style>
       <DesignersMainContainer style={{ marginTop: "100px" }}>
         <DesignersCardContainer>
-          <LinkA href={"/fairytale"}>
+          <LinkA to={"/fairytale"}>
             <DesignersMainCard>
               <TitleBrand>
                 <p className="brandTitle">Fairytale</p>
@@ -42,7 +42,7 @@ function WeddingDressesMain() {
             </DesignersMainCard>
           </LinkA>
 
-          <LinkA href={"/romantic"}>
+          <LinkA to={"/romantic"}>
             <DesignersMainCard>
               <TitleBrand>
                 <p className="brandTitle">Romantic</p>
@@ -52,7 +52,7 @@ function WeddingDressesMain() {
         </DesignersCardContainer>
 
         <DesignersCardContainer>
-          <LinkA href={"/sophisticated"}>
+          <LinkA to={"/sophisticated"}>
             <DesignersMainCard>
               <TitleBrand>
                 <p className="brandTitle">Sophisticated</p>
@@ -60,7 +60,7 @@ function WeddingDressesMain() {
             </DesignersMainCard>
           </LinkA>
 
-          <LinkA href={"/elegant"}>
+          <LinkA to={"/elegant"}>
             <DesignersMainCard>
               <TitleBrand>
                 <p className="brandTitle">Elegant</p>

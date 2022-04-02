@@ -137,7 +137,7 @@ function Nav() {
             onMouseEnter={popUpWeddingIn}
             onMouseLeave={popUpWeddingOut}
           >
-            <LinkA href={"/wedding-dresses"}>
+            <LinkA to={"/wedding-dresses"}>
               <div onClick={popUpWeddingOut}>Wedding Dresses</div>
             </LinkA>
             <PopUp popUp={popUpWed ? "true" : "false"}>

@@ -16,6 +16,11 @@ import VictoriaJane from './components/Designers/VictoriaJane';
 import RonaldJoyce from './components/Designers/RonaldJoyce';
 import AssetsBottom from './components/AssetsBottom/AssetsBottom';
 import ContactPage from './pages/ContactPage';
+import WeddingDressesPage from './pages/WeddingDressesPage';
+import FairyTalePage from './pages/FairyTalePage';
+import ElegantPage from './pages/ElegantPage';
+import RomanticPage from './pages/RomanticPage';
+import SophisticatedPage from './pages/SophisticatedPage';
 
 
 
@@ -56,6 +61,30 @@ function App() {
     <Route exact path='/designers/ronald-joyce'>
          <RonaldJoyce/>
     </Route>
+
+    <Route exact path='/wedding-dresses'>
+         <WeddingDressesPage/>
+    </Route>
+
+    <Route exact path='/fairytale'>
+         <FairyTalePage/>
+    </Route>
+
+    <Route exact path='/elegant'>
+         <ElegantPage/>
+    </Route>
+
+    <Route exact path='/romantic'>
+         <RomanticPage/>
+    </Route>
+
+    <Route exact path='/sophisticated'>
+         <SophisticatedPage/>
+    </Route>
+
+
+
+
 
       
     </Switch>

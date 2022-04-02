@@ -126,7 +126,7 @@ function Nav() {
           </Li>
 
           <Li onClick={fucusHome}>
-            <LinkA to={"/our-boutique"}>
+            <LinkA to={"/about-us"}>
               <div onClick={popUpAboutOut}>About Us</div>
             </LinkA>
            

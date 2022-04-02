@@ -44,7 +44,7 @@ display: flex;
 `;
 
 export const UlBurguer = styled.ul`
-width: 80%;
+width: 90%;
 display: flex;
 justify-content: start;
 flex-direction: column;
@@ -63,7 +63,7 @@ margin-bottom: 10px;
 `;
 
 export  const ButtonBurguerContainer = styled.div`
-width: 20%;
+width: 10%;
 height: 100%;
 display: flex;
 justify-content: center;
@@ -88,7 +88,7 @@ display: block;
 margin: 15px;
 
 color: #683535;
-font-size: 1.3rem;
+
 `
 
 
@@ -96,49 +96,25 @@ export const SummaryLanguage = styled.summary`
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 font-family: 'Cormorant Garamond', serif;
 font-size: 15px;
+
 &:hover{
     color: #bf6c4a;
 
   }
 `
 
-export const ButtonMenuLanguage = styled.button`
-  background-color: transparent;
-  
-  cursor: ${(props) => (props.switch ? "" : "pointer")};
- 
-  border: none;
-  padding: 1px 3px;
-  color: #fff;
-  margin: 10px 5px;
- 
 
-  display: flex;
-  justify-content: space-between;
-  opacity: ${(props) => (props.switch ? ".3" : "1")};
-
-  
-
-  &:hover{
-    color: #ffffff;
-    text-shadow: 0 0 8px #0e54ea, 0 0 2px #0e54ea, 0 0 10px #0e54ea,
-      0 0 6px #0e54ea, 0 0 20px #0e54ea, 0 0 20px #0e54ea, 0 0 1px #0e54ea,
-      0 0 12px #0e54ea;
-      border: none;
-  }             
-
-
-`
 
 export const ButtonMenu = styled.button`
 border: none;
 background-color: transparent;
 color: #683535;
-font-size: 1.3rem;
+
 cursor: pointer;
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 font-family: 'Cormorant Garamond', serif;
 font-size: 15px;
+
 
 
 text-align: start;
@@ -147,7 +123,4 @@ text-align: start;
 
   }
 
- @media screen and (max-width: 300px) {
-  font-size: 14px;
-}
 `

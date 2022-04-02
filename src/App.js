@@ -29,6 +29,10 @@ import AlanHannahPages from './pages/AlanHannahPages';
 import SofiaBiancaPages from './pages/SofiaBiancaPages';
 
 import LusanMandongusPage from './pages/LusanMandongusPage';
+import AlterationsPage from './pages/AlterationsPage';
+import PriceListPage from './pages/PriceListPage';
+import OurCreationsPage from './pages/OurCreationsPage';
+import TestimonialsPage from './pages/TestimonialsPage';
 
 
 
@@ -112,6 +116,26 @@ function App() {
     <Route exact path='/lusan-mandongus'>
          <LusanMandongusPage/>
     </Route>
+
+    <Route exact path='/alterations'>
+         <AlterationsPage/>
+    </Route>
+
+    <Route exact path='/price-list'>
+         <PriceListPage/>
+    </Route>
+
+    
+    <Route exact path='/our-creations'>
+         <OurCreationsPage/>
+    </Route>
+
+    <Route exact path='/testimonials'>
+        <TestimonialsPage/>
+    </Route>
+
+
+
 
 
 

@@ -30,11 +30,8 @@ export const BoxAlterations = styled.button`
   font-family: "FuturaStd", sans-serif;
   border-radius: 3px;
   background-color:rgba(255,255,255,.9);
-  //font-weight: 300;
-  //letter-spacing: 5px;
-  //color: #a59797;
+ 
   color:#494261b5;
-  //font-size: 100%;
   &:hover {
     box-shadow: 2px 6px 13px -4px rgba(0, 0, 0, 0.54);
     transform: scale(1.1);

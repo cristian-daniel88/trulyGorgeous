@@ -208,7 +208,7 @@ export const DesignersMainCard = styled.div`
   padding: 10px;
   &:hover {
     box-shadow: 2px 6px 13px -4px rgba(0, 0, 0, 0.54);
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 
   @media screen and (min-width: 1016px) {

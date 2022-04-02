@@ -38,15 +38,15 @@ function Alterations() {
       </style>
       <DesignersMainContainer alterationsMargin='true'>
         <DesignersCardContainer>
-          <LinkA href={"/our-creations"}>
+          <LinkA to={"/our-creations"}>
             <DesignersMainCard >
               <TitleBrand>
-                <p className="brandTitle">Our Creations</p>
+                <p className="brandTitle">Our Creations</p> 
               </TitleBrand>
             </DesignersMainCard>
           </LinkA>
 
-          <LinkA href={"/price-list"}>
+          <LinkA to={"/price-list"}>
             <DesignersMainCard>
               <TitleBrand>
                 <p className="brandTitle">Price List</p>

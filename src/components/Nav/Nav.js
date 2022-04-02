@@ -214,7 +214,7 @@ function Nav() {
             onMouseEnter={popUpAlterationsOut}
             onMouseLeave={popUpAlterationsIn}
           >
-            <LinkA href={"/alterations"}>
+            <LinkA to={"/alterations"}>
               <div onClick={popUpAlterationsIn}>Alterations</div>
             </LinkA>
             <PopUp
@@ -222,11 +222,11 @@ function Nav() {
               style={{ width: "140px" }}
             >
               <PopUpUl popUp={popUpAlt ? "true" : "false"}>
-                <LinkA href={"/price-list"}>
+                <LinkA to={"/price-list"}>
                   <PopUpLi onClick={popUpAlterationsIn}>Price list</PopUpLi>
                 </LinkA>
 
-                <LinkA href={"/our-creations"}>
+                <LinkA to={"/our-creations"}>
                   <PopUpLi onClick={popUpAlterationsIn}>Our Creations</PopUpLi>
                 </LinkA>
               </PopUpUl>
@@ -234,7 +234,7 @@ function Nav() {
           </Li>
 
           <Li onClick={fucusHome}>
-            <LinkA href="/testimonials">Testimonials</LinkA>
+            <LinkA to="/testimonials">Testimonials</LinkA>
           </Li>
 
           <Li onClick={fucusHome}>

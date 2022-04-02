@@ -31,8 +31,8 @@ function DesignersMain() {
       >
         Designers
       </NameDesigner>
-      <DesignersMainContainer style={{ marginTop: "50px" }}>
-        <DesignersCardContainer>
+      <DesignersMainContainer style={{ marginTop: "50px" }} designer='true'>
+        <DesignersCardContainer >
           <LinkA to={"/paloma-blanca"}>
             <DesignersMainCard>
               <TitleBrand>
@@ -50,7 +50,7 @@ function DesignersMain() {
           </LinkA>
         </DesignersCardContainer>
 
-        <DesignersCardContainer>
+        <DesignersCardContainer designer='true'>
           <LinkA to={"/victoria-jane"}>
             <DesignersMainCard>
               <TitleBrand>
@@ -58,16 +58,18 @@ function DesignersMain() {
               </TitleBrand>
             </DesignersMainCard>
           </LinkA>
-          <DesignersMainCard>
+              
             <a href={"https://dianelegrandbridal.com/"} target="_blank">
+          <DesignersMainCard>
               <TitleBrand>
                 <p className="brandTitle">Diane Legrand</p>
               </TitleBrand>
-            </a>
           </DesignersMainCard>
+            </a>
+            
         </DesignersCardContainer>
 
-        <DesignersCardContainer>
+        <DesignersCardContainer designer='true'>
           <LinkA to={"/alan-hannah"}>
             <DesignersMainCard>
               <TitleBrand>
@@ -88,6 +90,7 @@ function DesignersMain() {
         <DesignersCardContainer
           style={{ justifyContent: "left" }}
           bottom="true"
+          designer='true'
         >
           <LinkA to={"/sofia-bianca"}>
             <DesignersMainCard>

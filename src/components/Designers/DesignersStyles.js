@@ -179,7 +179,9 @@ export const DesignersMainContainer = styled.div`
 
   @media screen and (max-width: 865px) {
     margin-top: ${({alterationsMargin}) => alterationsMargin && '150px'} ;
+    margin:auto ;
    
+ 
   }
 
 
@@ -190,6 +192,7 @@ export const DesignersCardContainer = styled.div`
 
   flex-wrap: wrap;
 
+
   @media screen and (min-width: 1016px) {
   }
 `;
@@ -197,6 +200,7 @@ export const DesignersCardContainer = styled.div`
 export const DesignersMainCard = styled.div`
   min-width: 200px;
   width: 300px;
+  width:250px ;
   display: flex;
   justify-content: center;
 
@@ -220,6 +224,9 @@ export const DesignersMainCard = styled.div`
   @media screen and (max-width: 405px) {
     margin: ${({alterations})=> alterations && '0'};
     width: ${({alterations})=> alterations && '250px'};
+   
+  
+  
    
   }
 `;

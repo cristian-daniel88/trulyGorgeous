@@ -191,18 +191,18 @@ function Nav() {
                 </a>
 
                 
-                <LinkA href={"/alan-hannah"}>
+                <LinkA to={"/alan-hannah"}>
                   <PopUpLi onClick={popUpDesignersOut}>Alan Hannah</PopUpLi>
                 </LinkA>
 
-                <LinkA href={"/sofia-bianca"}>
+                <LinkA to={"/sofia-bianca"}>
                   <PopUpLi onClick={popUpDesignersOut}>Sofia Bianca</PopUpLi>
                 </LinkA>
 
 
                 
 
-                <LinkA href={"/lusan-mandongus"}>
+                <LinkA to={"/lusan-mandongus"}>
                   <PopUpLi onClick={popUpDesignersOut}>Lusan Mandongus</PopUpLi>
                 </LinkA>
               </PopUpUl>

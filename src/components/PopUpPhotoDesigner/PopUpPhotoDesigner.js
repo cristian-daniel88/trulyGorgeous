@@ -5,6 +5,7 @@ import { CloseContainer, CloseIcon, MarcoPhoto, PhotoPopUp, PopUpPhoto } from '.
 
 function PopUpPhotoDesigner() {
   const popUpPhoto =  useSelector(state => state.popUpDesigner);
+  console.log(popUpPhoto.imgUrl)
   
   const dispatch = useDispatch()
   const click = (value , boolean) => {
@@ -17,7 +18,7 @@ function PopUpPhotoDesigner() {
         <CloseIcon/>
       </CloseContainer>
       
-      {console.log(popUpPhoto.imgUrl.split('/')[7])}
+     
 
       {popUpPhoto.imgUrl.split('/')[7] == 'ourBrides' ? (<><PhotoPopUp img={popUpPhoto.imgUrl} width='90%'/></>) : (<><PhotoPopUp src={popUpPhoto.imgUrl}/></>)}
       </MarcoPhoto>

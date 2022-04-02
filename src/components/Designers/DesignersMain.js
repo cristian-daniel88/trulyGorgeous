@@ -68,7 +68,7 @@ function DesignersMain() {
         </DesignersCardContainer>
 
         <DesignersCardContainer>
-          <LinkA href={"/alan-hannah"}>
+          <LinkA to={"/alan-hannah"}>
             <DesignersMainCard>
               <TitleBrand>
                 <p className="brandTitle">Alan Hannah</p>
@@ -76,7 +76,7 @@ function DesignersMain() {
             </DesignersMainCard>
           </LinkA>
 
-          <LinkA href={"/lusan-mandongus"}>
+          <LinkA to={"/lusan-mandongus"}>
             <DesignersMainCard>
               <TitleBrand>
                 <p className="brandTitle">Lusan Mandongus</p>
@@ -89,7 +89,7 @@ function DesignersMain() {
           style={{ justifyContent: "left" }}
           bottom="true"
         >
-          <LinkA href={"/sofia-bianca"}>
+          <LinkA to={"/sofia-bianca"}>
             <DesignersMainCard>
               <TitleBrand>
                 <p className="brandTitle">Sofia Bianca</p>

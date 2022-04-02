@@ -16,6 +16,7 @@ function SliderContainer({photoMain, i}) {
   const click = (value, booleano) => {
   
     dispatch(clickPopUpPhoto(value, booleano))
+ 
   }
   return (
 

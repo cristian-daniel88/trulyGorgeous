@@ -23,6 +23,7 @@ import RomanticPage from './pages/RomanticPage';
 import SophisticatedPage from './pages/SophisticatedPage';
 import DesignersPage from './pages/DesignersPage';
 import PalomaBlancaPage from './pages/PalomaBlancaPage';
+import RonaldJoycePages from './pages/RonaldJoycePages';
 
 
 
@@ -55,14 +56,7 @@ function App() {
         <ContactPage/>
     </Route>
 
-    
-    <Route exact path='/designers/victoria-janes'>
-         <VictoriaJane/>
-    </Route>
-
-    <Route exact path='/designers/ronald-joyce'>
-         <RonaldJoyce/>
-    </Route>
+  
 
     <Route exact path='/wedding-dresses'>
          <WeddingDressesPage/>
@@ -92,6 +86,11 @@ function App() {
     <Route exact path='/paloma-blanca'>
          <PalomaBlancaPage/>
     </Route>
+
+    <Route exact path='/ronald-joyce'>
+         <RonaldJoycePages/>
+    </Route>
+
 
 
 

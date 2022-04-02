@@ -17,7 +17,7 @@ function DesignersMain() {
     <DesignersContainer
       style={{
         "background-image": "url('./assets/backgroundA.jpg')",
-        'height':'100vh'
+        'height':'auto'
         //"backgroundRepeat":"no-repeat",
         //"backgroundPosition":"center",
         //"backgroundSize":"cover"
@@ -30,6 +30,7 @@ function DesignersMain() {
       <NameDesigner
         style={{
           color: "rgb(115 112 137)",
+          'marginTop':'50px'
         }}
         >
         Designers

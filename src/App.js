@@ -21,6 +21,8 @@ import FairyTalePage from './pages/FairyTalePage';
 import ElegantPage from './pages/ElegantPage';
 import RomanticPage from './pages/RomanticPage';
 import SophisticatedPage from './pages/SophisticatedPage';
+import DesignersPage from './pages/DesignersPage';
+import PalomaBlancaPage from './pages/PalomaBlancaPage';
 
 
 
@@ -80,6 +82,15 @@ function App() {
 
     <Route exact path='/sophisticated'>
          <SophisticatedPage/>
+    </Route>
+
+    
+    <Route exact path='/designers'>
+         <DesignersPage/>
+    </Route>
+
+    <Route exact path='/paloma-blanca'>
+         <PalomaBlancaPage/>
     </Route>
 
 

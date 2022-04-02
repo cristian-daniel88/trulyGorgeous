@@ -166,7 +166,7 @@ function Nav() {
             onMouseEnter={popUpDesignersIn}
             onMouseLeave={popUpDesignersOut}
           >
-            <LinkA href={"/designers"}>
+            <LinkA to={"/designers"}>
               <div onClick={popUpDesignersOut}>Designers</div>
             </LinkA>
             <PopUp
@@ -174,15 +174,15 @@ function Nav() {
               style={{ width: "180px" }}
             >
               <PopUpUl popUp={popUpDes ? "true" : "false"}>
-                <LinkA href={"/paloma-blanca"}>
+                <LinkA to={"/paloma-blanca"}>
                   <PopUpLi onClick={popUpDesignersOut}>Paloma Blanca</PopUpLi>
                 </LinkA>
 
-                <LinkA href="/ronald-joyce">
+                <LinkA to="/ronald-joyce">
                   <PopUpLi onClick={popUpDesignersOut}>Ronald Joyce</PopUpLi>
                 </LinkA>
 
-                <LinkA href={"/victoria-jane"}>
+                <LinkA to={"/victoria-jane"}>
                   <PopUpLi onClick={popUpDesignersOut}>Victoria Jane</PopUpLi>
                 </LinkA>
 

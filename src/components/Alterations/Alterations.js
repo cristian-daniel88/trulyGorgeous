@@ -19,6 +19,7 @@ function Alterations() {
         'backgroundRepeat':'no-repeat',
         'backgroundSize':'cover',
          height: '100vh',
+         
        
       }}
     >
@@ -36,26 +37,35 @@ function Alterations() {
         @import
         url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
       </style>
-      <DesignersMainContainer alterationsMargin='true'>
-        <DesignersCardContainer>
-          <LinkA to={"/our-creations"}>
-            <DesignersMainCard >
-              <TitleBrand>
-                <p className="brandTitle">Our Creations</p> 
-              </TitleBrand>
-            </DesignersMainCard>
-          </LinkA>
 
-          <LinkA to={"/price-list"}>
-            <DesignersMainCard>
+
+      <DesignersCardContainer style={{
+        'display':'flex',
+        'justifyContent':'center',
+        'alignItems':'center',
+        'height':'70%'
+      }}>
+          <LinkA to={"/price-list"} >
+            <DesignersMainCard alterations='true'>
               <TitleBrand>
                 <p className="brandTitle">Price List</p>
               </TitleBrand>
             </DesignersMainCard>
           </LinkA>
+
+          <LinkA to="/our-creations">
+          <DesignersMainCard alterations='true'>
+              <TitleBrand>
+                <p className="brandTitle">Our Creations</p>
+              </TitleBrand>
+          </DesignersMainCard>
+          </LinkA>
+
         </DesignersCardContainer>
 
-      </DesignersMainContainer>
+
+
+
     </DesignersContainer>
   );
 }

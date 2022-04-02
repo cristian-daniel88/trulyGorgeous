@@ -206,6 +206,7 @@ export const DesignersMainCard = styled.div`
   cursor: pointer;
   margin-bottom: 50px;
   padding: 10px;
+  margin: ${({alterations})=> alterations && '50px'};
   &:hover {
     box-shadow: 2px 6px 13px -4px rgba(0, 0, 0, 0.54);
     transform: scale(1.2);
@@ -213,6 +214,13 @@ export const DesignersMainCard = styled.div`
 
   @media screen and (min-width: 1016px) {
     justify-content: ${({ bottom }) => bottom == "true" && "center"};
+  }
+
+  
+  @media screen and (max-width: 405px) {
+    margin: ${({alterations})=> alterations && '0'};
+    width: ${({alterations})=> alterations && '250px'};
+   
   }
 `;
 

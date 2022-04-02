@@ -142,19 +142,19 @@ function Nav() {
             </LinkA>
             <PopUp popUp={popUpWed ? "true" : "false"}>
               <PopUpUl popUp={popUpWed ? "true" : "false"}>
-                <LinkA href={"/fairytale"}>
+                <LinkA to={"/fairytale"}>
                   <PopUpLi onClick={popUpWeddingOut}>Fairytale</PopUpLi>
                 </LinkA>
 
-                <LinkA href={"/romantic"}>
+                <LinkA to={"/romantic"}>
                   <PopUpLi onClick={popUpWeddingOut}>Romantic</PopUpLi>
                 </LinkA>
 
-                <LinkA href={"/sophisticated"}>
+                <LinkA to={"/sophisticated"}>
                   <PopUpLi onClick={popUpWeddingOut}>Sophisticated</PopUpLi>
                 </LinkA>
 
-                <LinkA href={"/elegant"}>
+                <LinkA to={"/elegant"}>
                   <PopUpLi onClick={popUpWeddingOut}>Elegant</PopUpLi>
                 </LinkA>
               </PopUpUl>

@@ -7,13 +7,7 @@ function FairyTalePage() {
     <>
      <PopUpPhotoDesigner/>
      <Fairytale/>
-     hooooooooooooooooooooooooooo
-
-
-     eqgwrhw
-     HashRouteraj
-
-     jry
+   
      
     </>
   )

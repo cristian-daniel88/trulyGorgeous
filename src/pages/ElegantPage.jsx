@@ -1,8 +1,13 @@
 import React from 'react'
+import PopUpPhotoDesigner from '../components/PopUpPhotoDesigner/PopUpPhotoDesigner'
+import Elegant from '../components/weddingDresses/Elegant'
 
 function ElegantPage() {
   return (
-    <div>ElegantPage</div>
+    <>
+     <PopUpPhotoDesigner/>
+     <Elegant/>
+    </>
   )
 }
 

@@ -238,7 +238,7 @@ function Nav() {
           </Li>
 
           <Li onClick={fucusHome}>
-            <LinkA href="/contact">Contact</LinkA>
+            <LinkA to="/contact">Contact</LinkA>
           </Li>
         </Ul>
         <MenuBurguer onClick={toggleMenu} />

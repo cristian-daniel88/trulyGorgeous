@@ -1,12 +1,12 @@
 import React from 'react'
 import ContactContainer from '../components/ContactContainer/ContactContainer'
 
-function Contact() {
+function ContactPage() {
   return (
-    <ContactContainer>
-        
-    </ContactContainer>
+    <>
+    <ContactContainer/>
+    </>
   )
 }
 
-export default Contact
+export default ContactPage

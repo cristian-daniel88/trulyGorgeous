@@ -8,13 +8,14 @@ import Top from './components/Top/Top';
 import ToggleMenu from './components/ToggleMenu/ToggleMenu';
 import Home from './pages/Home';
 import Cover from './components/Cover/Cover';
-import Contact from './pages/Contact';
+
 import Footer from './components/Footer/Footer';
 import { HashRouter } from 'react-router-dom';
 import Aside from './components/Aside/Aside';
 import VictoriaJane from './components/Designers/VictoriaJane';
 import RonaldJoyce from './components/Designers/RonaldJoyce';
 import AssetsBottom from './components/AssetsBottom/AssetsBottom';
+import ContactPage from './pages/ContactPage';
 
 
 
@@ -44,7 +45,7 @@ function App() {
     </Route>
 
     <Route exact path='/contact'>
-        <Contact/>
+        <ContactPage/>
     </Route>
 
     

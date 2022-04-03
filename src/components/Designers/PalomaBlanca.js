@@ -219,7 +219,7 @@ function PalomaBlanca() {
 
         <NameDesigner>Paloma Blanca</NameDesigner>
 
-        <OurCreationsBox palomaSize='true'>
+        <OurCreationsBox palomaSize='true' style={{'marginBottom':'50px'}}>
           <OurCreationsBox2>
             <OurCreationsBox1
               src={ronaldModelsObject[4].imgs[fift]}

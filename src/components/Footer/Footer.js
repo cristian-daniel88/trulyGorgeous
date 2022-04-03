@@ -40,13 +40,13 @@ function Footer() {
         <FooterBox2Container>
           <P3>Opening Hours</P3>
           <P4 hours='true'>
-            <div>Monday: 10hs to 5pm</div><br/>
-            <div>Tuesday: 10hs to 5pm</div><br/>
-            <div>Wednesday: 10hs to 5pm</div><br/>
-            <div>Thursday: 10hs to 5pm</div><br/>
-            <div>Friday: 10hs to 5pm</div><br/>
-            <div>Saturday: 10hs to 5pm</div><br/>
-            <div>Sunday: Closed</div>
+            <div style={{'userSelect':'text'}}>Monday: 10hs to 5pm</div><br/>
+            <div style={{'userSelect':'text'}}>Tuesday: 10hs to 5pm</div><br/>
+            <div style={{'userSelect':'text'}}>Wednesday: 10hs to 5pm</div><br/>
+            <div style={{'userSelect':'text'}}>Thursday: 10hs to 5pm</div><br/>
+            <div style={{'userSelect':'text'}}>Friday: 10hs to 5pm</div><br/>
+            <div style={{'userSelect':'text'}}>Saturday: 10hs to 5pm</div><br/>
+            <div style={{'userSelect':'text'}}>Sunday: Closed</div>
           </P4>
         </FooterBox2Container>
       </FooterBox2>

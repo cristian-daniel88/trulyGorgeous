@@ -33,6 +33,7 @@ import AlterationsPage from './pages/AlterationsPage';
 import PriceListPage from './pages/PriceListPage';
 import OurCreationsPage from './pages/OurCreationsPage';
 import TestimonialsPage from './pages/TestimonialsPage';
+import ContactFooter from './components/ContactFooter/ContactFooter';
 
 
 
@@ -150,7 +151,12 @@ function App() {
     <Aside/>
 
      <Footer/>
-     <AssetsBottom/>
+
+
+
+    {/* <AssetsBottom/> */}
+
+     <ContactFooter/>
     
        
     

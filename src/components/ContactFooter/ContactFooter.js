@@ -35,6 +35,8 @@ function ContactFooter() {
         </PContactFooter>
       </a>
 
+    <div style={{'width':'280px'}}>
+
       <AInstagram
         style={{
           cursor: "pointer",
@@ -44,13 +46,14 @@ function ContactFooter() {
         }}
         href="https://www.instagram.com/trulygorgeousbridal"
         target="_blank"
-      >
+        >
         <PContactFooter>
           <IconInstagram />
 
           <p style={{ color: "#ffffff", 'marginLeft':'5px', 'fontFamily':`'Raleway',sans-serif`, 'fontWeight':'600','letterSpacing':'2px' , 'fontSize':'10px'}}>instagram.com/trulygorgeousbridal</p>
         </PContactFooter>
       </AInstagram>
+      </div>
 
       <a
         style={{
@@ -65,7 +68,7 @@ function ContactFooter() {
         target="_blank"
       >
         <IconPhone style={{ color: "white" }}></IconPhone> &nbsp;
-        <TelophoneNumber style={{ color: "white" , 'fontSize':'10px'}}>
+        <TelophoneNumber style={{ color: "white" , 'fontSize':'10px', 'letterSpacing':'2px'}}>
           01243788090
         </TelophoneNumber>
       </a>

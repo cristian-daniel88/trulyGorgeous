@@ -2,12 +2,17 @@ import styled from "styled-components";
 
 
 export const ContactFooterContainer = styled.div`
-display:none ;
+display:flex ;
+padding:0 5% ;
+margin:auto ;
 background: #333333;
 padding-bottom:20px ;
 border:none ;
+margin-top:-4px ;
 @media screen and (max-width: 865px) {
    display: block;
+   padding:0 ;
+   padding-bottom:30px ;
   
    
   }

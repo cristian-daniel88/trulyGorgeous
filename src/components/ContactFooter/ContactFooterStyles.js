@@ -61,7 +61,7 @@ color:#ffffff ;
 
 @media screen and (max-width: 865px) {
   display:block ;
-  margin-right:10px ;
+  margin-right:20px ;
   
   }
 `

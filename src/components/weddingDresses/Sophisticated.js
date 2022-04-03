@@ -48,12 +48,13 @@ function Sophisticated() {
           
           
             <>
-            <ProductContainerPhone key={i} style={{'marginBottom':'50px'}}>
+            <ProductContainerPhone key={i} style={{'marginBottom':'50px', 'border':'none'}}>
      
               
               <>
                <SliderContainerPhone a={v} />
               </>
+              {v.imgs[v.imgs.length - 1] == 'https://res.cloudinary.com/truly-gorgeous/image/upload/v1647433119/weddingDresses/sophisticated/willow-wedding-dress_znjx19.jpg' ? '' : (<NameDesigner>Sophisticated</NameDesigner>)}
          
             </ProductContainerPhone>
             </>

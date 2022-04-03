@@ -36,6 +36,7 @@ function Fairytale() {
             <Cart img={v.imgs} key={i} onClick={()=> click(v.imgs[0], true)}>
               
             </Cart>
+
           ))}
        
         </CartGrid>
@@ -48,14 +49,16 @@ function Fairytale() {
           
           
             <>
-            <ProductContainerPhone key={i} style={{'marginBottom':'50px'}}>
+            <ProductContainerPhone key={i} style={{'marginBottom':'50px', 'border':'none'}}>
      
               
               <>
                <SliderContainerPhone a={v} />
               </>
-         
+              
+            {v.imgs[v.imgs.length - 1] == 'https://res.cloudinary.com/truly-gorgeous/image/upload/v1647433123/weddingDresses/fairytale/Armia-bridal_tv2bmt.jpg' ? '' : (<NameDesigner>Fairytale</NameDesigner>)}
             </ProductContainerPhone>
+
             </>
           
 

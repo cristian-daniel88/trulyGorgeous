@@ -58,7 +58,7 @@ function Biography() {
             I offer a high-quality, one-to-one bridal service from our boutique
             in historical Chichester, West Sussex. I have worked in fashion for
             over 40 years, specialising in tailoring and Couture design. Part of
-            what makes Truly Gorgeous unique is our <LinkA href={'/alterations'}><div style={{'display':'inline', 'color':'purple', 'cursor':'pointer'}}>alterations service</div></LinkA>; I
+            what makes Truly Gorgeous unique is our <LinkA to={'/alterations'}><div style={{'display':'inline', 'color':'purple', 'cursor':'pointer'}}>alterations service</div></LinkA>; I
             carefully undertake all alterations myself on-site, promising a
             personalised approach from start to finish. We specialize in making
             your dress ‘unique’ by adding lace tops, boleros, straps, sleeves,

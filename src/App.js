@@ -34,6 +34,7 @@ import PriceListPage from './pages/PriceListPage';
 import OurCreationsPage from './pages/OurCreationsPage';
 import TestimonialsPage from './pages/TestimonialsPage';
 import ContactFooter from './components/ContactFooter/ContactFooter';
+import ScrollTop from './components/ScrollTop/ScrollTop';
 
 
 
@@ -43,7 +44,7 @@ function App() {
   return (
     <>
     <HashRouter>
-
+     <ScrollTop/>
     <GlobalStyles/>
     <Nav/>
     <Top/>

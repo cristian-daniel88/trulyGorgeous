@@ -6,7 +6,7 @@ import {
   IconPhone,
   TelophoneNumber,
 } from "../Nav/NavStyles";
-import { ContactFooterContainer, PContactFooter } from "./ContactFooterStyles";
+import { ContactFooterContainer, CristianHerreraDev, CristianHerreraDev2, PContactFooter } from "./ContactFooterStyles";
 
 function ContactFooter() {
   return (
@@ -55,23 +55,38 @@ function ContactFooter() {
       </AInstagram>
       </div>
 
+      <div >
+
       <a
         style={{
-          cursor: "pointer",
-          zIndex: "1000000",
-          display: "flex",
-          color: "#484040",
-          marginLeft: "20px",
-          marginRight: "20px",
+            cursor: "pointer",
+            zIndex: "1000000",
+            display: "flex",
+            color: "#484040",
+            marginLeft: "20px",
+            marginRight: "20px",
+            
         }}
         href="tel:01243788090"
         target="_blank"
-      >
+        >
         <IconPhone style={{ color: "white" }}></IconPhone> &nbsp;
         <TelophoneNumber style={{ color: "white" , 'fontSize':'10px', 'letterSpacing':'2px'}}>
           01243788090
         </TelophoneNumber>
       </a>
+
+    </div>
+      <CristianHerreraDev href="https://cristianherreradev.co.uk" target='_blank'>
+          Designed by cristianherreradev.co.uk
+      </CristianHerreraDev>
+
+    
+      
+      <CristianHerreraDev2 href="https://cristianherreradev.co.uk" target='_blank'>
+          Designed by cristianherreradev.co.uk
+      </CristianHerreraDev2>
+        
     </ContactFooterContainer>
   );
 }

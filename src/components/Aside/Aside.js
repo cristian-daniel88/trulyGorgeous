@@ -3,7 +3,12 @@ import React from "react";
 import { AsideContainer, DetailsAside } from "./AsideStyles";
 
 function Aside() {
+
+  
+  
   return (
+  
+    
     <AsideContainer>
       <style>
       @import url('https://fonts.googleapis.com/css2?family=Alef&family=PT+Sans&family=Raleway:ital@1&display=swap');
@@ -19,3 +24,6 @@ function Aside() {
 }
 
 export default Aside;
+
+
+//Our unique in-house alteration service allows you to customise and personalise your chosen dress, ensuring an excellent fit and flattering silhouette.

@@ -136,7 +136,7 @@ function HomeBody({toggle}) {
       'right':'10px'
     }}
     >
-      <p
+      <div
       style={{
         'fontSize':'10px',
         'color':'white'
@@ -144,7 +144,7 @@ function HomeBody({toggle}) {
       }}
       >
         MALCOLM HARRIS | PHOTOGRAPHY
-      </p>
+      </div>
     </div>
     {/* <Letters titulo={'titulo 2'} letters={'letters 2'} button={'button 2'} cuenta={count}/> */}
 

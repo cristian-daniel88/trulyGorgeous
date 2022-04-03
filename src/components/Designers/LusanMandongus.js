@@ -39,7 +39,7 @@ function LusanMandongus() {
 
       {ronaldModelsObject.map((v, i) => (
         <>
-          <ProductContainerPhone style={{ marginBottom: "50px" }} key={i}>
+          <ProductContainerPhone style={{ marginBottom: "50px", 'border':'none' }} key={i}>
             <>
               <PhoneCard>
                 <ImagenContainerDesigner>

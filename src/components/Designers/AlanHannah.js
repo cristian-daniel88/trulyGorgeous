@@ -51,7 +51,7 @@ function AlanHannah() {
 
       {ronaldModelsObject.map((v, i) => (
         <>
-          <ProductContainerPhone style={{ marginBottom: "50px" }}>
+          <ProductContainerPhone style={{ marginBottom: "50px",'border':'none' }}>
             <>
               <SliderContainerPhone a={v} />
             </>

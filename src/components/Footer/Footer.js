@@ -14,6 +14,7 @@ import {
   P4,
   IframeFooter,
   FooterPrim,
+  P5,
 } from "./FooterStyles";
 
 function Footer() {
@@ -54,7 +55,9 @@ function Footer() {
       <FooterBox3>
         <FooterBox2Container>
           <P3>Contact Us</P3>
-          <P4 style={{'color':'white'}}>Tel.:<span style={{'color':'white'}}>01243 788090</span></P4>
+          {/* <P4 style={{'color':'white'}}>Tel.:&nbsp;<span style={{'color':'white'}}>01243 788090</span></P4> */}
+          <P5></P5>
+          
           <P4>mail@trulygorgeous.co.uk</P4>
         </FooterBox2Container>
       </FooterBox3>

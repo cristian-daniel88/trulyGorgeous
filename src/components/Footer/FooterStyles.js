@@ -14,6 +14,7 @@ padding-bottom:5% ;
 display: flex;
 flex-wrap: wrap;
 
+
 `
 
 export const FooterBox1 = styled.div`
@@ -121,6 +122,9 @@ user-select: text;
 font-family: 'Cormorant Garamond', serif;
 font-family:'Open Sans';
 
+
+
+
 `
 
 export const P4 = styled.p`
@@ -132,6 +136,35 @@ user-select: text;
 text-align:${({hours}) => hours && `left`};
 font-size:${({hours}) => hours && `13px`};
 margin-left: ${({hours}) => hours && `35px`} ;
+
+
+
+
+
+@media screen and (max-width: 865px) {
+  text-align:${({hours}) => hours && `center`};
+font-size:${({hours}) => hours && `13px`};
+margin-left: ${({hours}) => hours && `0`} ;
+
+   
+  }
+
+`
+
+export const P5 = styled.p`
+color: white;
+text-align: center;
+margin-top: 20px;
+user-select: text;
+
+text-align:${({hours}) => hours && `left`};
+font-size:${({hours}) => hours && `13px`};
+margin-left: ${({hours}) => hours && `35px`} ;
+
+&::after {
+  color:white;
+  content: 'Tel.: 01243 788090';
+}
 
 
 

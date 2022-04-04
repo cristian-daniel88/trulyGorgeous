@@ -35,6 +35,7 @@ import OurCreationsPage from './pages/OurCreationsPage';
 import TestimonialsPage from './pages/TestimonialsPage';
 import ContactFooter from './components/ContactFooter/ContactFooter';
 import ScrollTop from './components/ScrollTop/ScrollTop';
+import SendMessagePages from './pages/SendMessagePages';
 
 
 
@@ -134,6 +135,11 @@ function App() {
 
     <Route exact path='/testimonials'>
         <TestimonialsPage/>
+    </Route>
+
+
+    <Route exact path='/sent'>
+        <SendMessagePages/>
     </Route>
 
 

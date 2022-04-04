@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import Loading from "../Loading/Loading";
+import { useHistory } from "react-router-dom";
+
 import { AdressContainer, BoldContact, BookingApoiment, ContactBoxes1, ContactBoxes2, ContactDetails, ContactDetailsContainer, ContactForm, ContainerBoxesContact, ContainerContact, DoneContainer, Form, IframeBox, IframeBoxContainer, Input, Label, OpeningHoursDiv, PContact, PhoneContainer, Send, SentContainer, SentDiv, TextArea } from "./ContactContainerStyles";
 var axios = require("axios");
 
 
 
 function ContactContainer () {
-
+  const history = useHistory()
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -33,12 +34,10 @@ function ContactContainer () {
 
   
 
-    setTimeout(() => {
+  
      
 
-      setValidateEmail("");
-      setValidatePhone("");
-    }, 1500);
+   
 
   
     var data = {
@@ -60,11 +59,16 @@ function ContactContainer () {
 
     axios(config)
       .then(function (response) {
+        history.push('/sent')
         console.log(JSON.stringify(response.data));
       })
       .catch(function (error) {
         console.log(error);
       });
+
+      
+      setValidateEmail("");
+      setValidatePhone("");
 
     
     return;

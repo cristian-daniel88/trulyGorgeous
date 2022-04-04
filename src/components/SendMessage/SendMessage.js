@@ -26,7 +26,7 @@ function SendMessage() {
         style={{
           height: "100px",
           justifyContent: "center",
-          backgroundColor: "lightblue",
+          backgroundColor: "#bffbd7",
           width:'80%',
         }}
       >

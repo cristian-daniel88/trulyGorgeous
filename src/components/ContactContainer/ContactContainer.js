@@ -201,7 +201,7 @@ function ContactContainer () {
                 }}>
                   <OpeningHoursDiv>
 
-                    <BoldContact style={{ 'fontSize':'14px'}}>Opening Hours:</BoldContact><br/> Sunday: Closed.<br/>Monday: 10 am to 5pm. <br/> Tuesday: 10 am to 5pm.<br/> Wednesday: 10 am to 5pm. <br/> Thursday: 10 am to 5pm.<br/> Friday: 10 am to 5pm.<br/> Saturday: 10 am to 5pm.
+                    <BoldContact style={{ 'fontSize':'14px'}}>Opening Hours:</BoldContact><br/> Monday: 10 am to 5pm<br/> Tuesday: 10 am to 5pm<br/> Wednesday: 10 am to 5pm<br/> Thursday: 10 am to 5pm<br/> Friday: 10 am to 5pm<br/> Saturday: 9 am to 5pm <br/>Sunday: Closed
                   </OpeningHoursDiv>
                   </PhoneContainer>
 

@@ -54,7 +54,7 @@ function Footer() {
       <FooterBox3>
         <FooterBox2Container>
           <P3>Contact Us</P3>
-          <P4>Tel.: 01243 788090</P4>
+          <P4 style={{'color':'white'}}>Tel.: 01243 788090</P4>
           <P4>mail@trulygorgeous.co.uk</P4>
         </FooterBox2Container>
       </FooterBox3>

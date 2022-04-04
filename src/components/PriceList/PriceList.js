@@ -275,7 +275,7 @@ function PriceList() {
 
         <PriceListBoxContainer>
           <PriceDetails style={{ textDecoration: "none" }}>
-          Redesign of dress £35.
+          Redesign of dress.
           </PriceDetails>
 
           <Price style={{ textDecoration: "none" }}>£35 per hour</Price>

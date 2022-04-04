@@ -18,6 +18,9 @@ function ContactContainer () {
   const [validateEmail, setValidateEmail] = useState("");
   const [validatePhone, setValidatePhone] = useState("");
 
+  let currentTime = new Date();
+  let year = currentTime.getFullYear()
+
  
 
     const sendEmail = (e) => {
@@ -141,7 +144,8 @@ function ContactContainer () {
                     name="weddingDate"
                     onChange={(e) => setWeddingDate(e.target.value)}
                     value={weddingDate}
-                    type="date"
+                    type="text"
+                    placeholder={`Eg. 8 September ${year}`}
                   />
 
                   <Label>Requested Appointment Date</Label>
@@ -152,7 +156,8 @@ function ContactContainer () {
                     name="appointmentDate"
                     onChange={(e) => setAppoimentDate(e.target.value)}
                     value={appointmentDate}
-                    type="date"
+                    type="text"
+                    placeholder={`Eg. 14 May ${year}`}
                   />
 
                   <Label>Details</Label>

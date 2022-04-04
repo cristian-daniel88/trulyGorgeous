@@ -17,8 +17,7 @@ function ContactContainer () {
   const [validateEmail, setValidateEmail] = useState("");
   const [validatePhone, setValidatePhone] = useState("");
 
-  const [done, setDone] = useState(false);
-  const [loading, setLoading] = useState("false");
+ 
 
     const sendEmail = (e) => {
     e.preventDefault();
@@ -32,20 +31,16 @@ function ContactContainer () {
       return;
     }
 
-    setDone(true);
-    setLoading("true");
+  
 
     setTimeout(() => {
-      setLoading("false");
+     
 
       setValidateEmail("");
       setValidatePhone("");
     }, 1500);
 
-    setTimeout(() => {
-      setDone(false);
-    }, 3000);
-
+  
     var data = {
       name: name,
       email: email,
@@ -71,10 +66,7 @@ function ContactContainer () {
         console.log(error);
       });
 
-    //   emailjs.sendForm('service_yfb5ybe','template_bj1osmd', e.target, 'NogLcaNm0-cpwsy9x').then(res =>{
-    //     console.log(res)
-    // }).catch(err => console.log(err))
-
+    
     return;
   };
   return (
@@ -82,19 +74,7 @@ function ContactContainer () {
     <ContainerContact>
 
       
-    {done ? (
-        <DoneContainer>
-          {loading == "true" ? (
-            <Loading toggle={loading} />
-          ) : (
-            <SentContainer>
-              <SentDiv>
-                <div>SENT</div>
-              </SentDiv>
-            </SentContainer>
-          )}
-        </DoneContainer>
-      ) : (
+   
         <>
           <div
             style={{
@@ -246,7 +226,7 @@ function ContactContainer () {
             </ContactBoxes2>
           </ContainerBoxesContact>
         </>
-      )}
+     
 
     </ContainerContact>
     </>

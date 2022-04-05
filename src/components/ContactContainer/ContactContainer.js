@@ -113,6 +113,8 @@ function ContactContainer () {
                     onChange={(e) => setName(e.target.value)}
                     
                   />
+                <input placeholder="test"/>
+
 
                   <Label>
                     Email Address{" "}
@@ -155,6 +157,8 @@ function ContactContainer () {
                     type="text"
                     placeholder={`Eg. 14 May ${year}`}
                   />
+
+
 
                   <Label>Details</Label>
                   <TextArea

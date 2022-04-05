@@ -88,6 +88,19 @@ function ContactContainer() {
   };
   return (
     <>
+
+    
+            <form>
+              <label for="fname">First name:</label>
+              <br />
+              <input type="text" id="fname" name="fname" />
+              <br />
+              <label for="lname">Last name:</label>
+              <br />
+              <input type="text" id="lname" name="lname" />
+              Park
+            </form>
+
       <ContainerContact>
         <>
           <div
@@ -168,17 +181,6 @@ function ContactContainer() {
                 </Form>
               </ContactForm>
             </ContactBoxes1>
-{/* 
-            <form>
-              <label for="fname">First name:</label>
-              <br />
-              <input type="text" id="fname" name="fname" />
-              <br />
-              <label for="lname">Last name:</label>
-              <br />
-              <input type="text" id="lname" name="lname" />
-              Park
-            </form> */}
 
             <ContactBoxes2>
               <ContactDetails>

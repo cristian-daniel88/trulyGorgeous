@@ -168,7 +168,7 @@ function ContactContainer() {
                 </Form>
               </ContactForm>
             </ContactBoxes1>
-
+{/* 
             <form>
               <label for="fname">First name:</label>
               <br />
@@ -178,7 +178,7 @@ function ContactContainer() {
               <br />
               <input type="text" id="lname" name="lname" />
               Park
-            </form>
+            </form> */}
 
             <ContactBoxes2>
               <ContactDetails>

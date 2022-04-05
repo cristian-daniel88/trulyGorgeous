@@ -161,7 +161,7 @@ function ContactContainer () {
                     placeholder="write here"
                     name="details"
                     onChange={(e) => setDetails(e.target.value)}
-                    value={details}
+                    
                   ></TextArea>
 
                   <Send type="submit" onClick={sendEmail}>
@@ -176,7 +176,7 @@ function ContactContainer () {
                 <ContactDetailsContainer>
                   <PhoneContainer>
                     <PContact>
-                      <BoldContact>Phone: </BoldContact>01243 788090
+                      <BoldContact>Phone: test</BoldContact>01243 788090
                     </PContact>
                     <PContact>
                       <BoldContact>Email: </BoldContact>mail@trulygorgeous.co.uk

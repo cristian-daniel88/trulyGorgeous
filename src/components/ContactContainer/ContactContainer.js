@@ -112,10 +112,12 @@ function ContactContainer() {
             <ContactBoxes1>
               <ContactForm>
                 <Form>
-                  <Label>Your Name test</Label>
+
+                <Label>Your Name</Label>
                   <Input
                     name="name"
                     onChange={(e) => setName(e.target.value)}
+                    value={name}
                   />
 
                   <Label>
@@ -124,7 +126,11 @@ function ContactContainer() {
                   </Label>
                   <Input
                     onChange={(e) => setEmail(e.target.value)}
+                    value={email}
                     type="email"
+                    onClick={() => {
+                      setValidateEmail("");
+                    }}
                   />
 
                   <Label>
@@ -134,7 +140,12 @@ function ContactContainer() {
                     name="phone"
                     onChange={(e) => setPhone(e.target.value)}
                     type={"tel"}
+                    onClick={() => {
+                      setValidatePhone("");
+                    }}
                   />
+
+
 
                   <Label>Wedding Date</Label>
                   <Input
@@ -228,16 +239,7 @@ function ContactContainer() {
         </>
       </ContainerContact>
 
-      <form>
-        <label for="fname">First name:</label>
-        <br />
-        <input type="text" id="fname" name="fname" />
-        <br />
-        <label for="lname">Last name:</label>
-        <br />
-        <input type="text" id="lname" name="lname" />
-        Park
-      </form>
+  
     </>
   );
 }

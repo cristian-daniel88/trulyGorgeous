@@ -1,13 +1,35 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-import { AdressContainer, BoldContact, BookingApoiment, ContactBoxes1, ContactBoxes2, ContactDetails, ContactDetailsContainer, ContactForm, ContainerBoxesContact, ContainerContact, DoneContainer, Form, IframeBox, IframeBoxContainer, Input, Label, OpeningHoursDiv, PContact, PhoneContainer, Send, SentContainer, SentDiv, TextArea } from "./ContactContainerStyles";
+import {
+  AdressContainer,
+  BoldContact,
+  BookingApoiment,
+  ContactBoxes1,
+  ContactBoxes2,
+  ContactDetails,
+  ContactDetailsContainer,
+  ContactForm,
+  ContainerBoxesContact,
+  ContainerContact,
+  DoneContainer,
+  Form,
+  IframeBox,
+  IframeBoxContainer,
+  Input,
+  Label,
+  OpeningHoursDiv,
+  PContact,
+  PhoneContainer,
+  Send,
+  SentContainer,
+  SentDiv,
+  TextArea,
+} from "./ContactContainerStyles";
 var axios = require("axios");
 
-
-
-function ContactContainer () {
-  const history = useHistory()
+function ContactContainer() {
+  const history = useHistory();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -19,11 +41,9 @@ function ContactContainer () {
   const [validatePhone, setValidatePhone] = useState("");
 
   let currentTime = new Date();
-  let year = currentTime.getFullYear()
+  let year = currentTime.getFullYear();
 
- 
-
-    const sendEmail = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
     if (!/^\S+@\S+\.\S+$/.test(email)) {
@@ -35,14 +55,6 @@ function ContactContainer () {
       return;
     }
 
-  
-
-  
-     
-
-   
-
-  
     var data = {
       name: name,
       email: email,
@@ -62,26 +74,21 @@ function ContactContainer () {
 
     axios(config)
       .then(function (response) {
-        history.push('/sent')
+        history.push("/sent");
         console.log(JSON.stringify(response.data));
       })
       .catch(function (error) {
         console.log(error);
       });
 
-      
-      setValidateEmail("");
-      setValidatePhone("");
+    setValidateEmail("");
+    setValidatePhone("");
 
-    
     return;
   };
   return (
     <>
-    <ContainerContact>
-
-      
-   
+      <ContainerContact>
         <>
           <div
             style={{
@@ -95,26 +102,21 @@ function ContactContainer () {
               <BoldContact style={{ fontSize: "22px" }}>
                 Book an Appointment at Truly Gorgeous
               </BoldContact>{" "}
-              <br /> 
+              <br />
               {/* To arrange your appointment with us.  */}
-              In our boutique we
-              offer only one bride a time. Please use the booking form below or
-              call us.
+              In our boutique we offer only one bride a time. Please use the
+              booking form below or call us.
             </BookingApoiment>
           </div>
           <ContainerBoxesContact>
             <ContactBoxes1>
-    
               <ContactForm>
                 <Form>
                   <Label>Your Name test</Label>
                   <Input
                     name="name"
                     onChange={(e) => setName(e.target.value)}
-                    
                   />
-                <input placeholder="test"/>
-
 
                   <Label>
                     Email Address{" "}
@@ -122,9 +124,7 @@ function ContactContainer () {
                   </Label>
                   <Input
                     onChange={(e) => setEmail(e.target.value)}
-                    
                     type="email"
-                   
                   />
 
                   <Label>
@@ -134,14 +134,12 @@ function ContactContainer () {
                     name="phone"
                     onChange={(e) => setPhone(e.target.value)}
                     type={"tel"}
-                   
                   />
 
                   <Label>Wedding Date</Label>
                   <Input
                     name="weddingDate"
                     onChange={(e) => setWeddingDate(e.target.value)}
-                 
                     type="text"
                     placeholder={`Eg. 8 September ${year}`}
                   />
@@ -153,19 +151,15 @@ function ContactContainer () {
                   <Input
                     name="appointmentDate"
                     onChange={(e) => setAppoimentDate(e.target.value)}
-                 
                     type="text"
                     placeholder={`Eg. 14 May ${year}`}
                   />
-
-
 
                   <Label>Details</Label>
                   <TextArea
                     placeholder="write here"
                     name="details"
                     onChange={(e) => setDetails(e.target.value)}
-                    
                   ></TextArea>
 
                   <Send type="submit" onClick={sendEmail}>
@@ -174,6 +168,17 @@ function ContactContainer () {
                 </Form>
               </ContactForm>
             </ContactBoxes1>
+
+            <form>
+              <label for="fname">First name:</label>
+              <br />
+              <input type="text" id="fname" name="fname" />
+              <br />
+              <label for="lname">Last name:</label>
+              <br />
+              <input type="text" id="lname" name="lname" />
+              Park
+            </form>
 
             <ContactBoxes2>
               <ContactDetails>
@@ -194,36 +199,33 @@ function ContactContainer () {
                       – West Sussex PO20 1QH
                     </PContact>
                   </AdressContainer>
-                  
-                  <PhoneContainer style={{
-                  'width':'100%',
-                  "padding":'0 5px',
-                  'paddingBottom':'10px',
-                  'display':'flex',
-                  //'justifyContent':'center'
-                  
-                  
-                }}>
-                  <OpeningHoursDiv>
 
-                    <BoldContact style={{ 'fontSize':'14px'}}>Opening Hours:</BoldContact><br/> Monday: 10 am to 5pm<br/> Tuesday: 10 am to 5pm<br/> Wednesday: 10 am to 5pm<br/> Thursday: 10 am to 5pm<br/> Friday: 10 am to 5pm<br/> Saturday: 9 am to 5pm <br/>Sunday: Closed
-                  </OpeningHoursDiv>
+                  <PhoneContainer
+                    style={{
+                      width: "100%",
+                      padding: "0 5px",
+                      paddingBottom: "10px",
+                      display: "flex",
+                      //'justifyContent':'center'
+                    }}
+                  >
+                    <OpeningHoursDiv>
+                      <BoldContact style={{ fontSize: "14px" }}>
+                        Opening Hours:
+                      </BoldContact>
+                      <br /> Monday: 10 am to 5pm
+                      <br /> Tuesday: 10 am to 5pm
+                      <br /> Wednesday: 10 am to 5pm
+                      <br /> Thursday: 10 am to 5pm
+                      <br /> Friday: 10 am to 5pm
+                      <br /> Saturday: 9 am to 5pm <br />
+                      Sunday: Closed
+                    </OpeningHoursDiv>
                   </PhoneContainer>
-
-                  
-                  
-                  
-
-
-                 
-
-                  
                 </ContactDetailsContainer>
               </ContactDetails>
 
               {/*  */}
-
-            
 
               <IframeBoxContainer>
                 <IframeBox
@@ -235,11 +237,9 @@ function ContactContainer () {
             </ContactBoxes2>
           </ContainerBoxesContact>
         </>
-     
-
-    </ContainerContact>
+      </ContainerContact>
     </>
-  )
+  );
 }
 
 export default ContactContainer;

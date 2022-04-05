@@ -12,5 +12,10 @@ code {
     monospace;
 }
 
+input {
+  user-select: text
+
+}
+
 
 

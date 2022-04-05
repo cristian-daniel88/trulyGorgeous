@@ -111,7 +111,7 @@ function ContactContainer () {
                   <Input
                     name="name"
                     onChange={(e) => setName(e.target.value)}
-                    value={name}
+                    
                   />
 
                   <Label>
@@ -120,11 +120,9 @@ function ContactContainer () {
                   </Label>
                   <Input
                     onChange={(e) => setEmail(e.target.value)}
-                    value={email}
+                    
                     type="email"
-                    onClick={() => {
-                      setValidateEmail("");
-                    }}
+                   
                   />
 
                   <Label>
@@ -134,16 +132,14 @@ function ContactContainer () {
                     name="phone"
                     onChange={(e) => setPhone(e.target.value)}
                     type={"tel"}
-                    onClick={() => {
-                      setValidatePhone("");
-                    }}
+                   
                   />
 
                   <Label>Wedding Date</Label>
                   <Input
                     name="weddingDate"
                     onChange={(e) => setWeddingDate(e.target.value)}
-                    value={weddingDate}
+                 
                     type="text"
                     placeholder={`Eg. 8 September ${year}`}
                   />
@@ -155,7 +151,7 @@ function ContactContainer () {
                   <Input
                     name="appointmentDate"
                     onChange={(e) => setAppoimentDate(e.target.value)}
-                    value={appointmentDate}
+                 
                     type="text"
                     placeholder={`Eg. 14 May ${year}`}
                   />

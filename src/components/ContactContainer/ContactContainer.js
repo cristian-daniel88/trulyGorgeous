@@ -107,7 +107,7 @@ function ContactContainer () {
     
               <ContactForm>
                 <Form>
-                  <Label>Your Name</Label>
+                  <Label>Your Name test</Label>
                   <Input
                     name="name"
                     onChange={(e) => setName(e.target.value)}
@@ -176,7 +176,7 @@ function ContactContainer () {
                 <ContactDetailsContainer>
                   <PhoneContainer>
                     <PContact>
-                      <BoldContact>Phone: test</BoldContact>01243 788090
+                      <BoldContact>Phone: </BoldContact>01243 788090
                     </PContact>
                     <PContact>
                       <BoldContact>Email: </BoldContact>mail@trulygorgeous.co.uk

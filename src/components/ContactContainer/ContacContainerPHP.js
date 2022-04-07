@@ -63,6 +63,7 @@ function ContactContainerPHP() {
                 <Label>Your Name</Label>
                   <Input
                     name="name"
+                    type="text"
                   />
 
                   <Label>

@@ -25,7 +25,7 @@ import {
 } from "./ContactContainerStyles";
 
 
-function ContactContainer() {
+function ContactContainerPHP() {
   let currentTime = new Date();
   let year = currentTime.getFullYear();
 
@@ -58,7 +58,7 @@ function ContactContainer() {
           <ContainerBoxesContact>
             <ContactBoxes1>
               <ContactForm>
-                <Form action="sendmessagephp.html">
+                <Form action="sendmessagetruly.php" method="post">
 
                 <Label>Your Name</Label>
                   <Input
@@ -180,4 +180,4 @@ function ContactContainer() {
   );
 }
 
-export default ContactContainer;
+export default ContactContainerPHP;

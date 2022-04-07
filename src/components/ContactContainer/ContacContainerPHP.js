@@ -12,7 +12,6 @@ import {
   ContactForm,
   ContainerBoxesContact,
   ContainerContact,
-  DoneContainer,
   Form,
   IframeBox,
   IframeBoxContainer,
@@ -22,70 +21,18 @@ import {
   PContact,
   PhoneContainer,
   Send,
-  SentContainer,
-  SentDiv,
   TextArea,
 } from "./ContactContainerStyles";
-var axios = require("axios");
+
 
 function ContactContainer() {
-  const history = useHistory();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [weddingDate, setWeddingDate] = useState("");
-  const [appointmentDate, setAppoimentDate] = useState("");
-  const [details, setDetails] = useState("");
-
-  const [validateEmail, setValidateEmail] = useState("");
-  const [validatePhone, setValidatePhone] = useState("");
-
   let currentTime = new Date();
   let year = currentTime.getFullYear();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  
 
-    if (!/^\S+@\S+\.\S+$/.test(email)) {
-      return setValidateEmail("invalid");
-    }
-
-    if (isNaN(phone) || phone === "") {
-      setValidatePhone("no number");
-      return;
-    }
-
-    var data = {
-      name: name,
-      email: email,
-      phone: phone,
-      weddingDate: weddingDate,
-      appointmentDate: appointmentDate,
-      details: details,
-    };
-
-    var config = {
-      method: "post",
-      url: "https://sendemailtrulygorgeous.herokuapp.com/api/emails",
-      //url:"http://localhost:8080/api/emails",
-      headers: {},
-      data: data,
-    };
-
-    axios(config)
-      .then(function (response) {
-        history.push("/sent");
-        console.log(JSON.stringify(response.data));
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-
-    setValidateEmail("");
-    setValidatePhone("");
-
-    return;
-  };
+  
+  
   return (
     <>
       <ContainerContact>
@@ -111,38 +58,30 @@ function ContactContainer() {
           <ContainerBoxesContact>
             <ContactBoxes1>
               <ContactForm>
-                <Form>
+                <Form action="sendmessagephp.html">
 
                 <Label>Your Name</Label>
                   <Input
                     name="name"
-                    onChange={(e) => setName(e.target.value)}
-                    value={name}
                   />
 
                   <Label>
                     Email Address{" "}
-                    <span style={{ color: "red" }}>{validateEmail}</span>
+                    <span style={{ color: "red" }}></span>
                   </Label>
                   <Input
-                    onChange={(e) => setEmail(e.target.value)}
-                    value={email}
+                    name="from2"
                     type="email"
-                    onClick={() => {
-                      setValidateEmail("");
-                    }}
+                    required   
                   />
 
                   <Label>
-                    Phone <span style={{ color: "red" }}>{validatePhone}</span>
+                    Phone <span style={{ color: "red" }}></span>
                   </Label>
                   <Input
                     name="phone"
-                    onChange={(e) => setPhone(e.target.value)}
                     type={"tel"}
-                    onClick={() => {
-                      setValidatePhone("");
-                    }}
+                    required
                   />
 
 
@@ -150,7 +89,6 @@ function ContactContainer() {
                   <Label>Wedding Date</Label>
                   <Input
                     name="weddingDate"
-                    onChange={(e) => setWeddingDate(e.target.value)}
                     type="text"
                     placeholder={`Eg. 8 September ${year}`}
                   />
@@ -161,7 +99,6 @@ function ContactContainer() {
                   </Label>
                   <Input
                     name="appointmentDate"
-                    onChange={(e) => setAppoimentDate(e.target.value)}
                     type="text"
                     placeholder={`Eg. 14 May ${year}`}
                   />
@@ -170,10 +107,9 @@ function ContactContainer() {
                   <TextArea
                     placeholder="write here"
                     name="details"
-                    onChange={(e) => setDetails(e.target.value)}
                   ></TextArea>
 
-                  <Send type="submit" onClick={sendEmail}>
+                  <Send type="submit">
                     Send
                   </Send>
                 </Form>

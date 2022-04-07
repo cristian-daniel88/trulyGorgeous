@@ -1,6 +1,6 @@
 <?php
-    $from = "test@trulygorgeous.co.uk";
-    $to = "test@trulygorgeous.co.uk";
+    $from = "mail@trulygorgeous.co.uk";
+    $to = "mail@trulygorgeous.co.uk";
     $subject = "NEW BRIDES ENQUIRES";
     $name =  $_POST["name"];
     $from2 = $_POST["from2"];
